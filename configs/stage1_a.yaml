@@ -1,0 +1,57 @@
+# Stage 1 (alignment), Option A: SigLIP-base/16-224, feature layer -2, avg pool 2 -> 49 image tokens.
+# Trainable: pooler + projector + modality_emb only. Laya and the tower are frozen, but gradients
+# flow through the frozen Laya encoder to the projector (plan.md §4 Phase 4).
+#   python -m laya_vision.train.stage1 --config configs/stage1_a.yaml
+stage: 1
+seed: 0
+output_dir: runs/stage1_a
+base: convaiinnovations/laya
+base_revision: null
+init_from: null
+resume: auto                      # continue from runs/stage1_a/checkpoint_latest if it exists
+device: auto
+
+vision:
+  tower: google/siglip-base-patch16-224
+  tower_revision: null
+  feature_layer: -2
+  pool_mode: avg
+  pool_k: 2
+
+data:
+  image_root: data/images         # record "image" paths are relative to this
+  # caption-matching choice (4-8 options, >=1 hard negative) + noul caption match, 500k-1M rows,
+  # written by `python -m laya_vision.data.prepare --config configs/data_stage1.yaml`
+  train:
+    caption: {files: [data/coco.train.jsonl], ratio: 1.0}
+  eval: [data/coco.test.jsonl]
+  max_eval_items: 4000
+  num_workers: 8
+  augment: true                   # data.augment.Augmenter(): option shuffle, label renaming, paraphrase
+
+train:
+  epochs: 1
+  max_steps: null
+  micro_batch: 32                 # rows per forward per GPU
+  grad_accum: 8                   # 32 x 8 = 256 rows per step on 1 GPU (use 4 on 2 GPUs, 2 on 4 GPUs)
+  lr: {projector: 1.0e-3, encoder: 0.0, head: 0.0, vision: 0.0}
+  weight_decay: 0.0
+  warmup_ratio: 0.03
+  min_lr_ratio: 0.0
+  grad_clip: 1.0
+  group_size: 4
+  sigma_start: 0.4
+  sigma_end: 0.1
+  w_sph: 0.75
+  w_rps: 1.0
+  ce_weight: 1.0
+  amp: auto                       # bf16 on Ampere+, else fp16 + GradScaler; fp32 on CPU/MPS
+  gradient_checkpointing: true
+  detach_encoder: false
+  log_every: 20
+  eval_every: 500
+  save_every: 500
+  best_metric: image.accuracy
+  best_mode: max
+
+wandb: {enabled: false, project: laya-vision, name: stage1_a}

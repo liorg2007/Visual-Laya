@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+/data/
+/runs/
+/eval/cache/
+/eval/results/*.jsonl
+/wandb/

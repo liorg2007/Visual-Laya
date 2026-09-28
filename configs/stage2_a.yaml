@@ -1,0 +1,67 @@
+# Stage 2 (decisions), Option A. Starts from the stage-1 projector.
+# Trainable: projector 1e-4, Laya encoder 2.5e-5, head/scorer/type-emb 1e-4 (notebook values).
+# Tower frozen by default. Mix: 75% image-task rows, 25% text-only typed-decisions rows.
+#   python -m laya_vision.train.stage2 --config configs/stage2_a.yaml
+stage: 2
+seed: 0
+output_dir: runs/stage2_a
+init_from: runs/stage1_a/final    # stage-1 output (or runs/stage1_a/best)
+resume: auto
+device: auto
+
+data:
+  image_root: data/images
+  # written by `python -m laya_vision.data.prepare --config configs/data_stage2.yaml`
+  # (same mixture as configs/data_stage2.yaml; drop files for tasks you did not build)
+  train:
+    image:
+      ratio: 0.75
+      files: [data/cifar10.train.jsonl, data/oxford_pets.train.jsonl, data/food101.train.jsonl,
+              data/eurosat.train.jsonl, data/aokvqa.train.jsonl, data/scienceqa.train.jsonl,
+              data/vqav2_yesno.train.jsonl, data/koniq.train.jsonl]
+    text:
+      ratio: 0.25
+      files: [data/typed_decisions.train.jsonl]
+  samples_per_epoch: null         # default: one pass over the source largest relative to its ratio
+  # held-out image + text rows, reported separately (text accuracy drives the early stop)
+  eval: [data/oxford_pets.test.jsonl, data/vqav2_yesno.test.jsonl, data/koniq.test.jsonl,
+         data/eurosat.test.jsonl, data/typed_decisions.test.jsonl]
+  max_eval_items: 4000
+  num_workers: 8
+  augment: true
+
+train:
+  epochs: 3                       # plan: 2-4
+  max_steps: null
+  micro_batch: 8
+  grad_accum: 8                   # 8 x 8 = 64 rows per step on 1 GPU (4 on 2 GPUs)
+  lr: {projector: 1.0e-4, encoder: 2.5e-5, head: 1.0e-4, vision: 0.0}
+  unfreeze_vision_blocks: 0       # e.g. 2 with lr.vision: 1.0e-6 to train the last 2 tower blocks
+  weight_decay: 0.01
+  warmup_ratio: 0.03
+  min_lr_ratio: 0.04              # ~ notebook eta_min 1e-6 on the encoder LR
+  grad_clip: 1.0
+  group_size: 4
+  sigma_start: 0.4
+  sigma_end: 0.1
+  w_sph: 0.75
+  w_rps: 1.0
+  ce_weight: 1.0
+  amp: auto
+  gradient_checkpointing: true
+  detach_encoder: false
+  lora:                           # variant if full fine-tuning regresses text by > 2 points
+    enabled: false
+    r: 16
+    alpha: 32
+    dropout: 0.05
+    targets: [Wqkv, Wo, Wi]
+  log_every: 20
+  eval_every: 500
+  save_every: 500
+  best_metric: image.accuracy
+  best_mode: max
+  early_stop_text_drop: 0.02      # stop when text accuracy drops > 2 points below step 0
+  early_stop_patience: 2
+
+wandb: {enabled: false, project: laya-vision, name: stage2_a}

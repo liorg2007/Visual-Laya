@@ -1,0 +1,24 @@
+# CPU smoke run (< 2 min): random tiny Laya + tiny SigLIP tower + a generated toy colour dataset.
+#   bash scripts/smoke_train.sh
+stage: 1
+seed: 0
+output_dir: runs/smoke/stage1
+base: tiny                        # laya_vision.testing.make_tiny_laya_dir (real tokenizer, tiny net)
+resume: false
+device: cpu
+vision: {tower: tiny, feature_layer: -2, pool_mode: avg, pool_k: 2}
+data:
+  synthetic: {dir: runs/smoke/data, n_train: 32, n_eval: 16, n_calib: 16}
+  num_workers: 0
+  max_eval_items: 48
+train:
+  epochs: 1
+  max_steps: 6
+  micro_batch: 8
+  grad_accum: 2
+  lr: {projector: 1.0e-3, encoder: 0.0, head: 0.0, vision: 0.0}
+  amp: fp32
+  gradient_checkpointing: true
+  log_every: 2
+  eval_every: 4
+  save_every: 4

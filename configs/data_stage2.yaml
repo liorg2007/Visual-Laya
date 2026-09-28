@@ -1,0 +1,54 @@
+# Stage-2 decision data, ARCHITECTURE §5.3 / plan.md Phase 3+5.
+#   python -m laya_vision.data.prepare --config configs/data_stage2.yaml
+# Writes data/{task}.{train,calib,test}.jsonl (+ {task}.stats.json), images under data/images/{task}/,
+# and data/typed_decisions.{train,calib,test}.jsonl (text mix; HF test split -> test).
+# Per-task keys override laya_vision/data/vision_tasks.py SOURCES (dataset_id, revision, hf_splits,
+# columns, options, calib/test fractions, max_per_task, n_distractors, enabled).
+out: data
+image_root: data/images
+data_root: data/raw                    # local sources (KonIQ / AVA csv + images)
+seed: 0
+streaming: false
+max_per_task: 60000                    # records per task, all splits
+n_distractors: 1                       # 0-2 extra questions per image (classification tasks)
+
+tasks:
+  cifar10: {options: [4, 10]}
+  oxford_pets: {options: [5, 20]}      # 37 classes -> 20 sampled incl. gold
+  food101: {options: [5, 20]}          # 101 classes -> <=20 sampled incl. gold
+  eurosat: {options: [4, 10]}          # VERIFY licence (MIT per the EuroSAT repo; HF card says unknown)
+  aokvqa: {n_distractors: 0}           # VERIFY licence
+  scienceqa: {n_distractors: 0}        # CC BY-NC-SA: non-commercial, see LICENSES.md
+  vqav2_yesno: {balance: true}         # VERIFY HF mirror lmms-lab-encoder/VQAv2
+  koniq:                               # VERIFY: download the official KonIQ-10k release to data/raw/koniq10k
+    csv_path: koniq10k/koniq10k_scores_and_distributions.csv
+    image_dir: koniq10k/1024x768
+    n_levels: 5
+    enabled: true
+  ava: {enabled: false}                # research-only licence; off by default
+
+text_mix:
+  hf_split: train
+  calib: 0.05                          # held-out text calibration cases (hashed by case id)
+  test: 0.0
+  test_split: true                     # HF test split -> typed_decisions.test.jsonl (text regression)
+
+text_eval:                             # text regression sets for configs/eval.yaml (test split only)
+  tasks: [ag_news, boolq]              # fancyzhx/ag_news (test), google/boolq (validation)
+  max_items: 5000
+
+# Mixture for the stage-2 trainer (`data.train` accepts this {name: {files, ratio}} mapping).
+mixture:
+  image:
+    ratio: 0.75
+    files: [data/cifar10.train.jsonl, data/oxford_pets.train.jsonl, data/food101.train.jsonl,
+            data/eurosat.train.jsonl, data/aokvqa.train.jsonl, data/scienceqa.train.jsonl,
+            data/vqav2_yesno.train.jsonl, data/koniq.train.jsonl]
+  text:
+    ratio: 0.25
+    files: [data/typed_decisions.train.jsonl]
+calib: [data/cifar10.calib.jsonl, data/oxford_pets.calib.jsonl, data/food101.calib.jsonl, data/eurosat.calib.jsonl,
+        data/aokvqa.calib.jsonl, data/scienceqa.calib.jsonl, data/vqav2_yesno.calib.jsonl, data/koniq.calib.jsonl,
+        data/typed_decisions.calib.jsonl]
+eval: [data/oxford_pets.test.jsonl, data/vqav2_yesno.test.jsonl, data/koniq.test.jsonl, data/eurosat.test.jsonl,
+       data/typed_decisions.test.jsonl]

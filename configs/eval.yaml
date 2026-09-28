@@ -1,0 +1,37 @@
+# Eval task set (plan.md §4 Phase 3 item 7). Held out from training; split by image.
+# Paths are JSONL files produced by the data pipeline (docs/interfaces.md record schema),
+# named data/{task}.test.jsonl. `image` fields are relative to image_root.
+#
+#   python -m laya_vision.eval.run_eval --config configs/eval.yaml --checkpoint DIR --out eval/results/model.json
+#   python -m laya_vision.eval.run_eval --config configs/eval.yaml --baseline caption_laya \
+#       --record-baseline eval/results/baselines.json --out eval/results/caption_laya.json
+
+image_root: data/images
+device: null            # auto
+max_questions_per_call: 32
+
+image_tasks:            # one per decision family; acceptance: beat caption_laya on >= 3 of 4
+  oxford_pets: data/oxford_pets.test.jsonl          # choice
+  vqav2_yesno: data/vqav2_yesno.test.jsonl          # noul
+  koniq: data/koniq.test.jsonl                      # score (bucketed)
+  eurosat: data/eurosat.test.jsonl                  # choice (fallback for a safety noul set)
+
+text_tasks:             # text regression vs stock Laya: within 2 points
+  ag_news: data/ag_news.test.jsonl
+  boolq: data/boolq.test.jsonl
+  typed_decisions: data/typed_decisions.test.jsonl
+
+baselines:
+  laya: convaiinnovations/laya                      # stock Laya for caption_laya / stock_laya
+  laya_revision: null
+  captioner: Salesforce/blip-image-captioning-base
+  captioner_revision: null                          # pin before recording baselines.json
+  caption_cache: eval/cache/captions
+  siglip: google/siglip-base-patch16-224
+  siglip_revision: null
+
+acceptance:             # plan.md §4 Phase 5 exit criteria / ARCH §6
+  min_image_task_wins_frac: 0.75
+  max_text_drop: 0.02
+  max_image_ece10: 0.10
+  max_latency_ratio: 2.0
