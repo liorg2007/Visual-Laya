@@ -114,3 +114,50 @@ def test_lora_merge_matches_adapter_forward():
     merged = merged_copy(net)
     assert not any("lora_" in n for n, _ in merged.named_parameters())
     assert torch.allclose(net(x), merged(x), atol=1e-5)
+
+
+def test_caption_distillation_and_projector_guards(tmp_path, tiny_laya_dir):
+    """Caption rows get text-only teachers; distillation, the standardized projector and a frozen
+    modality_emb train without error, and the eval reports the grounding metrics."""
+    from PIL import Image
+
+    from laya_vision.data.dataset import teacher_text
+
+    img_dir = tmp_path / "data"
+    (img_dir / "img").mkdir(parents=True)
+    caps = ["a red square", "a green square", "a blue square", "a yellow square"]
+    cols = [(220, 30, 30), (30, 200, 40), (30, 60, 220), (230, 220, 30)]
+    rows = []
+    for i, (c, rgb) in enumerate(zip(caps * 3, cols * 3)):
+        Image.new("RGB", (32, 32), rgb).save(img_dir / "img" / ("%d.png" % i))
+        opts = [c] + [x for x in caps if x != c][:2]
+        rows.append({"id": "c/%d/q0" % i, "task": "coco", "split": "train", "image": "img/%d.png" % i, "text": None,
+                     "question": {"type": "choice", "instructions": "Which caption describes the image?",
+                                  "criteria": {k: v for k, v in zip("ABC", opts)}},
+                     "target": [1.0, 0.0, 0.0], "template": "caption_choice"})
+        pos = i % 2 == 0
+        cap = c if pos else opts[1]
+        rows.append({"id": "c/%d/q1" % i, "task": "coco", "split": "train", "image": "img/%d.png" % i, "text": None,
+                     "question": {"type": "noul", "instructions": "This caption describes the image: \"%s\"" % cap},
+                     "target": [0.0, 1.0] if pos else [1.0, 0.0], "template": "caption_noul",
+                     "fields": {"caption": cap}})
+    path = img_dir / "cap.jsonl"
+    path.write_text("".join(json.dumps(r) + "\n" for r in rows))
+    assert teacher_text(rows[0]) == caps[0] and teacher_text(rows[1]) == caps[0] and teacher_text(rows[3]) is None
+
+    out = str(tmp_path / "run")
+    cfg = load_config(SMOKE, ["output_dir=%s" % out, "base=%s" % tiny_laya_dir, "data.synthetic=null",
+                              "data.train=[%s]" % path, "data.eval=[%s]" % path, "data.image_root=%s" % img_dir,
+                              "train.max_steps=3", "train.eval_every=1000", "train.save_every=1000",
+                              "train.distill_weight=1.0", "train.freeze_modality_emb=true",
+                              "vision.proj_in_norm=true", "vision.proj_standardize=true"])
+    res = train(cfg)
+    assert res["step"] == 3
+    m = _metrics(out)
+    tr = [r for r in m if r["event"] == "train"]
+    assert all(math.isfinite(r["loss"]) for r in tr) and any("distill_cos" in r for r in tr)
+    ev = [r for r in m if r["event"] == "eval"][-1]
+    assert "image_grounding" in ev and "image_token_cos" in ev
+    sd = load_file(os.path.join(out, "final", "vision.safetensors"))
+    assert "projector.std.running_mean" in sd and "projector.in_norm.weight" in sd
+    assert torch.count_nonzero(sd["modality_emb"]) == 0  # frozen at its zero init

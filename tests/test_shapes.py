@@ -140,3 +140,24 @@ def test_feature_layer(tiny_siglip_config):
         v.feature_layer = -2
         assert torch.equal(v(pv), out.hidden_states[-2])
     assert (v.grid, v.width, v.image_size, v.patch_size) == (4, 32, 32, 8)
+
+
+def test_projector_standardize_keeps_images_apart():
+    import torch
+    from laya_vision.projector import Projector
+
+    torch.manual_seed(0)
+    p = Projector(12, 64, in_norm=True, standardize=True)
+    with torch.no_grad():  # collapse: a huge shared output direction, as stage-1 training produced
+        p.fc2.bias.fill_(50.0)
+    x = torch.randn(8, 5, 12)
+    p.train()
+    for _ in range(300):
+        p(x)
+    p.eval()
+    y = p(x).mean(1)
+    cos = torch.nn.functional.cosine_similarity(y[:, None], y[None], dim=-1)
+    assert cos[~torch.eye(8, dtype=torch.bool)].mean() < 0.5
+    assert abs(p(x).norm(dim=-1).mean().item() - 2.0) < 1.0
+    assert {"std.running_mean", "std.running_var", "in_norm.weight"} <= set(p.state_dict())
+    assert set(Projector(12, 64).state_dict()) == {"fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias"}

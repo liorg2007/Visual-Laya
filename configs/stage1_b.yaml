@@ -1,0 +1,68 @@
+# Stage 1 (alignment), recipe B. Recipe A (stage1_a.yaml: projector only at lr 1e-3) collapsed:
+# every image looked alike to Laya (token cos 0.9995) and caption accuracy came from text priors.
+# B adds the projector guards (input LayerNorm + running standardization, frozen modality_emb),
+# lowers the projector LR to 1e-4, uses easier negatives, and trains the encoder with LoRA so
+# Laya learns to read the image tokens. Short runs: grounding (accuracy minus accuracy with the
+# image swapped) 0.01 after 300 projector-only steps vs 0.11 after 450 LoRA steps.
+#   python -m laya_vision.train.stage1 --config configs/stage1_b.yaml
+stage: 1
+seed: 0
+output_dir: runs/stage1_b
+base: convaiinnovations/laya
+base_revision: 55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851
+init_from: null
+resume: auto
+device: auto
+
+vision:
+  tower: google/siglip-base-patch16-224
+  tower_revision: 7fd15f0689c79d79e38b1c2e2e2370a7bf2761ed
+  feature_layer: -2
+  pool_mode: avg
+  pool_k: 2
+  proj_in_norm: true
+  proj_standardize: true
+
+data:
+  image_root: data/images
+  # written by `python -m laya_vision.data.prepare --config configs/data_stage1_easy.yaml`;
+  # text rows keep Laya's text behaviour anchored now that the encoder trains
+  train:
+    caption: {files: [data_easy/coco.train.jsonl], ratio: 0.9}
+    text: {files: [data/typed_decisions.train.jsonl], ratio: 0.1}
+  eval: [data/coco.test.jsonl, data/typed_decisions.test.jsonl]
+  samples_per_epoch: 320000       # 5000 steps; grounding rose 0 -> 0.11 within the first 450
+  max_eval_items: 3000
+  num_workers: 8
+  augment: true
+
+train:
+  epochs: 1
+  max_steps: null
+  micro_batch: 8
+  grad_accum: 8                   # 64 rows per step (8 GB GPU)
+  lr: {projector: 1.0e-4, encoder: 5.0e-5, head: 1.0e-4, vision: 0.0}
+  freeze_modality_emb: true
+  weight_decay: 0.01
+  warmup_ratio: 0.03
+  min_lr_ratio: 0.04
+  grad_clip: 1.0
+  group_size: 4
+  sigma_start: 0.4
+  sigma_end: 0.1
+  w_sph: 0.75
+  w_rps: 1.0
+  ce_weight: 1.0
+  amp: auto
+  gradient_checkpointing: true
+  detach_encoder: false
+  lora: {enabled: true, r: 16, alpha: 32, dropout: 0.05, targets: [Wqkv, Wo, Wi]}
+  log_every: 20
+  eval_every: 1000
+  save_every: 500
+  best_metric: image.grounding
+  best_mode: max
+  early_stop_text_drop: 0.02
+  early_stop_patience: 2
+
+wandb: {enabled: false, project: laya-vision, name: stage1_b}

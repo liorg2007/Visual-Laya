@@ -14,11 +14,12 @@ import os
 import random
 import shutil
 import time
-from typing import Any, Dict, List, Optional, Sequence
+from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
 import torch
 import torch.distributed as dist
+import torch.nn.functional as F
 import yaml
 
 from laya.common import QTYPE_NAMES
@@ -259,9 +260,9 @@ def build_datasets(cfg: Dict, tok, laya_cfg: Dict, n_img: int, with_eval: bool =
     max_len = d.get("max_len") or laya_cfg["max_len"]
     head_max_len = d.get("head_max_len") or laya_cfg["head_max_len"]
 
-    def make(src, augment, prescan, seed):
+    def make(src, augment, prescan, seed, teacher=False):
         return DecisionDataset(src["files"], src.get("image_root", d["image_root"]), tok, max_len, head_max_len,
-                               n_img, augment=augment, seed=seed, prescan=prescan)
+                               n_img, augment=augment, seed=seed, prescan=prescan, teacher=teacher)
 
     augment = None
     if d.get("augment"):
@@ -271,7 +272,8 @@ def build_datasets(cfg: Dict, tok, laya_cfg: Dict, n_img: int, with_eval: bool =
     train_src = _sources(d["train"])
     if not train_src:
         raise ValueError("data.train is empty")
-    train = [make(s, augment, bool(d.get("prescan_train")), cfg["seed"] + i) for i, s in enumerate(train_src)]
+    teacher = float(cfg["train"].get("distill_weight") or 0) > 0
+    train = [make(s, augment, bool(d.get("prescan_train")), cfg["seed"] + i, teacher) for i, s in enumerate(train_src)]
     weights = [float(s.get("weight", 1.0)) for s in train_src] if any("weight" in s for s in train_src) else None
     # eval sets are pre-scanned (exact len, unfit rows logged); only rank 0 evaluates
     evals = [make(s, None, True, cfg["seed"]) for s in _sources(d["eval"])] if with_eval else []
@@ -296,15 +298,35 @@ def eval_subset(datasets, max_items: Optional[int], seed: int):
 
 
 def to_device(batch: Dict, device: torch.device) -> Dict:
-    return {k: (v.to(device, non_blocking=True) if torch.is_tensor(v) else v) for k, v in batch.items()}
+    return {k: (v.to(device, non_blocking=True) if torch.is_tensor(v) else to_device(v, device) if k == "teacher"
+                else v) for k, v in batch.items()}
 
 
-def forward_batch(model, b: Dict, detach_encoder: bool = False):
+def forward_batch(model, b: Dict, detach_encoder: bool = False, return_hidden: bool = False):
     kw = {}
     if b.get("pixel_values") is not None:
         kw = {"pixel_values": b["pixel_values"], "image_index": b["image_index"], "image_start": b["image_start"]}
     return model(b["input_ids"], b["attention_mask"], b["marker_pos"], b["marker_mask"], b["qtype"],
-                 detach_encoder=detach_encoder, **kw)
+                 detach_encoder=detach_encoder, return_hidden=return_hidden, **kw)
+
+
+def distill_loss(model, b: Dict, hidden: torch.Tensor, logits: torch.Tensor) -> Tuple[torch.Tensor, Dict[str, float]]:
+    """Caption-teacher distillation: the image rows' marker states and answer distribution should
+    match what the model computes with the image's true caption as a text-only state (no grad
+    through the teacher). Gives the projector a dense, image-specific target, which the decision
+    loss alone did not: stage-1 training otherwise learned to make every image look alike.
+    Returns ``(1 - cos(markers) + KL(teacher || student), stats)``."""
+    t = b["teacher"]
+    rows = b["teacher_rows"]
+    with torch.no_grad():
+        t_logits, _, t_hidden = forward_batch(model, t, return_hidden=True)
+    mask = b["marker_mask"][rows]
+    cos = F.cosine_similarity(hidden[rows].float(), t_hidden.float(), dim=-1)
+    l_cos = ((1 - cos) * mask).sum() / mask.sum().clamp(min=1)
+    s_logp = torch.log_softmax(logits[rows].float().masked_fill(~mask, -1e4), -1)
+    t_p = torch.softmax(t_logits.float().masked_fill(~mask, -1e4), -1)
+    l_kl = (t_p * (torch.log(t_p.clamp_min(1e-9)) - s_logp)).masked_fill(~mask, 0).sum(-1).mean()
+    return l_cos + l_kl, {"distill_cos": float(l_cos), "distill_kl": float(l_kl), "distill_rows": float(len(rows))}
 
 
 # ----------------------------------------------------------------------------- synthetic toy data
@@ -416,6 +438,10 @@ def setup_trainable(model, tcfg: Dict, vcfg) -> List[Dict[str, Any]]:
         if lr <= 0:
             continue
         params = list(groups[g])
+        if g == "projector" and tcfg.get("freeze_modality_emb"):
+            # modality_emb is the one shared vector on every image token; trained, it can grow until
+            # all images look alike to Laya (the collapse route left once the projector standardizes)
+            params = [p for p in params if p is not model.modality_emb]
         if g == "vision":
             n = int(tcfg.get("unfreeze_vision_blocks") or 0)
             blocks = _vision_blocks(model.vision)
@@ -454,8 +480,14 @@ def barrier():
 # ----------------------------------------------------------------------------- eval / save
 
 @torch.no_grad()
-def collect_predictions(model, loader, device, amp_dtype) -> List[Dict[str, Any]]:
-    """Raw logits per row: ``{id, task, modality, qtype (int), logits [k], target [k]}``."""
+def collect_predictions(model, loader, device, amp_dtype, grounding: bool = False) -> List[Dict[str, Any]]:
+    """Raw logits per row: ``{id, task, modality, qtype (int), logits [k], target [k]}``.
+
+    ``grounding``: image rows also get ``logits_swap``, the logits with the row's image replaced
+    by the next distinct image in the batch (batches with one image get none), and image rows of
+    each batch add ``image_cos`` (mean cosine between different images' tokens after Laya's
+    embedding LayerNorm; near 1 means the images look alike to Laya).
+    """
     was = model.training
     model.eval()
     rows = []
@@ -466,15 +498,31 @@ def collect_predictions(model, loader, device, amp_dtype) -> List[Dict[str, Any]
         with autocast(device, amp_dtype):
             logits, _ = forward_batch(model, b)
         logits = logits.float().cpu()
+        swap, cos = None, None
+        n_img = len(b.get("image_refs") or [])
+        if grounding and n_img > 1 and b.get("pixel_values") is not None:
+            idx = b["image_index"]
+            sb = dict(b, image_index=torch.where(idx >= 0, (idx + 1) % n_img, idx))
+            with autocast(device, amp_dtype):
+                swap, _ = forward_batch(model, sb)
+                tok = model.encode_images(b["pixel_values"])
+            tok = model.laya.encoder.embeddings.norm(tok.float()).mean(1)
+            c = F.cosine_similarity(tok[:, None], tok[None], dim=-1)
+            cos = float(c[~torch.eye(n_img, dtype=torch.bool, device=c.device)].mean())
+            swap = swap.float().cpu()
         k = b["marker_mask"].sum(-1).cpu()
         img = b["image_start"].cpu() if torch.is_tensor(b.get("image_start")) else torch.full((len(k),), -1)
         target = b["target"].cpu()
         for i in range(len(k)):
             meta = b["meta"][i] if "meta" in b else {}
             ki = int(k[i])
-            rows.append({"id": meta.get("id"), "task": meta.get("task"),
-                         "modality": "image" if int(img[i]) >= 0 else "text", "qtype": int(b["qtype"][i]),
-                         "logits": logits[i, :ki].tolist(), "target": target[i, :ki].tolist()})
+            row = {"id": meta.get("id"), "task": meta.get("task"),
+                   "modality": "image" if int(img[i]) >= 0 else "text", "qtype": int(b["qtype"][i]),
+                   "logits": logits[i, :ki].tolist(), "target": target[i, :ki].tolist()}
+            if swap is not None and int(img[i]) >= 0:
+                row["logits_swap"] = swap[i, :ki].tolist()
+                row["image_cos"] = cos
+            rows.append(row)
     model.train(was)
     return rows
 
@@ -482,7 +530,7 @@ def collect_predictions(model, loader, device, amp_dtype) -> List[Dict[str, Any]
 def evaluate(model, loader, device, amp_dtype) -> Dict[str, Any]:
     from ..eval.metrics import summarize
 
-    rows = collect_predictions(model, loader, device, amp_dtype)
+    rows = collect_predictions(model, loader, device, amp_dtype, grounding=True)
     for r in rows:
         z = torch.tensor(r["logits"])
         r["probs"] = torch.softmax(z, -1).tolist()
@@ -497,6 +545,15 @@ def evaluate(model, loader, device, amp_dtype) -> Dict[str, Any]:
         s["logit_mean"] = float(np.mean(zs))
         s["logit_std"] = float(np.std(zs))
         s["logit_max_mean"] = float(np.mean([max(r["logits"]) for r in sel]))
+        sw = [r for r in sel if "logits_swap" in r]
+        if sw:
+            # accuracy with every row's image swapped for another one: the gap to the real-image
+            # accuracy on the same rows is how much the answers depend on the image
+            def acc(key):
+                return float(np.mean([int(np.argmax(r[key]) == np.argmax(r["target"])) for r in sw]))
+            s["accuracy_swapped"] = acc("logits_swap")
+            s["grounding"] = acc("logits") - s["accuracy_swapped"]
+            s["token_cos"] = float(np.mean([r["image_cos"] for r in sw]))
         out[mod] = s
     return out
 
@@ -683,11 +740,18 @@ def train(cfg: Dict) -> Dict[str, Any]:
                 sigma = sigma_at(step / max(1, total - 1), tcfg["sigma_start"], tcfg["sigma_end"])
                 sync = contextlib.nullcontext() if (not is_dist or last_micro) else ddp_model.no_sync()
                 with sync:
+                    distill = float(tcfg.get("distill_weight") or 0) > 0 and "teacher" in b
                     with autocast(device, amp_dtype):
-                        logits, act = forward_batch(ddp_model, b, tcfg.get("detach_encoder", False))
+                        out = forward_batch(ddp_model, b, tcfg.get("detach_encoder", False), return_hidden=distill)
+                        logits, act = out[0], out[1]
+                        if distill:
+                            l_dist, d_stats = distill_loss(ddp_model, b, out[2], logits)
                     loss, stats = rlcd_loss(logits, b["target"], b["marker_mask"], b["qtype"], sigma,
                                             group_size=tcfg["group_size"], w_sph=tcfg["w_sph"], w_rps=tcfg["w_rps"],
                                             ce_weight=tcfg["ce_weight"])
+                    if distill:
+                        loss = loss + float(tcfg["distill_weight"]) * l_dist
+                        stats = dict(stats, loss=float(loss), **d_stats)
                     # notebook: loss / GRAD_ACCUM (+ 0 * act so DDP sees the act head used)
                     n_acc = accum if (i // accum + 1) * accum <= n_micro else n_micro - (i // accum) * accum
                     scaler.scale(loss / n_acc + 0.0 * act.float().sum()).backward()
@@ -713,7 +777,8 @@ def train(cfg: Dict) -> Dict[str, Any]:
             step += 1
             pos = (epoch, i + 1)
             if window and (step % tcfg["log_every"] == 0 or step == 1 or step == total):
-                avg = {k: float(np.mean([s[k] for s in window])) for k in window[0]}
+                keys = list(dict.fromkeys(k for s in window for k in s))  # distill stats: only batches with teachers
+                avg = {k: float(np.mean([s[k] for s in window if k in s])) for k in keys}
                 logger.log({"event": "train", "step": step, "epoch": epoch, **avg, "grad_norm": float(gnorm),
                             **{"lr_%s" % g["name"]: optimizer.param_groups[j]["lr"]
                                for j, g in enumerate(param_groups)},

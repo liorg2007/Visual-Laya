@@ -138,8 +138,16 @@ def collect_images(rows: Iterable[Dict[str, Any]], image_root: str, src: Dict[st
 def generate(order: List[str], rel: Dict[str, str], caps: Dict[str, List[str]], n: Optional[int] = None,
              questions_per_image: int = 4, options: Tuple[int, int] = (4, 8), seed: int = 0,
              hard_negatives: str = "tfidf", task: str = "coco", calib: float = 0.01, test: float = 0.01,
-             siglip_model: str = "google/siglip-base-patch16-224") -> Iterator[Dict[str, Any]]:
-    """Caption-matching records; stops after ``n`` records (None = all images)."""
+             siglip_model: str = "google/siglip-base-patch16-224", max_hard: Optional[int] = None,
+             noul_hard: float = 0.5) -> Iterator[Dict[str, Any]]:
+    """Caption-matching records; stops after ``n`` records (None = all images).
+
+    Difficulty: a choice question gets ``randint(1, k // 2)`` hard negatives by default, or
+    ``randint(0, max_hard)`` when ``max_hard`` is set; a noul negative is hard with probability
+    ``noul_hard``. Hard negatives are other images' captions of nearly the same scene, so an
+    easier set (``max_hard: 1``, ``noul_hard: 0.1``) gives a projector trained from scratch a
+    cleaner signal.
+    """
     pool: List[str] = []
     owner: List[str] = []
     for g in order:
@@ -192,7 +200,8 @@ def generate(order: List[str], rel: Dict[str, str], caps: Dict[str, List[str]], 
             base = {"id": rid, "task": task, "split": split, "image": rel[g], "text": None}
             if qi % 2 == 0:
                 k = rng.randint(lo, hi)
-                negs = negatives(gold_idx, rng.randint(1, max(1, k // 2)), k)[:k - 1]
+                n_hard = rng.randint(1, max(1, k // 2)) if max_hard is None else rng.randint(0, max_hard)
+                negs = negatives(gold_idx, n_hard, k)[:k - 1]
                 if len(negs) < 1:
                     continue
                 opts = negs + [own[ci]]
@@ -206,7 +215,7 @@ def generate(order: List[str], rel: Dict[str, str], caps: Dict[str, List[str]], 
                 if pos:
                     cap = own[ci]
                 else:
-                    hard = rng.random() < 0.5
+                    hard = rng.random() < noul_hard
                     negs = negatives(gold_idx, 1 if hard else 0, 0 if hard else 1)
                     if not negs:
                         continue

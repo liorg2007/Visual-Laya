@@ -1,0 +1,32 @@
+# Stage-1 alignment data (caption matching), ARCHITECTURE §5.2 / plan.md Phase 4.
+#   python -m laya_vision.data.prepare --config configs/data_stage1_easy.yaml
+# Easy variant of data_stage1.yaml (fewer hard negatives) for projector alignment.
+# Writes data_easy/coco.{train,calib,test}.jsonl; reuses the images under data/images/coco/.
+out: data_easy
+image_root: data/images
+seed: 0
+streaming: false
+stage1:
+  name: coco
+  source:                              # VERIFY: HF id + columns (see laya_vision/data/LICENSES.md)
+    dataset_id: jxie/coco_captions     # one caption per row, ~5 rows per image (Karpathy splits)
+    config: null
+    revision: a2ed90d49b61dd13dd71f399c70f5feb897f8bec  # pinned 2026-09-29
+    hf_splits: [train]
+    image_col: image
+    caption_col: caption
+    group_col: cocoid
+  n: 500000
+  max_hard: 1                          # easy curriculum: 0-1 hard negatives per choice question
+  noul_hard: 0.1                       # and 10% hard noul negatives (default: 1..k/2 and 50%)
+  questions_per_image: 4               # q0,q2: choice; q1,q3: noul (one positive, one negative -> 50/50)
+  options: [4, 8]                      # choice options, >= 1 hard negative
+  hard_negatives: tfidf                # tfidf (CPU, no extra deps) | siglip (text embeddings, GPU)
+  siglip_model: google/siglip-base-patch16-224
+  calib: 0.01                          # split fractions, hashed by image id
+  test: 0.01
+
+# Mixture for the stage-1 trainer (`data.train` accepts this {name: {files, ratio}} mapping).
+mixture:
+  caption: {ratio: 1.0, files: [data_easy/coco.train.jsonl]}
+eval: [data_easy/coco.test.jsonl]

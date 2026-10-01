@@ -158,7 +158,7 @@ def main(argv: Optional[list] = None) -> None:
     s1 = cfg.get("stage1") or {}
     if a.stage1 or s1:
         kw = {k: v for k, v in s1.items() if k in ("questions_per_image", "hard_negatives", "calib", "test",
-                                                   "siglip_model")}
+                                                   "siglip_model", "max_hard", "noul_hard")}
         if s1.get("options"):
             kw["options"] = tuple(s1["options"])
         if a.questions_per_image:

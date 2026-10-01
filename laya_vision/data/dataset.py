@@ -50,7 +50,7 @@ class DecisionDataset(Dataset):
     def __init__(self, jsonl_paths: Union[str, Sequence[str]], image_root: Optional[str], tok,
                  max_len: int = 512, head_max_len: int = 192, n_img: int = 49,
                  augment: Optional[Callable] = None, seed: int = 0, prescan: bool = False,
-                 records: Optional[List[Dict[str, Any]]] = None):
+                 records: Optional[List[Dict[str, Any]]] = None, teacher: bool = False):
         if isinstance(jsonl_paths, str):
             jsonl_paths = [jsonl_paths]
         self.records = list(records) if records is not None else [r for p in jsonl_paths for r in read_jsonl(p)]
@@ -58,6 +58,7 @@ class DecisionDataset(Dataset):
         self.tok = tok
         self.max_len, self.head_max_len, self.n_img = max_len, head_max_len, n_img
         self.augment = augment
+        self.teacher = teacher
         self.seed = seed
         self.epoch = 0
         self.n_skipped = 0
@@ -90,13 +91,48 @@ class DecisionDataset(Dataset):
                              % (rec.get("id"), len(target), len(item["markers"])))
         item.update(target=target, label=max(range(len(target)), key=target.__getitem__),
                     image_ref=ref, task=rec.get("task"), id=rec.get("id"))
+        if self.teacher and ref is not None:
+            item["teacher"] = self._teacher_item(rec, item)
         return item
+
+    def _teacher_item(self, rec: Dict[str, Any], item: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """The same question asked about the image's true caption as a text-only state, for
+        caption-teacher distillation (``train.distill_weight``). None when the record has no true
+        caption (e.g. a noul row whose caption is a negative) or the markers do not line up."""
+        text = teacher_text(rec)
+        if not text:
+            return None
+        try:
+            t = build_item(self.tok, text, to_internal(rec["question"], rec.get("id", "q")),
+                           self.n_img, self.max_len, self.head_max_len)
+        except ValueError:
+            return None
+        if t["markers"] != item["markers"]:
+            return None
+        return t
 
     def __getitem__(self, i: int) -> Optional[Dict[str, Any]]:
         rec = self.records[i]
         if self.augment is not None:
             rec = self.augment(rec, random.Random("%d:%d:%d" % (self.seed, self.epoch, i)))
         return self._build(rec)
+
+
+def teacher_text(rec: Dict[str, Any]) -> Optional[str]:
+    """The true caption of an image record: the gold option of a caption ``choice`` row, or the
+    caption of a ``noul`` caption row whose answer is true."""
+    q, target = rec["question"], rec["target"]
+    tmpl = rec.get("template") or ""
+    if not tmpl.startswith("caption_"):
+        return None
+    gold = max(range(len(target)), key=target.__getitem__)
+    if q["type"] == "choice":
+        crit = q["criteria"]
+        vals = list(crit.values()) if isinstance(crit, dict) else list(crit)
+        return str(vals[gold]) if vals[gold] not in (None, "") else None
+    if q["type"] == "noul" and gold == 1:
+        return (rec.get("fields") or {}).get("caption")
+    return None
 
 
 class LRUCache(OrderedDict):
@@ -130,6 +166,10 @@ class VisionCollate:
         if not items:
             return None
         batch = collate_vision(items, self.pad_id)
+        rows = [i for i, it in enumerate(items) if it.get("teacher") is not None]
+        if rows:  # text-only teacher rows for caption distillation, aligned by ``teacher_rows``
+            batch["teacher"] = collate_vision([items[i]["teacher"] for i in rows], self.pad_id)
+            batch["teacher_rows"] = torch.tensor(rows, dtype=torch.long)
         refs = batch["image_refs"]
         if not refs:
             batch["pixel_values"] = None

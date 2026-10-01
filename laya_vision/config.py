@@ -29,6 +29,10 @@ class VisionConfig:
     patch_size: int = 16
     vision_width: int = 768
     tower_trained: bool = False
+    # Projector guards against modality collapse (see projector.RunningStandardize). Off by default
+    # so checkpoints written before they existed load unchanged; configs/stage1_a.yaml turns them on.
+    proj_in_norm: bool = False
+    proj_standardize: bool = False
     # Image-modality temperatures, same layout as Laya's `temperature` / `temperature_by_options`.
     temperature: Optional[List[float]] = None
     temperature_by_options: Dict[str, float] = field(default_factory=dict)
