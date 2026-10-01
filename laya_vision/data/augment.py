@@ -113,10 +113,11 @@ def instruction(template_key: str, fields: Optional[Dict[str, Any]] = None, i: i
 
 
 def _choice_keys(n: int, style: str) -> List[str]:
+    # letters that read as yes/no/true/false (e.g. "F") are skipped, so 6+ options stay valid
     if style == "upper":
-        keys = list(string.ascii_uppercase)
+        keys = [c for c in string.ascii_uppercase if c.lower() not in BANNED_CHOICE_KEYS]
     elif style == "lower":
-        keys = list(string.ascii_lowercase)
+        keys = [c for c in string.ascii_lowercase if c not in BANNED_CHOICE_KEYS]
     elif style == "number":
         keys = [str(i + 1) for i in range(n)]
     elif style == "option":

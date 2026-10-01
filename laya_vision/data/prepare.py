@@ -81,10 +81,11 @@ def run_stage2(tasks, out, image_root, overrides=None, max_per_task=None, seed=0
     return res
 
 
-def run_text_mix(out, hf_split="train", calib=0.05, test=0.0, dataset_id=None, config=None, test_split=True):
+def run_text_mix(out, hf_split="train", calib=0.05, test=0.0, dataset_id=None, config=None, test_split=True,
+                 revision=None):
     from . import text_mix as tm
 
-    kw = {"dataset_id": dataset_id or tm.DATASET_ID, "config": config or tm.CONFIG}
+    kw = {"dataset_id": dataset_id or tm.DATASET_ID, "config": config or tm.CONFIG, "revision": revision}
     w = SplitWriter(out, tm.TASK)
     try:
         w.write_all(tm.load_text_mix(hf_split, calib=calib, test=test, **kw))
@@ -95,15 +96,15 @@ def run_text_mix(out, hf_split="train", calib=0.05, test=0.0, dataset_id=None, c
     return summary
 
 
-def run_text_eval(out, tasks=("ag_news", "boolq"), max_items=5000):
-    """Text regression sets -> data/{task}.test.jsonl (see text_eval.py)."""
+def run_text_eval(out, tasks=("ag_news", "boolq"), max_items=5000, revisions=None):
+    """Text regression sets -> data/{task}.test.jsonl (see text_eval.py). ``revisions``: {task: sha}."""
     from . import text_eval as te
 
     summaries = {}
     for task in tasks:
         w = SplitWriter(out, task)
         try:
-            w.write_all(te.load_text_eval(task, max_items=max_items))
+            w.write_all(te.load_text_eval(task, max_items=max_items, revision=(revisions or {}).get(task)))
         finally:
             summaries[task] = w.close()
     return summaries

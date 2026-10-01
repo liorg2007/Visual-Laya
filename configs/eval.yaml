@@ -13,7 +13,7 @@ max_questions_per_call: 32
 image_tasks:            # one per decision family; acceptance: beat caption_laya on >= 3 of 4
   oxford_pets: data/oxford_pets.test.jsonl          # choice
   vqav2_yesno: data/vqav2_yesno.test.jsonl          # noul
-  koniq: data/koniq.test.jsonl                      # score (bucketed)
+  # koniq: data/koniq.test.jsonl                    # score (bucketed); dropped: KonIQ-10k not downloaded
   eurosat: data/eurosat.test.jsonl                  # choice (fallback for a safety noul set)
 
 text_tasks:             # text regression vs stock Laya: within 2 points
@@ -23,12 +23,12 @@ text_tasks:             # text regression vs stock Laya: within 2 points
 
 baselines:
   laya: convaiinnovations/laya                      # stock Laya for caption_laya / stock_laya
-  laya_revision: null
+  laya_revision: 55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851
   captioner: Salesforce/blip-image-captioning-base
-  captioner_revision: null                          # pin before recording baselines.json
+  captioner_revision: 82a37760796d32b1411fe092ab5d4e227313294b
   caption_cache: eval/cache/captions
   siglip: google/siglip-base-patch16-224
-  siglip_revision: null
+  siglip_revision: 7fd15f0689c79d79e38b1c2e2e2370a7bf2761ed
 
 acceptance:             # plan.md §4 Phase 5 exit criteria / ARCH §6
   min_image_task_wins_frac: 0.75

@@ -13,13 +13,13 @@ max_per_task: 60000                    # records per task, all splits
 n_distractors: 1                       # 0-2 extra questions per image (classification tasks)
 
 tasks:
-  cifar10: {options: [4, 10]}
-  oxford_pets: {options: [5, 20]}      # 37 classes -> 20 sampled incl. gold
-  food101: {options: [5, 20]}          # 101 classes -> <=20 sampled incl. gold
-  eurosat: {options: [4, 10]}          # VERIFY licence (MIT per the EuroSAT repo; HF card says unknown)
-  aokvqa: {n_distractors: 0}           # VERIFY licence
-  scienceqa: {n_distractors: 0}        # CC BY-NC-SA: non-commercial, see LICENSES.md
-  vqav2_yesno: {balance: true}         # VERIFY HF mirror lmms-lab-encoder/VQAv2
+  cifar10: {revision: 0b2714987fa478483af9968de7c934580d0bb9a2, options: [4, 10]}
+  oxford_pets: {revision: 089695c834a7deb60505b7cc506672db1c31a6aa, options: [5, 20]}      # 37 classes -> 20 sampled incl. gold
+  food101: {revision: 83488de741c1bd1ce27aa6a2b33e19c7bdf92ca9, options: [5, 20]}          # 101 classes -> <=20 sampled incl. gold
+  eurosat: {revision: 655ef66ef2be07f89aec61407f24c772802eb87d, options: [4, 10]}          # VERIFY licence (MIT per the EuroSAT repo; HF card says unknown)
+  aokvqa: {revision: d1b0efa3a436e9101dfbde3752db7607da696c35, n_distractors: 0}           # VERIFY licence
+  scienceqa: {revision: f18b0a70359ebfb41f658fd564208d0355b013f4, n_distractors: 0}        # CC BY-NC-SA: non-commercial, see LICENSES.md
+  vqav2_yesno: {revision: 32665d35052eb4a6d4414851c3c829a72754915a, balance: true}         # VERIFY HF mirror lmms-lab-encoder/VQAv2
   koniq:                               # VERIFY: download the official KonIQ-10k release to data/raw/koniq10k
     csv_path: koniq10k/koniq10k_scores_and_distributions.csv
     image_dir: koniq10k/1024x768
@@ -29,6 +29,7 @@ tasks:
 
 text_mix:
   hf_split: train
+  revision: f2491dda413a9d94afcb30464123b429c857e079   # LocalLLaMA/typed-decisions, pinned 2026-09-29
   calib: 0.05                          # held-out text calibration cases (hashed by case id)
   test: 0.0
   test_split: true                     # HF test split -> typed_decisions.test.jsonl (text regression)
@@ -36,6 +37,7 @@ text_mix:
 text_eval:                             # text regression sets for configs/eval.yaml (test split only)
   tasks: [ag_news, boolq]              # fancyzhx/ag_news (test), google/boolq (validation)
   max_items: 5000
+  revisions: {ag_news: eb185aade064a813bc0b7f42de02595523103ca4, boolq: 35b264d03638db9f4ce671b711558bf7ff0f80d5}
 
 # Mixture for the stage-2 trainer (`data.train` accepts this {name: {files, ratio}} mapping).
 mixture:

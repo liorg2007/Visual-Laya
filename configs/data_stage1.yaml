@@ -10,7 +10,7 @@ stage1:
   source:                              # VERIFY: HF id + columns (see laya_vision/data/LICENSES.md)
     dataset_id: jxie/coco_captions     # one caption per row, ~5 rows per image (Karpathy splits)
     config: null
-    revision: null                     # pin a commit sha before the real run
+    revision: a2ed90d49b61dd13dd71f399c70f5feb897f8bec  # pinned 2026-09-29
     hf_splits: [train]
     image_col: image
     caption_col: caption

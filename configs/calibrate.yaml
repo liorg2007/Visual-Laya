@@ -3,7 +3,7 @@
 checkpoint: runs/stage2_a/best
 out: runs/stage2_a/calibrated     # copy of the checkpoint with the fitted temperatures
 data: [data/cifar10.calib.jsonl, data/oxford_pets.calib.jsonl, data/food101.calib.jsonl, data/eurosat.calib.jsonl,
-       data/aokvqa.calib.jsonl, data/scienceqa.calib.jsonl, data/vqav2_yesno.calib.jsonl, data/koniq.calib.jsonl,
+       data/aokvqa.calib.jsonl, data/scienceqa.calib.jsonl, data/vqav2_yesno.calib.jsonl,
        data/typed_decisions.calib.jsonl]
 image_root: data/images
 min_bucket: 100                   # (qtype, option-count) buckets with fewer items use the per-type T

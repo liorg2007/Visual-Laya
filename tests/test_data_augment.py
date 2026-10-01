@@ -58,3 +58,12 @@ def test_paraphrase_and_determinism():
 def test_text_rows_untouched_by_default():
     r0 = dict(choice_rec(), image=None, text={"a": 1})
     assert Augmenter(p_rename=1.0)(r0, random.Random(0)) is r0
+
+
+def test_rename_many_options_skips_banned_letters():
+    rec = {"question": {"type": "choice", "criteria": ["c%d" % i for i in range(8)]}, "target": [1.0] + [0.0] * 7}
+    for style in ("upper", "lower", "number", "option", "paren"):
+        out = rename_labels(rec, random.Random(0), style=style)
+        keys = list(out["question"]["criteria"])
+        assert len(keys) == 8 and not BANNED_CHOICE_KEYS & {k.lower() for k in keys}
+        assert list(out["question"]["criteria"].values()) == ["c%d" % i for i in range(8)]
