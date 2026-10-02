@@ -1,0 +1,213 @@
+{
+ "question": "Robustness of the Python API, HTTP /v1/systemone and web UI to edge cases; post-fix rerun verifying B1 (lone surrogate -> 500) and B2 (zero-size image accepted)",
+ "checkpoint": "runs/stage2_c/wise085_calibrated",
+ "code_under_test": "working tree with uncommitted fixes: laya_vision/textnorm.py (new), agent.py, images.py",
+ "parts_before": {
+  "part1_python_api": {
+   "n": 137,
+   "pass": 123,
+   "fail": 14
+  },
+  "part2_python_http_inproc": {
+   "n": 51,
+   "pass": 43,
+   "fail": 8
+  },
+  "part3_http_cli_ui_server": {
+   "n": 31,
+   "pass": 30,
+   "fail": 1
+  },
+  "part4_modes": {
+   "n": 2,
+   "pass": 2,
+   "fail": 0
+  },
+  "part4b_nocompile": {
+   "n": 5,
+   "pass": 1,
+   "fail": 3
+  }
+ },
+ "parts_after": {
+  "part1_python_api": {
+   "all": {
+    "n": 179,
+    "pass": 167,
+    "fail": 12,
+    "info": 0
+   },
+   "original_checks": {
+    "n": 141,
+    "pass": 130,
+    "fail": 11,
+    "info": 0
+   },
+   "new_checks": {
+    "n": 38,
+    "pass": 37,
+    "fail": 1,
+    "info": 0
+   },
+   "source": "part1.txt / results_api.json"
+  },
+  "part2_http_inproc": {
+   "all": {
+    "n": 74,
+    "pass": 72,
+    "fail": 2,
+    "info": 0
+   },
+   "original_checks": {
+    "n": 52,
+    "pass": 52,
+    "fail": 0,
+    "info": 0
+   },
+   "new_checks": {
+    "n": 22,
+    "pass": 20,
+    "fail": 2,
+    "info": 0
+   },
+   "source": "part2.log / results_part2.json (uvicorn in-process, port 8795)"
+  },
+  "part3_http_cli_ui": {
+   "all": {
+    "n": 54,
+    "pass": 52,
+    "fail": 2,
+    "info": 0
+   },
+   "original_checks": {
+    "n": 32,
+    "pass": 32,
+    "fail": 0,
+    "info": 0
+   },
+   "new_checks": {
+    "n": 22,
+    "pass": 20,
+    "fail": 2,
+    "info": 0
+   },
+   "source": "part3.log / results_part3.json (python -m laya_vision.ui, port 8793, SIGTERM, exited)"
+  },
+  "part4_compile": {
+   "all": {
+    "n": 5,
+    "pass": 2,
+    "fail": 1,
+    "info": 2
+   },
+   "source": "part4.log / results_part4.json"
+  },
+  "part4b_nocompile": {
+   "all": {
+    "n": 7,
+    "pass": 5,
+    "fail": 1,
+    "info": 1
+   },
+   "source": "part4b.log / results_part4b.json"
+  },
+  "part4c_compile_diag": {
+   "results": {
+    "laya.Agent(vision ckpt dir)": "TorchRuntimeError: Failed running call_function <built-in function add>(*(None, FakeTensor(..., device='cuda:0', size=(1, 1, 1024))), **{}):\nunsupported operand type(s) for +: 'NoneType' and 'FakeTensor'\n\nfrom user code:\n   File \"/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py\", line 317, in t",
+    "laya.Agent(convaiinnovations/laya)": "TorchRuntimeError: Failed running call_function <built-in function add>(*(None, FakeTensor(..., device='cuda:0', size=(1, 1, 1024))), **{}):\nunsupported operand type(s) for +: 'NoneType' and 'FakeTensor'\n\nfrom user code:\n   File \"/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py\", line 317, in t",
+    "laya_vision.load(ckpt)": "TorchRuntimeError: Failed running call_function <built-in function add>(*(None, FakeTensor(..., device='cuda:0', size=(1, 1, 1024))), **{}):\nunsupported operand type(s) for +: 'NoneType' and 'FakeTensor'\n\nfrom user code:\n   File \"/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py\", line 317, in t"
+   },
+   "source": "part4c.log / results_part4c.json"
+  }
+ },
+ "regressions_prev_pass_now_not": [],
+ "prev_fail_now_pass": [
+  {
+   "part": "part1",
+   "test": "ndarray empty 0x0 (expect reject)"
+  },
+  {
+   "part": "part1",
+   "test": "noul 2 options"
+  },
+  {
+   "part": "part2",
+   "test": "HTTP POST image PNG"
+  },
+  {
+   "part": "part2",
+   "test": "HTTP POST image BMP (server allows only JPEG/PNG/WEBP/GIF) expect 400"
+  },
+  {
+   "part": "part2",
+   "test": "HTTP POST image TIFF expect 400"
+  },
+  {
+   "part": "part2",
+   "test": "HTTP POST image RGBA PNG"
+  },
+  {
+   "part": "part2",
+   "test": "HTTP POST image CMYK JPEG"
+  },
+  {
+   "part": "part2",
+   "test": "HTTP POST image 1x1"
+  },
+  {
+   "part": "part2",
+   "test": "HTTP POST 7000x7000 PNG expect 413"
+  }
+ ],
+ "fix_verification": {
+  "B1": {
+   "before": "TypeError (Python) / HTTP 500 'inference failed' for surrogate in label, instructions, state text",
+   "after": "ValueError naming 'surrogate' (Python, 14/14 checks incl. predict_batch, text-only, dict keys); HTTP 422 with 'surrogate' in detail for label, instructions, option description, image-state text (str/dict), text-only state (str/dict value/dict key), text-only label, lone low surrogate (11/11)",
+   "not_covered": [
+    "question id with a lone surrogate: HTTP 500 (JSONResponse cannot encode the answer key)",
+    "predict_long (text-only) with a surrogate: still TypeError"
+   ]
+  },
+  "B2": {
+   "before": "(0,0,3)/(0,5)/(5,0,3) arrays accepted as blank images",
+   "after": "ImageError 'at least one pixel' for (0,0,3),(0,5),(5,0,3),(0,0),(3,0,0) CHW,(0,4,4) float arrays and PIL 0x4/4x0/0x0; predict raises ImageError (ValueError); 1x1 still accepted; 0x0 GIF over HTTP -> 400"
+  }
+ },
+ "caps_checks": "image all-caps request returns caller's upper-case labels and choice, probabilities identical to the lower-case twin (Python and HTTP); DNA/RNA labels unchanged in output and model input; APPLE/apple collision left unrewritten; text-only requests never rewritten. Info: 4+-letter acronyms (NASA, HTTP, JSON, UNESCO) are lower-cased for the model.",
+ "remaining_bugs": [
+  {
+   "id": "B3",
+   "severity": "low",
+   "where": "laya_vision/serve.py _inner -> JSONResponse",
+   "title": "Lone surrogate in a question id -> HTTP 500 'Internal Server Error' (UnicodeEncodeError while rendering the response, after inference ran)",
+   "repro": "curl -X POST /v1/systemone -H 'content-type: application/json' -d '{\"state\":\"hello\",\"questions\":{\"q\\ud800\":{\"type\":\"choice\",\"instructions\":\"?\",\"criteria\":{\"a\":null,\"b\":null}}}}'  (also with an image state). Fix: check_text on question ids too (-> 422)."
+  },
+  {
+   "id": "B4",
+   "severity": "low",
+   "where": "VisionAgent.predict_long -> laya.Agent.predict_long (text-only)",
+   "title": "predict_long with a lone surrogate still raises the tokenizer TypeError (B1 fix covers _encode_state only)",
+   "repro": "agent.predict_long('x\\ud800', {'q':{'type':'choice','instructions':'?','criteria':{'a':None,'b':None}}}) -> TypeError: TextEncodeInput must be Union[...]. Python-only (not reachable over HTTP)."
+  },
+  {
+   "id": "U1",
+   "severity": "upstream (not laya_vision)",
+   "where": "laya.Agent(compile=True) text predict; torch 2.6.0, transformers 5.17.0, laya 0.3.21",
+   "title": "compile=True text-only predict fails in ~7 s with TorchRuntimeError ('NoneType' + FakeTensor at laya/common.py:317, h = h + type_emb). Not a hang. Identical with stock laya.Agent on convaiinnovations/laya, so it is upstream.",
+   "repro": "part4c_compile_diag.py"
+  }
+ ],
+ "test_script_changes": [
+  "run_part2.py: defined enc() and base_im (7 checks previously NameError); max_len=64 now expects 200 and a max_len=40 -> 422 check was added; port 8791 -> 8795; exec post_fix_http.py",
+  "run_api.py: max_len=64 now expects success (63 tokens) + new max_len=40 -> error check; noul check reads answers['q']['noul'] (was KeyError 'probabilities'); HTTP section removed (duplicate of run_part2.py); 3 load-mode checks at the end are now reached (pre-fix run was interrupted before them); exec post_fix_checks.py",
+  "part3_http.py: surrogate-in-option check now strictly expects 422 (was 200/400/422); exec post_fix_http.py; asserts the server process exited",
+  "part4_modes.py: compile=True text-only predict re-timed with a 1800 s budget and faulthandler stack dumps; part4c_compile_diag.py added",
+  "part4b_nocompile.py: surrogate checks strict (ValueError naming 'surrogate'); image-state text and predict_long cases added",
+  "post_fix_checks.py: a surrogate-pair literal had been turned into a real emoji by the editor; now built with chr()"
+ ],
+ "notes": [
+  "No repo source edited, no training.",
+  "Pre-fix outputs: results_prefix.json, report_prefix.md, prefix_logs/.",
+  "No server or test process left running after the runs (checked ports 8790-8799 and ps)."
+ ]
+}

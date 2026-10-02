@@ -1,0 +1,37 @@
+[
+ {
+  "test": "simulated _fast set + image (expect clear ValueError)",
+  "status": "PASS",
+  "detail": "ValueError: image states are not supported on the TileLang fast path; load without fast=True (or call deaccelerate()) to send images"
+ },
+ {
+  "test": "accelerate(strict=True) without tilelang",
+  "status": "INFO",
+  "detail": "ModuleNotFoundError: No module named 'tilelang'"
+ },
+ {
+  "test": "Python API surrogate in option (expect ValueError)",
+  "status": "PASS",
+  "detail": "ValueError: question 'q' contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"
+ },
+ {
+  "test": "Python API surrogate in instructions (expect ValueError)",
+  "status": "PASS",
+  "detail": "ValueError: question 'q' contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"
+ },
+ {
+  "test": "Python API surrogate in state text (expect ValueError)",
+  "status": "PASS",
+  "detail": "ValueError: state contains an invalid character '\\ud800' at position 2 (a lone surrogate cannot be encoded as UTF-8)"
+ },
+ {
+  "test": "Python API surrogate in image-state text (expect ValueError)",
+  "status": "PASS",
+  "detail": "ValueError: state text contains an invalid character '\\ud800' at position 2 (a lone surrogate cannot be encoded as UTF-8)"
+ },
+ {
+  "test": "Python API text-only predict_long surrogate (expect ValueError)",
+  "status": "FAIL",
+  "detail": "TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]"
+ }
+]

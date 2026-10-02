@@ -1,0 +1,67 @@
+items 2960
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights:  27%|██▋       | 57/208 [00:00<00:00, 564.53it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 1117.60it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+loaded
+210 548 49.61880612373352
+220 548 50.717650175094604
+230 548 66.83210825920105
+240 548 70.5827100276947
+250 548 81.70535635948181
+260 548 82.49007248878479
+270 548 93.96871399879456
+280 548 94.60759210586548
+290 548 95.3703088760376
+300 548 96.18756461143494
+310 548 106.99084162712097
+320 548 107.66569423675537
+330 548 108.2749993801117
+340 548 119.64483094215393
+350 548 120.3746645450592
+360 548 121.2009608745575
+370 548 132.78085207939148
+380 548 134.0521502494812
+390 548 147.08357453346252
+400 548 147.96398448944092
+410 548 148.94010519981384
+420 548 162.30652785301208
+430 548 175.85019612312317
+440 548 176.90445137023926
+450 548 189.93469309806824
+460 548 190.6800901889801
+470 548 205.08048677444458
+480 548 206.13051986694336
+490 548 235.95345902442932
+500 548 236.84758615493774
+510 548 237.69025897979736
+520 548 251.58665704727173
+530 548 266.0918016433716
+540 548 267.0819935798645

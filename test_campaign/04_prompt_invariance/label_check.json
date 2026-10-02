@@ -1,0 +1,343 @@
+[
+ {
+  "task": "scienceqa",
+  "id": "scienceqa/687ec774298e51d7f484/validation-655",
+  "caller_keys": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "returned_choice": "B",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": true,
+  "base_choice": "B",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "what is the capital of indiana?",
+  "gold_text_tokens_raw": [
+   "ĠIND",
+   "IA",
+   "NA",
+   "POL",
+   "IS"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġind",
+   "ian",
+   "apolis"
+  ]
+ },
+ {
+  "task": "scienceqa",
+  "id": "scienceqa/684015bb413ec9b62e8a/train-6520",
+  "caller_keys": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "returned_choice": "A",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": false,
+  "base_choice": "B",
+  "same_option_as_base": false,
+  "ins_seen_by_model": "what is the capital of new mexico?",
+  "gold_text_tokens_raw": [
+   "ĠS",
+   "ANT",
+   "A",
+   "ĠFE"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġs",
+   "anta",
+   "Ġfe"
+  ]
+ },
+ {
+  "task": "aokvqa",
+  "id": "aokvqa/aa2951894b36ce537cfb/eJexgTBc5Pw3dQ8AvGsmKq",
+  "caller_keys": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "returned_choice": "A",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": true,
+  "base_choice": "A",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "why is the woman sitting?",
+  "gold_text_tokens_raw": [
+   "ĠTO",
+   "ĠE",
+   "AT"
+  ],
+  "gold_text_tokens_normalised": [
+   "ĠTO",
+   "ĠE",
+   "AT"
+  ]
+ },
+ {
+  "task": "aokvqa",
+  "id": "aokvqa/2dbd015d68bc53186afa/hppEVGD8trHYXk8AToJnqu",
+  "caller_keys": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "returned_choice": "C",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": true,
+  "base_choice": "C",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "what is the woman doing at the window?",
+  "gold_text_tokens_raw": [
+   "ĠAD",
+   "M",
+   "IR",
+   "ING",
+   "ĠRO",
+   "OM"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġadm",
+   "iring",
+   "Ġroom"
+  ]
+ },
+ {
+  "task": "cifar10",
+  "id": "cifar10/train-13479/q0",
+  "caller_keys": [
+   "AIRPLANE",
+   "DEER",
+   "TRUCK",
+   "HORSE",
+   "FROG",
+   "BIRD"
+  ],
+  "returned_choice": "SHIP",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": true,
+  "base_choice": "ship",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "what object is shown in the image?",
+  "gold_text_tokens_raw": [
+   "ĠSH",
+   "IP"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġship"
+  ]
+ },
+ {
+  "task": "cifar10",
+  "id": "cifar10/train-6416/q0",
+  "caller_keys": [
+   "TRUCK",
+   "AIRPLANE",
+   "FROG",
+   "BIRD",
+   "DEER",
+   "SHIP"
+  ],
+  "returned_choice": "DEER",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": true,
+  "base_choice": "deer",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "what object is shown in the image?",
+  "gold_text_tokens_raw": [
+   "ĠDE",
+   "ER"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġdeer"
+  ]
+ },
+ {
+  "task": "food101",
+  "id": "food101/train-13690/q0",
+  "caller_keys": [
+   "SHRIMP AND GRITS",
+   "POUTINE",
+   "HUMMUS",
+   "BEEF CARPACCIO",
+   "GYOZA",
+   "CHICKEN CURRY"
+  ],
+  "returned_choice": "MUSSELS",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": true,
+  "base_choice": "mussels",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "which dish is shown in the image?",
+  "gold_text_tokens_raw": [
+   "ĠMUS",
+   "SE",
+   "LS"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġm",
+   "ussels"
+  ]
+ },
+ {
+  "task": "food101",
+  "id": "food101/train-6198/q0",
+  "caller_keys": [
+   "FRIED CALAMARI",
+   "HUMMUS",
+   "PORK CHOP",
+   "CAPRESE SALAD",
+   "BEEF CARPACCIO",
+   "FRENCH ONION SOUP"
+  ],
+  "returned_choice": "APPLE PIE",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": false,
+  "base_choice": "apple pie",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "which dish is shown in the image?",
+  "gold_text_tokens_raw": [
+   "ĠDON",
+   "UT",
+   "S"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġdon",
+   "uts"
+  ]
+ },
+ {
+  "task": "oxford_pets",
+  "id": "oxford_pets/samoyed_177/q0",
+  "caller_keys": [
+   "MINIATURE PINSCHER",
+   "EGYPTIAN MAU",
+   "GREAT PYRENEES",
+   "BEAGLE",
+   "NEWFOUNDLAND",
+   "STAFFORDSHIRE BULL TERRIER"
+  ],
+  "returned_choice": "GREAT PYRENEES",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": false,
+  "base_choice": "great pyrenees",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "which breed is the animal in the image?",
+  "gold_text_tokens_raw": [
+   "ĠSAM",
+   "OY",
+   "ED"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġsam",
+   "oy",
+   "ed"
+  ]
+ },
+ {
+  "task": "oxford_pets",
+  "id": "oxford_pets/Siamese_144/q0",
+  "caller_keys": [
+   "SIAMESE",
+   "STAFFORDSHIRE BULL TERRIER",
+   "SPHYNX",
+   "RUSSIAN BLUE",
+   "BIRMAN",
+   "ENGLISH COCKER SPANIEL"
+  ],
+  "returned_choice": "SIAMESE",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": true,
+  "base_choice": "siamese",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "which breed is the animal in the image?",
+  "gold_text_tokens_raw": [
+   "ĠSI",
+   "AM",
+   "ESE"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġsi",
+   "ames",
+   "e"
+  ]
+ },
+ {
+  "task": "eurosat",
+  "id": "eurosat/PermanentCrop_354/q0",
+  "caller_keys": [
+   "ANNUAL CROP",
+   "PERMANENT CROP",
+   "PASTURE",
+   "RIVER",
+   "HERBACEOUS VEGETATION",
+   "RESIDENTIAL BUILDINGS"
+  ],
+  "returned_choice": "PERMANENT CROP",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": true,
+  "base_choice": "Permanent Crop",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "what land use or land cover does this satellite image show?",
+  "gold_text_tokens_raw": [
+   "ĠPER",
+   "MAN",
+   "ENT",
+   "ĠCR",
+   "OP"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġpermanent",
+   "Ġcrop"
+  ]
+ },
+ {
+  "task": "eurosat",
+  "id": "eurosat/Residential_1473/q0",
+  "caller_keys": [
+   "HERBACEOUS VEGETATION",
+   "SEALAKE",
+   "HIGHWAY",
+   "PERMANENT CROP",
+   "FOREST",
+   "ANNUAL CROP"
+  ],
+  "returned_choice": "RESIDENTIAL BUILDINGS",
+  "returned_in_caller_keys": true,
+  "returned_is_upper": true,
+  "correct": true,
+  "base_choice": "Residential Buildings",
+  "same_option_as_base": true,
+  "ins_seen_by_model": "what land use or land cover does this satellite image show?",
+  "gold_text_tokens_raw": [
+   "ĠRES",
+   "IDENT",
+   "IAL",
+   "ĠBU",
+   "ILD",
+   "INGS"
+  ],
+  "gold_text_tokens_normalised": [
+   "Ġresidential",
+   "Ġbuildings"
+  ]
+ }
+]

@@ -1,0 +1,1200 @@
+{"id": "ag_news/test/002795", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0241, 0.0108, 0.919, 0.046]}
+{"id": "ag_news/test/004151", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0005, 0.9985, 0.0005, 0.0005]}
+{"id": "ag_news/test/000597", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0001, 0.9996, 0.0001, 0.0001]}
+{"id": "ag_news/test/002932", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0005, 0.0004, 0.0024, 0.9967]}
+{"id": "ag_news/test/003289", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0155, 0.9487, 0.0228, 0.013]}
+{"id": "ag_news/test/001328", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0006, 0.9983, 0.0005, 0.0005]}
+{"id": "ag_news/test/004771", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.1845, 0.8011, 0.0117, 0.0028]}
+{"id": "ag_news/test/001985", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0113, 0.0071, 0.9738, 0.0078]}
+{"id": "ag_news/test/003550", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.003, 0.9928, 0.0024, 0.0018]}
+{"id": "ag_news/test/001500", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.001, 0.0009, 0.0009, 0.9972]}
+{"id": "ag_news/test/003310", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.996, 0.0013, 0.0014, 0.0014]}
+{"id": "ag_news/test/004836", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0029, 0.0022, 0.9919, 0.0029]}
+{"id": "ag_news/test/000945", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0017, 0.9969, 0.0008, 0.0007]}
+{"id": "ag_news/test/004731", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0152, 0.0015, 0.9817, 0.0016]}
+{"id": "ag_news/test/001426", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0014, 0.9964, 0.0012, 0.001]}
+{"id": "ag_news/test/000175", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0008, 0.0006, 0.0239, 0.9747]}
+{"id": "ag_news/test/004473", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9954, 0.0015, 0.0015, 0.0016]}
+{"id": "ag_news/test/001195", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0032, 0.0013, 0.0078, 0.9877]}
+{"id": "ag_news/test/000837", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.002, 0.0011, 0.0329, 0.964]}
+{"id": "ag_news/test/004582", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9647, 0.0065, 0.0065, 0.0223]}
+{"id": "ag_news/test/002369", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.04, 0.0016, 0.9566, 0.0017]}
+{"id": "ag_news/test/000530", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0007, 0.0006, 0.0069, 0.9918]}
+{"id": "ag_news/test/004523", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9911, 0.0009, 0.0009, 0.0071]}
+{"id": "ag_news/test/004207", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0025, 0.0004, 0.9967, 0.0004]}
+{"id": "ag_news/test/004695", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0456, 0.0036, 0.9473, 0.0035]}
+{"id": "ag_news/test/002416", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0024, 0.0017, 0.9878, 0.0082]}
+{"id": "ag_news/test/001135", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0023, 0.9921, 0.0036, 0.0019]}
+{"id": "ag_news/test/002970", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0069, 0.0041, 0.9851, 0.0039]}
+{"id": "ag_news/test/004912", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0512, 0.0897, 0.6494, 0.2097]}
+{"id": "ag_news/test/000783", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0022, 0.0015, 0.9848, 0.0115]}
+{"id": "ag_news/test/003429", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.4934, 0.0538, 0.0581, 0.3946]}
+{"id": "ag_news/test/003563", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0005, 0.9988, 0.0004, 0.0004]}
+{"id": "ag_news/test/000843", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0004, 0.9989, 0.0003, 0.0003]}
+{"id": "ag_news/test/001848", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9916, 0.0026, 0.0031, 0.0026]}
+{"id": "ag_news/test/001994", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0018, 0.0011, 0.0162, 0.981]}
+{"id": "ag_news/test/000490", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.002, 0.0016, 0.015, 0.9815]}
+{"id": "ag_news/test/001073", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.0204, 0.0067, 0.9635, 0.0095]}
+{"id": "ag_news/test/000850", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.013, 0.9834, 0.0018, 0.0018]}
+{"id": "ag_news/test/004436", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0012, 0.001, 0.9968, 0.0011]}
+{"id": "ag_news/test/001139", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0002, 0.9994, 0.0002, 0.0002]}
+{"id": "ag_news/test/002593", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9774, 0.0067, 0.009, 0.0069]}
+{"id": "ag_news/test/004873", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.007, 0.0009, 0.9905, 0.0016]}
+{"id": "ag_news/test/003071", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.4479, 0.0048, 0.5424, 0.0049]}
+{"id": "ag_news/test/000913", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0109, 0.0041, 0.7593, 0.2257]}
+{"id": "ag_news/test/004609", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0016, 0.0014, 0.9954, 0.0016]}
+{"id": "ag_news/test/003553", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0009, 0.0008, 0.022, 0.9763]}
+{"id": "ag_news/test/004684", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.9991, 0.0003, 0.0003]}
+{"id": "ag_news/test/001314", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9931, 0.0023, 0.0023, 0.0023]}
+{"id": "ag_news/test/000699", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.001, 0.0007, 0.0008, 0.9975]}
+{"id": "ag_news/test/000650", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0373, 0.1427, 0.6428, 0.1772]}
+{"id": "ag_news/test/002179", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0053, 0.0028, 0.9875, 0.0044]}
+{"id": "ag_news/test/002202", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0002, 0.9994, 0.0002, 0.0002]}
+{"id": "ag_news/test/003554", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0322, 0.0113, 0.8692, 0.0873]}
+{"id": "ag_news/test/003258", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0012, 0.0007, 0.0069, 0.9911]}
+{"id": "ag_news/test/003299", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0024, 0.0017, 0.9316, 0.0644]}
+{"id": "ag_news/test/003636", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0011, 0.0008, 0.0093, 0.9888]}
+{"id": "ag_news/test/000905", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0012, 0.0009, 0.0025, 0.9955]}
+{"id": "ag_news/test/000578", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0015, 0.0014, 0.9957, 0.0015]}
+{"id": "ag_news/test/003431", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9961, 0.0013, 0.0013, 0.0013]}
+{"id": "ag_news/test/001795", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0024, 0.0016, 0.024, 0.9721]}
+{"id": "ag_news/test/001752", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0012, 0.0005, 0.0106, 0.9877]}
+{"id": "ag_news/test/003690", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0591, 0.0061, 0.9295, 0.0053]}
+{"id": "ag_news/test/002964", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0069, 0.0066, 0.9796, 0.0069]}
+{"id": "ag_news/test/000629", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0027, 0.0012, 0.13, 0.866]}
+{"id": "ag_news/test/002772", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.9992, 0.0003, 0.0003]}
+{"id": "ag_news/test/000149", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0082, 0.0054, 0.9675, 0.019]}
+{"id": "ag_news/test/004959", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0132, 0.0012, 0.9843, 0.0013]}
+{"id": "ag_news/test/004052", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.9991, 0.0003, 0.0003]}
+{"id": "ag_news/test/003315", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.4214, 0.056, 0.1517, 0.3709]}
+{"id": "ag_news/test/003284", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0014, 0.0011, 0.0635, 0.9339]}
+{"id": "ag_news/test/002483", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0017, 0.0008, 0.9963, 0.0012]}
+{"id": "ag_news/test/001313", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0137, 0.0023, 0.0224, 0.9616]}
+{"id": "ag_news/test/003480", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0002, 0.9995, 0.0002, 0.0002]}
+{"id": "ag_news/test/000752", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9762, 0.0083, 0.0084, 0.007]}
+{"id": "ag_news/test/002748", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0003, 0.0003, 0.999, 0.0003]}
+{"id": "ag_news/test/002366", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.1006, 0.0057, 0.1259, 0.7678]}
+{"id": "ag_news/test/002681", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0638, 0.0299, 0.1216, 0.7847]}
+{"id": "ag_news/test/004197", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0932, 0.1457, 0.0329, 0.7282]}
+{"id": "ag_news/test/001894", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.0519, 0.0023, 0.9435, 0.0023]}
+{"id": "ag_news/test/002917", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.016, 0.0182, 0.9577, 0.0082]}
+{"id": "ag_news/test/000598", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0094, 0.0087, 0.9725, 0.0093]}
+{"id": "ag_news/test/003326", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.9991, 0.0003, 0.0003]}
+{"id": "ag_news/test/002025", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0024, 0.9968, 0.0004, 0.0004]}
+{"id": "ag_news/test/004665", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0014, 0.0011, 0.0067, 0.9908]}
+{"id": "ag_news/test/001532", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0085, 0.0015, 0.8691, 0.1209]}
+{"id": "ag_news/test/001336", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0062, 0.0056, 0.9823, 0.0059]}
+{"id": "ag_news/test/001541", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0132, 0.0019, 0.003, 0.9819]}
+{"id": "ag_news/test/001395", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9912, 0.0029, 0.0029, 0.003]}
+{"id": "ag_news/test/001554", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0014, 0.997, 0.0008, 0.0008]}
+{"id": "ag_news/test/001109", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.8362, 0.0156, 0.1338, 0.0144]}
+{"id": "ag_news/test/002816", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9947, 0.0018, 0.0018, 0.0018]}
+{"id": "ag_news/test/000356", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.2877, 0.0813, 0.5177, 0.1133]}
+{"id": "ag_news/test/001585", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.6322, 0.0036, 0.0038, 0.3604]}
+{"id": "ag_news/test/001473", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0026, 0.9943, 0.0015, 0.0016]}
+{"id": "ag_news/test/004442", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9948, 0.0017, 0.0017, 0.0018]}
+{"id": "ag_news/test/001796", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0093, 0.0014, 0.0019, 0.9875]}
+{"id": "ag_news/test/002027", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0004, 0.9989, 0.0004, 0.0004]}
+{"id": "ag_news/test/003385", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0074, 0.9881, 0.0022, 0.0023]}
+{"id": "ag_news/test/001106", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0007, 0.9981, 0.0006, 0.0006]}
+{"id": "ag_news/test/003918", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9932, 0.0022, 0.0023, 0.0022]}
+{"id": "ag_news/test/003606", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9969, 0.001, 0.001, 0.001]}
+{"id": "ag_news/test/003082", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0038, 0.0013, 0.0399, 0.955]}
+{"id": "ag_news/test/004726", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9878, 0.0039, 0.0045, 0.0037]}
+{"id": "ag_news/test/000777", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0007, 0.9985, 0.0004, 0.0004]}
+{"id": "ag_news/test/002309", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0013, 0.0011, 0.0131, 0.9846]}
+{"id": "ag_news/test/004278", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.028, 0.9643, 0.0056, 0.0021]}
+{"id": "ag_news/test/000347", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.002, 0.996, 0.001, 0.001]}
+{"id": "ag_news/test/002647", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0016, 0.9961, 0.0011, 0.0011]}
+{"id": "ag_news/test/002845", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0002, 0.9995, 0.0002, 0.0002]}
+{"id": "ag_news/test/001914", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.5121, 0.3818, 0.0534, 0.0527]}
+{"id": "ag_news/test/004099", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0005, 0.9986, 0.0004, 0.0004]}
+{"id": "ag_news/test/001242", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0557, 0.0022, 0.9394, 0.0027]}
+{"id": "ag_news/test/003520", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0037, 0.0009, 0.9943, 0.0011]}
+{"id": "ag_news/test/000499", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0599, 0.003, 0.9336, 0.0035]}
+{"id": "ag_news/test/000225", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0009, 0.0007, 0.0031, 0.9952]}
+{"id": "ag_news/test/002544", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9992, 0.0003, 0.0003, 0.0003]}
+{"id": "ag_news/test/002732", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0005, 0.9986, 0.0004, 0.0004]}
+{"id": "ag_news/test/000452", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.023, 0.0227, 0.0974, 0.8568]}
+{"id": "ag_news/test/000978", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9868, 0.0048, 0.004, 0.0045]}
+{"id": "ag_news/test/003282", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0013, 0.9963, 0.0012, 0.0012]}
+{"id": "ag_news/test/003601", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9771, 0.0075, 0.0075, 0.0078]}
+{"id": "ag_news/test/000094", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0115, 0.001, 0.9865, 0.0011]}
+{"id": "ag_news/test/003715", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0025, 0.0013, 0.0883, 0.9079]}
+{"id": "ag_news/test/003322", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0004, 0.999, 0.0003, 0.0003]}
+{"id": "ag_news/test/003834", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.8217, 0.1234, 0.0185, 0.0364]}
+{"id": "ag_news/test/002935", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.8362, 0.0157, 0.1321, 0.0161]}
+{"id": "ag_news/test/000583", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0113, 0.0081, 0.9715, 0.009]}
+{"id": "ag_news/test/003579", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0032, 0.0012, 0.0112, 0.9844]}
+{"id": "ag_news/test/002646", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0113, 0.9868, 0.0009, 0.0009]}
+{"id": "ag_news/test/002006", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0009, 0.0007, 0.0036, 0.9947]}
+{"id": "ag_news/test/004965", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.999, 0.0003, 0.0003]}
+{"id": "ag_news/test/002566", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0122, 0.0052, 0.9715, 0.0111]}
+{"id": "ag_news/test/003930", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0002, 0.9995, 0.0002, 0.0002]}
+{"id": "ag_news/test/003680", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0029, 0.001, 0.0012, 0.9949]}
+{"id": "ag_news/test/003031", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0013, 0.0008, 0.0031, 0.9948]}
+{"id": "ag_news/test/001417", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0094, 0.9885, 0.0011, 0.001]}
+{"id": "ag_news/test/000136", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9877, 0.0035, 0.0051, 0.0038]}
+{"id": "ag_news/test/003335", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.1187, 0.0305, 0.241, 0.6098]}
+{"id": "ag_news/test/004460", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0318, 0.0266, 0.9, 0.0416]}
+{"id": "ag_news/test/000048", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0024, 0.0017, 0.994, 0.002]}
+{"id": "ag_news/test/003190", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9791, 0.0067, 0.0075, 0.0066]}
+{"id": "ag_news/test/001330", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0002, 0.9993, 0.0002, 0.0002]}
+{"id": "ag_news/test/002680", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0011, 0.0008, 0.0032, 0.9949]}
+{"id": "ag_news/test/001189", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0037, 0.0009, 0.9945, 0.0009]}
+{"id": "ag_news/test/004174", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0007, 0.0005, 0.0016, 0.9972]}
+{"id": "ag_news/test/002580", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9297, 0.0228, 0.0247, 0.0228]}
+{"id": "ag_news/test/004339", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0008, 0.0005, 0.0041, 0.9945]}
+{"id": "ag_news/test/004170", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9926, 0.0023, 0.0026, 0.0025]}
+{"id": "ag_news/test/002302", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.8601, 0.0029, 0.1333, 0.0037]}
+{"id": "ag_news/test/002822", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.9991, 0.0003, 0.0003]}
+{"id": "ag_news/test/001950", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0028, 0.9962, 0.0005, 0.0005]}
+{"id": "ag_news/test/000700", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0002, 0.9993, 0.0002, 0.0002]}
+{"id": "ag_news/test/001362", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.003, 0.9925, 0.0022, 0.0022]}
+{"id": "ag_news/test/002528", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9426, 0.0472, 0.005, 0.0051]}
+{"id": "ag_news/test/000640", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0158, 0.9789, 0.0026, 0.0026]}
+{"id": "ag_news/test/000247", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.7219, 0.0707, 0.1271, 0.0803]}
+{"id": "ag_news/test/003128", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0007, 0.0005, 0.0007, 0.9981]}
+{"id": "ag_news/test/003386", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.9992, 0.0003, 0.0002]}
+{"id": "ag_news/test/002693", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9164, 0.0121, 0.0486, 0.0229]}
+{"id": "ag_news/test/004177", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0033, 0.0013, 0.9939, 0.0016]}
+{"id": "ag_news/test/002534", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0015, 0.9963, 0.0011, 0.0011]}
+{"id": "ag_news/test/000389", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.7665, 0.0755, 0.0765, 0.0815]}
+{"id": "ag_news/test/004086", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9685, 0.0101, 0.0102, 0.0112]}
+{"id": "ag_news/test/003275", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0196, 0.082, 0.8932, 0.0051]}
+{"id": "ag_news/test/001446", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9917, 0.0028, 0.0027, 0.0029]}
+{"id": "ag_news/test/001376", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0024, 0.9433, 0.053, 0.0013]}
+{"id": "ag_news/test/003798", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9944, 0.0019, 0.0019, 0.0019]}
+{"id": "ag_news/test/004490", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.999, 0.0003, 0.0003]}
+{"id": "ag_news/test/001904", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.4371, 0.0109, 0.0935, 0.4585]}
+{"id": "ag_news/test/000949", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.009, 0.0054, 0.9745, 0.0112]}
+{"id": "ag_news/test/000449", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9954, 0.0015, 0.0015, 0.0015]}
+{"id": "ag_news/test/004355", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0065, 0.0016, 0.002, 0.9899]}
+{"id": "ag_news/test/001823", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0026, 0.0019, 0.0022, 0.9933]}
+{"id": "ag_news/test/001024", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0007, 0.0005, 0.0066, 0.9922]}
+{"id": "ag_news/test/003808", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9928, 0.0024, 0.0024, 0.0024]}
+{"id": "ag_news/test/004390", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.0848, 0.894, 0.0105, 0.0108]}
+{"id": "ag_news/test/004581", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0046, 0.0013, 0.0622, 0.9319]}
+{"id": "ag_news/test/003476", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0121, 0.0075, 0.8972, 0.0832]}
+{"id": "ag_news/test/004263", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.1154, 0.0285, 0.7032, 0.1529]}
+{"id": "ag_news/test/004774", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.0518, 0.946, 0.0011, 0.0011]}
+{"id": "ag_news/test/000029", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9947, 0.0017, 0.0017, 0.0018]}
+{"id": "ag_news/test/003973", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0012, 0.0009, 0.0051, 0.9927]}
+{"id": "ag_news/test/003203", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.999, 0.0003, 0.0003]}
+{"id": "ag_news/test/004401", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.8576, 0.0309, 0.0632, 0.0483]}
+{"id": "ag_news/test/003717", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0083, 0.9874, 0.0022, 0.0021]}
+{"id": "ag_news/test/000353", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9889, 0.0036, 0.0037, 0.0038]}
+{"id": "ag_news/test/001210", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0013, 0.0011, 0.0041, 0.9935]}
+{"id": "ag_news/test/002163", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0033, 0.9898, 0.0035, 0.0033]}
+{"id": "ag_news/test/003413", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0012, 0.001, 0.0069, 0.9909]}
+{"id": "ag_news/test/003521", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0028, 0.9942, 0.0016, 0.0015]}
+{"id": "ag_news/test/000146", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0012, 0.001, 0.0703, 0.9275]}
+{"id": "ag_news/test/004302", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0016, 0.0013, 0.0026, 0.9946]}
+{"id": "ag_news/test/000680", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0015, 0.9416, 0.056, 0.0009]}
+{"id": "ag_news/test/004379", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0003, 0.0003, 0.9991, 0.0003]}
+{"id": "ag_news/test/002233", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9677, 0.001, 0.0302, 0.0011]}
+{"id": "ag_news/test/002973", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0013, 0.0011, 0.9946, 0.0031]}
+{"id": "ag_news/test/002279", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9953, 0.0016, 0.0016, 0.0016]}
+{"id": "ag_news/test/001229", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0088, 0.0056, 0.0061, 0.9795]}
+{"id": "ag_news/test/000608", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0021, 0.0003, 0.0003, 0.9973]}
+{"id": "ag_news/test/002958", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9888, 0.0036, 0.0038, 0.0038]}
+{"id": "ag_news/test/004358", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0101, 0.0024, 0.0795, 0.908]}
+{"id": "ag_news/test/000524", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0176, 0.0019, 0.9781, 0.0024]}
+{"id": "ag_news/test/000596", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0145, 0.0017, 0.9815, 0.0023]}
+{"id": "ag_news/test/003663", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0036, 0.0017, 0.0315, 0.9631]}
+{"id": "ag_news/test/002201", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0018, 0.0015, 0.0484, 0.9483]}
+{"id": "ag_news/test/004641", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9966, 0.0011, 0.0011, 0.0011]}
+{"id": "ag_news/test/000300", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0022, 0.0011, 0.0298, 0.9669]}
+{"id": "ag_news/test/000032", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0009, 0.0007, 0.0368, 0.9616]}
+{"id": "ag_news/test/002537", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9981, 0.0006, 0.0006, 0.0007]}
+{"id": "ag_news/test/003298", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0028, 0.0013, 0.1883, 0.8075]}
+{"id": "ag_news/test/003983", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0008, 0.0007, 0.9977, 0.0007]}
+{"id": "ag_news/test/000461", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9767, 0.0071, 0.007, 0.0092]}
+{"id": "ag_news/test/004349", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0001, 0.9996, 0.0001, 0.0001]}
+{"id": "ag_news/test/002671", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9961, 0.0013, 0.0013, 0.0013]}
+{"id": "ag_news/test/000217", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0017, 0.995, 0.0016, 0.0017]}
+{"id": "ag_news/test/002107", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.001, 0.9968, 0.0011, 0.001]}
+{"id": "ag_news/test/002061", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.001, 0.0008, 0.6703, 0.3279]}
+{"id": "ag_news/test/000397", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9056, 0.0111, 0.0723, 0.0111]}
+{"id": "ag_news/test/000243", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0011, 0.0006, 0.9936, 0.0048]}
+{"id": "ag_news/test/003860", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0013, 0.0012, 0.9963, 0.0013]}
+{"id": "ag_news/test/002471", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.8918, 0.0138, 0.0783, 0.0161]}
+{"id": "ag_news/test/001611", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.999, 0.0003, 0.0003]}
+{"id": "ag_news/test/004047", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0095, 0.0066, 0.5186, 0.4653]}
+{"id": "ag_news/test/003766", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9862, 0.0043, 0.0049, 0.0046]}
+{"id": "ag_news/test/000360", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0054, 0.0003, 0.0003, 0.994]}
+{"id": "ag_news/test/002727", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.9992, 0.0003, 0.0003]}
+{"id": "ag_news/test/003629", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0018, 0.0006, 0.997, 0.0006]}
+{"id": "ag_news/test/003272", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.999, 0.0003, 0.0003]}
+{"id": "ag_news/test/003743", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0004, 0.9992, 0.0002, 0.0002]}
+{"id": "ag_news/test/003154", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9336, 0.0202, 0.0257, 0.0204]}
+{"id": "ag_news/test/002424", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0011, 0.0008, 0.0219, 0.9762]}
+{"id": "ag_news/test/001218", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.003, 0.0029, 0.0026, 0.9915]}
+{"id": "ag_news/test/001884", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0031, 0.0021, 0.0028, 0.9921]}
+{"id": "ag_news/test/002249", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0045, 0.0011, 0.001, 0.9933]}
+{"id": "ag_news/test/003264", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0501, 0.0076, 0.9328, 0.0095]}
+{"id": "ag_news/test/004461", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9577, 0.0068, 0.0275, 0.0081]}
+{"id": "ag_news/test/004862", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0069, 0.0032, 0.985, 0.005]}
+{"id": "ag_news/test/004142", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.1982, 0.1516, 0.1595, 0.4907]}
+{"id": "ag_news/test/003676", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0117, 0.0028, 0.0028, 0.9827]}
+{"id": "ag_news/test/000248", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.8096, 0.0079, 0.1742, 0.0083]}
+{"id": "ag_news/test/002213", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.8078, 0.0241, 0.0288, 0.1393]}
+{"id": "ag_news/test/000054", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0021, 0.0014, 0.995, 0.0016]}
+{"id": "ag_news/test/002809", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0252, 0.0748, 0.8902, 0.0098]}
+{"id": "ag_news/test/001347", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0064, 0.0008, 0.0008, 0.992]}
+{"id": "ag_news/test/000465", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0004, 0.9989, 0.0003, 0.0003]}
+{"id": "ag_news/test/001973", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9805, 0.0064, 0.0067, 0.0064]}
+{"id": "ag_news/test/003095", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9928, 0.0024, 0.0024, 0.0024]}
+{"id": "ag_news/test/002535", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.9993, 0.0002, 0.0002]}
+{"id": "ag_news/test/002903", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0005, 0.9987, 0.0004, 0.0004]}
+{"id": "ag_news/test/000981", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0026, 0.0019, 0.0042, 0.9912]}
+{"id": "ag_news/test/001599", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0005, 0.9987, 0.0004, 0.0004]}
+{"id": "ag_news/test/001090", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9969, 0.001, 0.001, 0.001]}
+{"id": "ag_news/test/004329", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0001, 0.9996, 0.0001, 0.0001]}
+{"id": "ag_news/test/004276", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0011, 0.9973, 0.0008, 0.0008]}
+{"id": "ag_news/test/001512", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.2455, 0.2002, 0.4996, 0.0547]}
+{"id": "ag_news/test/003897", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9852, 0.0049, 0.0049, 0.005]}
+{"id": "ag_news/test/000613", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.002, 0.0013, 0.0298, 0.9669]}
+{"id": "ag_news/test/004940", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0013, 0.0011, 0.0017, 0.996]}
+{"id": "ag_news/test/002283", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9902, 0.0024, 0.0025, 0.0049]}
+{"id": "ag_news/test/004377", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.1185, 0.0191, 0.4955, 0.3669]}
+{"id": "ag_news/test/004776", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0004, 0.0003, 0.0035, 0.9957]}
+{"id": "ag_news/test/004844", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0014, 0.0012, 0.1717, 0.8256]}
+{"id": "ag_news/test/000163", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0034, 0.0013, 0.0334, 0.9619]}
+{"id": "ag_news/test/000443", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0021, 0.0011, 0.002, 0.9948]}
+{"id": "ag_news/test/001244", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0007, 0.0006, 0.0014, 0.9973]}
+{"id": "ag_news/test/003517", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0006, 0.0004, 0.0004, 0.9986]}
+{"id": "ag_news/test/002957", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.9991, 0.0003, 0.0003]}
+{"id": "ag_news/test/000361", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0081, 0.0012, 0.9887, 0.002]}
+{"id": "ag_news/test/002305", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0227, 0.005, 0.9673, 0.0051]}
+{"id": "ag_news/test/001537", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0011, 0.0005, 0.0006, 0.9978]}
+{"id": "ag_news/test/004417", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0016, 0.0013, 0.0252, 0.9718]}
+{"id": "ag_news/test/002235", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0008, 0.9977, 0.0008, 0.0007]}
+{"id": "ag_news/test/001171", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.002, 0.997, 0.0005, 0.0005]}
+{"id": "ag_news/test/003771", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9942, 0.0019, 0.0019, 0.0019]}
+{"id": "ag_news/test/001365", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9958, 0.0013, 0.0015, 0.0014]}
+{"id": "ag_news/test/001612", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0028, 0.9944, 0.0015, 0.0013]}
+{"id": "ag_news/test/002625", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0118, 0.0033, 0.7755, 0.2095]}
+{"id": "ag_news/test/003908", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0031, 0.9955, 0.0007, 0.0007]}
+{"id": "ag_news/test/003969", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.991, 0.0029, 0.0031, 0.003]}
+{"id": "ag_news/test/004109", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.024, 0.0265, 0.3774, 0.572]}
+{"id": "ag_news/test/003594", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0079, 0.9793, 0.0063, 0.0064]}
+{"id": "ag_news/test/002665", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.0526, 0.0012, 0.0101, 0.9361]}
+{"id": "ag_news/test/000480", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0062, 0.0023, 0.9859, 0.0056]}
+{"id": "ag_news/test/001029", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0064, 0.001, 0.0011, 0.9916]}
+{"id": "ag_news/test/002346", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.0851, 0.9116, 0.0017, 0.0017]}
+{"id": "ag_news/test/002361", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0009, 0.0006, 0.0328, 0.9657]}
+{"id": "ag_news/test/003958", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0098, 0.0019, 0.9863, 0.002]}
+{"id": "ag_news/test/003436", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0003, 0.0003, 0.999, 0.0003]}
+{"id": "ag_news/test/000682", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0066, 0.0009, 0.0009, 0.9916]}
+{"id": "ag_news/test/003358", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0032, 0.02, 0.0884, 0.8884]}
+{"id": "ag_news/test/004485", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9954, 0.0015, 0.0016, 0.0016]}
+{"id": "ag_news/test/003437", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0006, 0.9984, 0.0005, 0.0005]}
+{"id": "ag_news/test/000391", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.2583, 0.0104, 0.6375, 0.0939]}
+{"id": "ag_news/test/002536", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.9991, 0.0003, 0.0003]}
+{"id": "ag_news/test/003006", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0029, 0.0021, 0.992, 0.003]}
+{"id": "ag_news/test/003585", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.002, 0.0014, 0.0044, 0.9923]}
+{"id": "ag_news/test/004925", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0006, 0.0006, 0.0006, 0.9982]}
+{"id": "ag_news/test/002323", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0008, 0.0007, 0.0071, 0.9914]}
+{"id": "ag_news/test/002757", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0056, 0.0015, 0.487, 0.506]}
+{"id": "ag_news/test/004768", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.001, 0.0007, 0.0119, 0.9864]}
+{"id": "ag_news/test/001908", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0006, 0.998, 0.0007, 0.0006]}
+{"id": "ag_news/test/001956", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9887, 0.0037, 0.0037, 0.0039]}
+{"id": "ag_news/test/004890", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0083, 0.0056, 0.9542, 0.032]}
+{"id": "ag_news/test/000402", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0041, 0.0008, 0.9944, 0.0008]}
+{"id": "ag_news/test/004794", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0008, 0.9977, 0.0007, 0.0007]}
+{"id": "ag_news/test/004650", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9929, 0.0023, 0.0023, 0.0024]}
+{"id": "ag_news/test/001872", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0035, 0.0011, 0.9942, 0.0013]}
+{"id": "ag_news/test/000155", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9949, 0.0017, 0.0017, 0.0017]}
+{"id": "ag_news/test/003360", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0022, 0.0015, 0.994, 0.0023]}
+{"id": "ag_news/test/003889", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0016, 0.0009, 0.002, 0.9955]}
+{"id": "ag_news/test/000881", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0006, 0.0004, 0.0005, 0.9985]}
+{"id": "ag_news/test/000797", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0018, 0.0012, 0.0447, 0.9523]}
+{"id": "ag_news/test/003887", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9895, 0.0034, 0.0035, 0.0035]}
+{"id": "ag_news/test/003439", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0015, 0.0012, 0.036, 0.9613]}
+{"id": "ag_news/test/004549", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0079, 0.0052, 0.9808, 0.0062]}
+{"id": "ag_news/test/001403", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0065, 0.0013, 0.0017, 0.9905]}
+{"id": "ag_news/test/002944", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0334, 0.0041, 0.9543, 0.0082]}
+{"id": "ag_news/test/004806", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0024, 0.0019, 0.0406, 0.9551]}
+{"id": "ag_news/test/001708", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0017, 0.0011, 0.0011, 0.9962]}
+{"id": "ag_news/test/001535", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0016, 0.0015, 0.0118, 0.9851]}
+{"id": "ag_news/test/002496", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0074, 0.9322, 0.0519, 0.0086]}
+{"id": "ag_news/test/001138", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0021, 0.0019, 0.994, 0.0021]}
+{"id": "ag_news/test/002359", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0021, 0.9938, 0.002, 0.0021]}
+{"id": "ag_news/test/004285", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9485, 0.0226, 0.015, 0.0138]}
+{"id": "ag_news/test/001637", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0012, 0.9964, 0.0011, 0.0013]}
+{"id": "ag_news/test/001916", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0187, 0.0026, 0.9727, 0.006]}
+{"id": "ag_news/test/002880", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0334, 0.0026, 0.9603, 0.0037]}
+{"id": "ag_news/test/002022", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0038, 0.0013, 0.0033, 0.9916]}
+{"id": "ag_news/test/001880", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9919, 0.0027, 0.0027, 0.0028]}
+{"id": "ag_news/test/004825", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0013, 0.0011, 0.057, 0.9405]}
+{"id": "ag_news/test/004117", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0025, 0.0032, 0.9918, 0.0026]}
+{"id": "ag_news/test/003430", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0007, 0.0006, 0.007, 0.9916]}
+{"id": "ag_news/test/002145", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0019, 0.9966, 0.0007, 0.0007]}
+{"id": "ag_news/test/004785", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0049, 0.0017, 0.0325, 0.9609]}
+{"id": "ag_news/test/000533", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9946, 0.0018, 0.0018, 0.0019]}
+{"id": "ag_news/test/004867", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0002, 0.9995, 0.0002, 0.0002]}
+{"id": "ag_news/test/003543", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0013, 0.9982, 0.0003, 0.0003]}
+{"id": "ag_news/test/004252", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0015, 0.0011, 0.9961, 0.0012]}
+{"id": "ag_news/test/001890", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.7366, 0.1372, 0.1038, 0.0224]}
+{"id": "ag_news/test/000540", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0741, 0.0104, 0.9048, 0.0107]}
+{"id": "ag_news/test/002916", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0022, 0.0009, 0.9958, 0.001]}
+{"id": "ag_news/test/001781", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9963, 0.0012, 0.0012, 0.0012]}
+{"id": "ag_news/test/003927", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9794, 0.0068, 0.0068, 0.007]}
+{"id": "ag_news/test/000448", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0006, 0.9983, 0.0005, 0.0006]}
+{"id": "ag_news/test/001882", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0018, 0.0016, 0.9105, 0.086]}
+{"id": "ag_news/test/002946", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0017, 0.0012, 0.9953, 0.0018]}
+{"id": "ag_news/test/001008", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0006, 0.9981, 0.0006, 0.0006]}
+{"id": "ag_news/test/002210", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.01, 0.009, 0.0145, 0.9665]}
+{"id": "ag_news/test/000811", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0903, 0.0031, 0.9016, 0.005]}
+{"id": "ag_news/test/004669", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0014, 0.0011, 0.9962, 0.0013]}
+{"id": "ag_news/test/003578", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9506, 0.0077, 0.0339, 0.0077]}
+{"id": "ag_news/test/002063", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9941, 0.0019, 0.002, 0.002]}
+{"id": "ag_news/test/003333", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0007, 0.0004, 0.0014, 0.9975]}
+{"id": "ag_news/test/002995", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0316, 0.0021, 0.0117, 0.9547]}
+{"id": "ag_news/test/002569", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0021, 0.0011, 0.0594, 0.9374]}
+{"id": "ag_news/test/001255", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9455, 0.0206, 0.0206, 0.0132]}
+{"id": "ag_news/test/000751", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0462, 0.0082, 0.9161, 0.0295]}
+{"id": "ag_news/test/001071", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0003, 0.0002, 0.0003, 0.9991]}
+{"id": "ag_news/test/002376", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0666, 0.1436, 0.2138, 0.576]}
+{"id": "ag_news/test/001837", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.725, 0.0065, 0.0928, 0.1758]}
+{"id": "ag_news/test/001604", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0144, 0.006, 0.9507, 0.0289]}
+{"id": "ag_news/test/003960", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0015, 0.9964, 0.001, 0.001]}
+{"id": "ag_news/test/000085", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0014, 0.001, 0.001, 0.9965]}
+{"id": "ag_news/test/002143", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.001, 0.0009, 0.0148, 0.9832]}
+{"id": "ag_news/test/002608", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0024, 0.0008, 0.996, 0.0008]}
+{"id": "ag_news/test/000802", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0018, 0.0019, 0.0067, 0.9895]}
+{"id": "ag_news/test/002051", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0035, 0.003, 0.9876, 0.0058]}
+{"id": "ag_news/test/003371", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0019, 0.0014, 0.9953, 0.0015]}
+{"id": "ag_news/test/001547", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9961, 0.0013, 0.0013, 0.0013]}
+{"id": "ag_news/test/004920", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0004, 0.0003, 0.9989, 0.0003]}
+{"id": "ag_news/test/002216", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0009, 0.9976, 0.0008, 0.0007]}
+{"id": "ag_news/test/004005", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0012, 0.0006, 0.9974, 0.0008]}
+{"id": "ag_news/test/000896", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0021, 0.0014, 0.0527, 0.9439]}
+{"id": "ag_news/test/004622", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0017, 0.0012, 0.0031, 0.9941]}
+{"id": "ag_news/test/002836", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.7452, 0.0171, 0.1907, 0.047]}
+{"id": "ag_news/test/004327", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0009, 0.0007, 0.002, 0.9963]}
+{"id": "ag_news/test/001662", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0086, 0.0011, 0.0015, 0.9888]}
+{"id": "ag_news/test/002961", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0004, 0.9988, 0.0004, 0.0004]}
+{"id": "ag_news/test/002066", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9741, 0.0066, 0.0128, 0.0064]}
+{"id": "ag_news/test/004856", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0011, 0.0008, 0.9973, 0.0009]}
+{"id": "ag_news/test/003665", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0024, 0.0018, 0.9939, 0.0019]}
+{"id": "ag_news/test/003130", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0003, 0.999, 0.0003, 0.0003]}
+{"id": "ag_news/test/002303", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0016, 0.001, 0.0424, 0.9551]}
+{"id": "ag_news/test/000202", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0002, 0.9995, 0.0002, 0.0002]}
+{"id": "ag_news/test/001306", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.002, 0.9966, 0.0007, 0.0007]}
+{"id": "ag_news/test/003087", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0005, 0.9987, 0.0004, 0.0004]}
+{"id": "ag_news/test/002874", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9954, 0.0015, 0.0015, 0.0016]}
+{"id": "ag_news/test/002686", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0816, 0.0624, 0.7333, 0.1227]}
+{"id": "ag_news/test/000684", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0089, 0.0011, 0.9889, 0.0011]}
+{"id": "ag_news/test/001032", "task": "ag_news", "qtype": "choice", "target": [0.0, 1.0, 0.0, 0.0], "probs": [0.0002, 0.9994, 0.0002, 0.0002]}
+{"id": "ag_news/test/002805", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0175, 0.0142, 0.7755, 0.1928]}
+{"id": "ag_news/test/003581", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.002, 0.0018, 0.0788, 0.9174]}
+{"id": "ag_news/test/002620", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0005, 0.0004, 0.0151, 0.984]}
+{"id": "ag_news/test/003474", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0017, 0.0007, 0.0032, 0.9943]}
+{"id": "ag_news/test/003840", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9992, 0.0003, 0.0003, 0.0003]}
+{"id": "ag_news/test/000159", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0173, 0.0025, 0.9772, 0.0029]}
+{"id": "ag_news/test/004024", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0027, 0.0015, 0.9472, 0.0486]}
+{"id": "ag_news/test/004775", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 0.0, 1.0], "probs": [0.0007, 0.0006, 0.0007, 0.9981]}
+{"id": "ag_news/test/003901", "task": "ag_news", "qtype": "choice", "target": [0.0, 0.0, 1.0, 0.0], "probs": [0.0131, 0.0107, 0.9643, 0.0119]}
+{"id": "ag_news/test/004653", "task": "ag_news", "qtype": "choice", "target": [1.0, 0.0, 0.0, 0.0], "probs": [0.9793, 0.0046, 0.0114, 0.0046]}
+{"id": "boolq/test/000077", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8911, 0.1089]}
+{"id": "boolq/test/000549", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.42079999999999995, 0.5792]}
+{"id": "boolq/test/001435", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9134, 0.0866]}
+{"id": "boolq/test/000660", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.23309999999999997, 0.7669]}
+{"id": "boolq/test/001883", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.19030000000000002, 0.8097]}
+{"id": "boolq/test/000438", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.4274, 0.5726]}
+{"id": "boolq/test/002913", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.602, 0.398]}
+{"id": "boolq/test/003006", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.16110000000000002, 0.8389]}
+{"id": "boolq/test/000239", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9619, 0.0381]}
+{"id": "boolq/test/000284", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.5158, 0.4842]}
+{"id": "boolq/test/001488", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.043300000000000005, 0.9567]}
+{"id": "boolq/test/001126", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8855, 0.1145]}
+{"id": "boolq/test/000210", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.05289999999999995, 0.9471]}
+{"id": "boolq/test/000712", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.7686999999999999, 0.2313]}
+{"id": "boolq/test/000489", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.05230000000000001, 0.9477]}
+{"id": "boolq/test/001118", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8733, 0.1267]}
+{"id": "boolq/test/000747", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.6912, 0.3088]}
+{"id": "boolq/test/002179", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.12329999999999997, 0.8767]}
+{"id": "boolq/test/000547", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.024800000000000044, 0.9752]}
+{"id": "boolq/test/003078", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.024700000000000055, 0.9753]}
+{"id": "boolq/test/002805", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3294, 0.6706]}
+{"id": "boolq/test/001212", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8678, 0.1322]}
+{"id": "boolq/test/000466", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.2671, 0.7329]}
+{"id": "boolq/test/001773", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.48919999999999997, 0.5108]}
+{"id": "boolq/test/001102", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.6123000000000001, 0.3877]}
+{"id": "boolq/test/003250", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.28269999999999995, 0.7173]}
+{"id": "boolq/test/000910", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8102, 0.1898]}
+{"id": "boolq/test/002971", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3466, 0.6534]}
+{"id": "boolq/test/003138", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03400000000000003, 0.966]}
+{"id": "boolq/test/001221", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.19030000000000002, 0.8097]}
+{"id": "boolq/test/001932", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8297, 0.1703]}
+{"id": "boolq/test/001097", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.053200000000000025, 0.9468]}
+{"id": "boolq/test/001823", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9136, 0.0864]}
+{"id": "boolq/test/002984", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.18799999999999994, 0.812]}
+{"id": "boolq/test/000258", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8425, 0.1575]}
+{"id": "boolq/test/002456", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.14849999999999997, 0.8515]}
+{"id": "boolq/test/001007", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8208, 0.1792]}
+{"id": "boolq/test/000666", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.48540000000000005, 0.5146]}
+{"id": "boolq/test/001440", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.07430000000000003, 0.9257]}
+{"id": "boolq/test/003123", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.2811, 0.7189]}
+{"id": "boolq/test/002391", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.7032, 0.2968]}
+{"id": "boolq/test/002727", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.906, 0.094]}
+{"id": "boolq/test/000659", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.1441, 0.8559]}
+{"id": "boolq/test/002366", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03990000000000005, 0.9601]}
+{"id": "boolq/test/002109", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.51, 0.49]}
+{"id": "boolq/test/002762", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8956, 0.1044]}
+{"id": "boolq/test/002545", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.11119999999999997, 0.8888]}
+{"id": "boolq/test/001228", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.2508, 0.7492]}
+{"id": "boolq/test/002994", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.5296000000000001, 0.4704]}
+{"id": "boolq/test/001999", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.06799999999999995, 0.932]}
+{"id": "boolq/test/000195", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.05130000000000001, 0.9487]}
+{"id": "boolq/test/001336", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.0988, 0.9012]}
+{"id": "boolq/test/000522", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.44599999999999995, 0.554]}
+{"id": "boolq/test/002448", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.27569999999999995, 0.7243]}
+{"id": "boolq/test/002911", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.5321, 0.4679]}
+{"id": "boolq/test/001908", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.21009999999999995, 0.7899]}
+{"id": "boolq/test/002454", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8667, 0.1333]}
+{"id": "boolq/test/002536", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8299, 0.1701]}
+{"id": "boolq/test/002636", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.4737, 0.5263]}
+{"id": "boolq/test/001572", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.4181, 0.5819]}
+{"id": "boolq/test/000610", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.5903, 0.4097]}
+{"id": "boolq/test/000853", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.24150000000000005, 0.7585]}
+{"id": "boolq/test/000102", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.04269999999999996, 0.9573]}
+{"id": "boolq/test/002752", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9125, 0.0875]}
+{"id": "boolq/test/001413", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.013800000000000034, 0.9862]}
+{"id": "boolq/test/001501", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.0373, 0.9627]}
+{"id": "boolq/test/003086", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.08879999999999999, 0.9112]}
+{"id": "boolq/test/000938", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.31089999999999995, 0.6891]}
+{"id": "boolq/test/001148", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.14329999999999998, 0.8567]}
+{"id": "boolq/test/002530", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.047699999999999965, 0.9523]}
+{"id": "boolq/test/001486", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.11970000000000003, 0.8803]}
+{"id": "boolq/test/000202", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.04410000000000003, 0.9559]}
+{"id": "boolq/test/002657", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.11119999999999997, 0.8888]}
+{"id": "boolq/test/002698", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.21450000000000002, 0.7855]}
+{"id": "boolq/test/000209", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8913, 0.1087]}
+{"id": "boolq/test/000338", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.04730000000000001, 0.9527]}
+{"id": "boolq/test/000340", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.05400000000000005, 0.946]}
+{"id": "boolq/test/001070", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.03149999999999997, 0.9685]}
+{"id": "boolq/test/002169", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.037900000000000045, 0.9621]}
+{"id": "boolq/test/002817", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.26870000000000005, 0.7313]}
+{"id": "boolq/test/000266", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8304, 0.1696]}
+{"id": "boolq/test/000927", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.6412, 0.3588]}
+{"id": "boolq/test/003133", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.5818, 0.4182]}
+{"id": "boolq/test/000087", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.43689999999999996, 0.5631]}
+{"id": "boolq/test/000974", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.038799999999999946, 0.9612]}
+{"id": "boolq/test/002414", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.21619999999999995, 0.7838]}
+{"id": "boolq/test/002517", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.7435, 0.2565]}
+{"id": "boolq/test/000267", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03310000000000002, 0.9669]}
+{"id": "boolq/test/003139", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.0252, 0.9748]}
+{"id": "boolq/test/003056", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.2502, 0.7498]}
+{"id": "boolq/test/001300", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7766, 0.2234]}
+{"id": "boolq/test/003224", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.32430000000000003, 0.6757]}
+{"id": "boolq/test/000594", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03320000000000001, 0.9668]}
+{"id": "boolq/test/003041", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.039100000000000024, 0.9609]}
+{"id": "boolq/test/000273", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.7115, 0.2885]}
+{"id": "boolq/test/002039", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.1965, 0.8035]}
+{"id": "boolq/test/002554", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8125, 0.1875]}
+{"id": "boolq/test/000846", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.14100000000000001, 0.859]}
+{"id": "boolq/test/001472", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.22099999999999997, 0.779]}
+{"id": "boolq/test/002445", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9198, 0.0802]}
+{"id": "boolq/test/001087", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.863, 0.137]}
+{"id": "boolq/test/002399", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3287, 0.6713]}
+{"id": "boolq/test/001703", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.3851, 0.6149]}
+{"id": "boolq/test/001996", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.11970000000000003, 0.8803]}
+{"id": "boolq/test/002557", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.6691, 0.3309]}
+{"id": "boolq/test/002871", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.6869000000000001, 0.3131]}
+{"id": "boolq/test/000130", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.10260000000000002, 0.8974]}
+{"id": "boolq/test/000986", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.09570000000000001, 0.9043]}
+{"id": "boolq/test/003167", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.47419999999999995, 0.5258]}
+{"id": "boolq/test/002162", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.16590000000000005, 0.8341]}
+{"id": "boolq/test/000650", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.29890000000000005, 0.7011]}
+{"id": "boolq/test/001780", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.02949999999999997, 0.9705]}
+{"id": "boolq/test/000126", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.04510000000000003, 0.9549]}
+{"id": "boolq/test/002453", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8908, 0.1092]}
+{"id": "boolq/test/002194", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.02190000000000003, 0.9781]}
+{"id": "boolq/test/000310", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.07899999999999996, 0.921]}
+{"id": "boolq/test/002381", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.06440000000000001, 0.9356]}
+{"id": "boolq/test/001305", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9051, 0.0949]}
+{"id": "boolq/test/002876", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.9513, 0.0487]}
+{"id": "boolq/test/002867", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8682, 0.1318]}
+{"id": "boolq/test/001041", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.4808, 0.5192]}
+{"id": "boolq/test/002338", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9351, 0.0649]}
+{"id": "boolq/test/001011", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8331999999999999, 0.1668]}
+{"id": "boolq/test/001740", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.07269999999999999, 0.9273]}
+{"id": "boolq/test/001388", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.014100000000000001, 0.9859]}
+{"id": "boolq/test/002452", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.6631, 0.3369]}
+{"id": "boolq/test/000314", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8032, 0.1968]}
+{"id": "boolq/test/002558", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.6986, 0.3014]}
+{"id": "boolq/test/001067", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.28380000000000005, 0.7162]}
+{"id": "boolq/test/002228", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.16820000000000002, 0.8318]}
+{"id": "boolq/test/000186", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.5515, 0.4485]}
+{"id": "boolq/test/000792", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.3406, 0.6594]}
+{"id": "boolq/test/001864", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.09870000000000001, 0.9013]}
+{"id": "boolq/test/001149", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.0736, 0.9264]}
+{"id": "boolq/test/000749", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.38360000000000005, 0.6164]}
+{"id": "boolq/test/002405", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.08919999999999995, 0.9108]}
+{"id": "boolq/test/002211", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.347, 0.653]}
+{"id": "boolq/test/000432", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03390000000000004, 0.9661]}
+{"id": "boolq/test/000788", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8791, 0.1209]}
+{"id": "boolq/test/002275", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.14990000000000003, 0.8501]}
+{"id": "boolq/test/002013", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.11519999999999997, 0.8848]}
+{"id": "boolq/test/002826", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.49960000000000004, 0.5004]}
+{"id": "boolq/test/000656", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.18669999999999998, 0.8133]}
+{"id": "boolq/test/001668", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.11170000000000002, 0.8883]}
+{"id": "boolq/test/001120", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3365, 0.6635]}
+{"id": "boolq/test/002803", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9249, 0.0751]}
+{"id": "boolq/test/002006", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.5863, 0.4137]}
+{"id": "boolq/test/001968", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8097, 0.1903]}
+{"id": "boolq/test/001307", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7299, 0.2701]}
+{"id": "boolq/test/000455", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.1008, 0.8992]}
+{"id": "boolq/test/002306", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.14249999999999996, 0.8575]}
+{"id": "boolq/test/002585", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7313000000000001, 0.2687]}
+{"id": "boolq/test/000806", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.635, 0.365]}
+{"id": "boolq/test/000387", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.04369999999999996, 0.9563]}
+{"id": "boolq/test/001559", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9368, 0.0632]}
+{"id": "boolq/test/000409", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.02080000000000004, 0.9792]}
+{"id": "boolq/test/001980", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8738, 0.1262]}
+{"id": "boolq/test/002523", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.09430000000000005, 0.9057]}
+{"id": "boolq/test/002572", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03649999999999998, 0.9635]}
+{"id": "boolq/test/003193", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.24860000000000004, 0.7514]}
+{"id": "boolq/test/002990", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.5732999999999999, 0.4267]}
+{"id": "boolq/test/003171", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.04039999999999999, 0.9596]}
+{"id": "boolq/test/000668", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8751, 0.1249]}
+{"id": "boolq/test/000098", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.019299999999999984, 0.9807]}
+{"id": "boolq/test/001350", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.34019999999999995, 0.6598]}
+{"id": "boolq/test/000399", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.842, 0.158]}
+{"id": "boolq/test/000911", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.08150000000000002, 0.9185]}
+{"id": "boolq/test/001539", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.12880000000000003, 0.8712]}
+{"id": "boolq/test/000128", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7883, 0.2117]}
+{"id": "boolq/test/002643", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.09460000000000002, 0.9054]}
+{"id": "boolq/test/003226", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.026900000000000035, 0.9731]}
+{"id": "boolq/test/000760", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03410000000000002, 0.9659]}
+{"id": "boolq/test/000585", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.849, 0.151]}
+{"id": "boolq/test/002669", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8922, 0.1078]}
+{"id": "boolq/test/001649", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.753, 0.247]}
+{"id": "boolq/test/002108", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.19810000000000005, 0.8019]}
+{"id": "boolq/test/000947", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.21989999999999998, 0.7801]}
+{"id": "boolq/test/001487", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9287, 0.0713]}
+{"id": "boolq/test/003249", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.844, 0.156]}
+{"id": "boolq/test/001243", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.5125, 0.4875]}
+{"id": "boolq/test/001966", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.025399999999999978, 0.9746]}
+{"id": "boolq/test/002496", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.4345, 0.5655]}
+{"id": "boolq/test/000437", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.5096, 0.4904]}
+{"id": "boolq/test/000473", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.916, 0.084]}
+{"id": "boolq/test/001940", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.02959999999999996, 0.9704]}
+{"id": "boolq/test/002766", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.25239999999999996, 0.7476]}
+{"id": "boolq/test/000535", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8559, 0.1441]}
+{"id": "boolq/test/000923", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.15639999999999998, 0.8436]}
+{"id": "boolq/test/000307", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.20399999999999996, 0.796]}
+{"id": "boolq/test/001284", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03720000000000001, 0.9628]}
+{"id": "boolq/test/002833", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03290000000000004, 0.9671]}
+{"id": "boolq/test/002209", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.07650000000000001, 0.9235]}
+{"id": "boolq/test/001725", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.23909999999999998, 0.7609]}
+{"id": "boolq/test/001706", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.04679999999999995, 0.9532]}
+{"id": "boolq/test/000751", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.37549999999999994, 0.6245]}
+{"id": "boolq/test/000434", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.6273, 0.3727]}
+{"id": "boolq/test/001956", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.016700000000000048, 0.9833]}
+{"id": "boolq/test/000830", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.14290000000000003, 0.8571]}
+{"id": "boolq/test/001216", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.2552, 0.7448]}
+{"id": "boolq/test/001741", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.20030000000000003, 0.7997]}
+{"id": "boolq/test/002548", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8237, 0.1763]}
+{"id": "boolq/test/002288", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8586, 0.1414]}
+{"id": "boolq/test/002215", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.17969999999999997, 0.8203]}
+{"id": "boolq/test/002178", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.19499999999999995, 0.805]}
+{"id": "boolq/test/001537", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.29059999999999997, 0.7094]}
+{"id": "boolq/test/000223", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03820000000000001, 0.9618]}
+{"id": "boolq/test/002739", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.2156, 0.7844]}
+{"id": "boolq/test/002901", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.19079999999999997, 0.8092]}
+{"id": "boolq/test/001283", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8364, 0.1636]}
+{"id": "boolq/test/003150", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.05069999999999997, 0.9493]}
+{"id": "boolq/test/001701", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.33609999999999995, 0.6639]}
+{"id": "boolq/test/001012", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7664, 0.2336]}
+{"id": "boolq/test/002463", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.10670000000000002, 0.8933]}
+{"id": "boolq/test/002578", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3671, 0.6329]}
+{"id": "boolq/test/000162", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.7371, 0.2629]}
+{"id": "boolq/test/000773", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.5013000000000001, 0.4987]}
+{"id": "boolq/test/000872", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.40390000000000004, 0.5961]}
+{"id": "boolq/test/001490", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.34099999999999997, 0.659]}
+{"id": "boolq/test/002831", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.19079999999999997, 0.8092]}
+{"id": "boolq/test/001184", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.06810000000000005, 0.9319]}
+{"id": "boolq/test/001518", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.15290000000000004, 0.8471]}
+{"id": "boolq/test/001993", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.7872, 0.2128]}
+{"id": "boolq/test/002566", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.7505, 0.2495]}
+{"id": "boolq/test/001036", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.12290000000000001, 0.8771]}
+{"id": "boolq/test/002602", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.3095, 0.6905]}
+{"id": "boolq/test/002302", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.22599999999999998, 0.774]}
+{"id": "boolq/test/001188", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.07630000000000003, 0.9237]}
+{"id": "boolq/test/003047", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.6965, 0.3035]}
+{"id": "boolq/test/001881", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.051000000000000045, 0.949]}
+{"id": "boolq/test/000097", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9207, 0.0793]}
+{"id": "boolq/test/000094", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.027599999999999958, 0.9724]}
+{"id": "boolq/test/001612", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.6916, 0.3084]}
+{"id": "boolq/test/002525", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8734999999999999, 0.1265]}
+{"id": "boolq/test/001939", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.035499999999999976, 0.9645]}
+{"id": "boolq/test/002260", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.027800000000000047, 0.9722]}
+{"id": "boolq/test/003269", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.27470000000000006, 0.7253]}
+{"id": "boolq/test/002284", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7863, 0.2137]}
+{"id": "boolq/test/001555", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.6746, 0.3254]}
+{"id": "boolq/test/002166", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8509, 0.1491]}
+{"id": "boolq/test/001077", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.3074, 0.6926]}
+{"id": "boolq/test/000358", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8898, 0.1102]}
+{"id": "boolq/test/002647", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.20399999999999996, 0.796]}
+{"id": "boolq/test/001919", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.1542, 0.8458]}
+{"id": "boolq/test/002703", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8458, 0.1542]}
+{"id": "boolq/test/002200", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.06220000000000003, 0.9378]}
+{"id": "boolq/test/002792", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.854, 0.146]}
+{"id": "boolq/test/002412", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.15249999999999997, 0.8475]}
+{"id": "boolq/test/003132", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7681, 0.2319]}
+{"id": "boolq/test/001611", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.026900000000000035, 0.9731]}
+{"id": "boolq/test/001093", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.7492, 0.2508]}
+{"id": "boolq/test/001856", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.1269, 0.8731]}
+{"id": "boolq/test/000153", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.12250000000000005, 0.8775]}
+{"id": "boolq/test/000955", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.07730000000000004, 0.9227]}
+{"id": "boolq/test/002156", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8432999999999999, 0.1567]}
+{"id": "boolq/test/001171", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.15869999999999995, 0.8413]}
+{"id": "boolq/test/003130", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.5630999999999999, 0.4369]}
+{"id": "boolq/test/002983", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.06979999999999997, 0.9302]}
+{"id": "boolq/test/000452", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8225, 0.1775]}
+{"id": "boolq/test/003247", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.29059999999999997, 0.7094]}
+{"id": "boolq/test/000414", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.10870000000000002, 0.8913]}
+{"id": "boolq/test/001675", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.04379999999999995, 0.9562]}
+{"id": "boolq/test/001038", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7358, 0.2642]}
+{"id": "boolq/test/001593", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.1582, 0.8418]}
+{"id": "boolq/test/002402", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.16800000000000004, 0.832]}
+{"id": "boolq/test/002063", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.16869999999999996, 0.8313]}
+{"id": "boolq/test/000597", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.4134, 0.5866]}
+{"id": "boolq/test/002254", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.08350000000000002, 0.9165]}
+{"id": "boolq/test/002320", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.6222, 0.3778]}
+{"id": "boolq/test/000608", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7684, 0.2316]}
+{"id": "boolq/test/001182", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.022299999999999986, 0.9777]}
+{"id": "boolq/test/002935", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.03300000000000003, 0.967]}
+{"id": "boolq/test/002016", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.495, 0.505]}
+{"id": "boolq/test/002650", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.052200000000000024, 0.9478]}
+{"id": "boolq/test/000092", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.09660000000000002, 0.9034]}
+{"id": "boolq/test/002524", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.45009999999999994, 0.5499]}
+{"id": "boolq/test/000378", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.5441, 0.4559]}
+{"id": "boolq/test/002910", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.2156, 0.7844]}
+{"id": "boolq/test/000642", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3298, 0.6702]}
+{"id": "boolq/test/002158", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.11660000000000004, 0.8834]}
+{"id": "boolq/test/000801", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7829, 0.2171]}
+{"id": "boolq/test/000364", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7403, 0.2597]}
+{"id": "boolq/test/002900", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.046599999999999975, 0.9534]}
+{"id": "boolq/test/002966", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.05830000000000002, 0.9417]}
+{"id": "boolq/test/000124", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8005, 0.1995]}
+{"id": "boolq/test/001628", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.6930000000000001, 0.307]}
+{"id": "boolq/test/001315", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.15269999999999995, 0.8473]}
+{"id": "boolq/test/001114", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.995, 0.005]}
+{"id": "boolq/test/002046", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.2861, 0.7139]}
+{"id": "boolq/test/002510", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.017100000000000004, 0.9829]}
+{"id": "boolq/test/002798", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.054400000000000004, 0.9456]}
+{"id": "boolq/test/002216", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.6308, 0.3692]}
+{"id": "boolq/test/002438", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.020199999999999996, 0.9798]}
+{"id": "boolq/test/000175", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.19599999999999995, 0.804]}
+{"id": "boolq/test/001247", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.04730000000000001, 0.9527]}
+{"id": "boolq/test/001984", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3306, 0.6694]}
+{"id": "boolq/test/002840", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8479, 0.1521]}
+{"id": "boolq/test/002085", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.11809999999999998, 0.8819]}
+{"id": "boolq/test/002079", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.12729999999999997, 0.8727]}
+{"id": "boolq/test/000831", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.10319999999999996, 0.8968]}
+{"id": "boolq/test/001082", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.31420000000000003, 0.6858]}
+{"id": "boolq/test/000657", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9175, 0.0825]}
+{"id": "boolq/test/002049", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9329, 0.0671]}
+{"id": "boolq/test/001344", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8087, 0.1913]}
+{"id": "boolq/test/001113", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.08560000000000001, 0.9144]}
+{"id": "boolq/test/003050", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.08979999999999999, 0.9102]}
+{"id": "boolq/test/000180", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.24150000000000005, 0.7585]}
+{"id": "boolq/test/001734", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8341000000000001, 0.1659]}
+{"id": "boolq/test/001693", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.675, 0.325]}
+{"id": "boolq/test/001853", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8107, 0.1893]}
+{"id": "boolq/test/001557", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.39280000000000004, 0.6072]}
+{"id": "boolq/test/002494", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.08250000000000002, 0.9175]}
+{"id": "boolq/test/000673", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.09589999999999999, 0.9041]}
+{"id": "boolq/test/000289", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8153, 0.1847]}
+{"id": "boolq/test/000633", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.33720000000000006, 0.6628]}
+{"id": "boolq/test/000017", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8671, 0.1329]}
+{"id": "boolq/test/002332", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.27470000000000006, 0.7253]}
+{"id": "boolq/test/001927", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.017100000000000004, 0.9829]}
+{"id": "boolq/test/002879", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.06440000000000001, 0.9356]}
+{"id": "boolq/test/001090", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.12290000000000001, 0.8771]}
+{"id": "boolq/test/000750", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.01980000000000004, 0.9802]}
+{"id": "boolq/test/002793", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.17490000000000006, 0.8251]}
+{"id": "boolq/test/002152", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.7908, 0.2092]}
+{"id": "boolq/test/001337", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.5424, 0.4576]}
+{"id": "boolq/test/001384", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.15039999999999998, 0.8496]}
+{"id": "boolq/test/003222", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3188, 0.6812]}
+{"id": "boolq/test/000561", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.11729999999999996, 0.8827]}
+{"id": "boolq/test/001014", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.02100000000000002, 0.979]}
+{"id": "boolq/test/000622", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.9143, 0.0857]}
+{"id": "boolq/test/002022", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.1997, 0.8003]}
+{"id": "boolq/test/001924", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.024399999999999977, 0.9756]}
+{"id": "boolq/test/002606", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.1089, 0.8911]}
+{"id": "boolq/test/002058", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.2379, 0.7621]}
+{"id": "boolq/test/000887", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.25770000000000004, 0.7423]}
+{"id": "boolq/test/000812", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.33430000000000004, 0.6657]}
+{"id": "boolq/test/002367", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.033499999999999974, 0.9665]}
+{"id": "boolq/test/002843", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.33199999999999996, 0.668]}
+{"id": "boolq/test/002821", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.06459999999999999, 0.9354]}
+{"id": "boolq/test/000425", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3328, 0.6672]}
+{"id": "boolq/test/002486", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3871, 0.6129]}
+{"id": "boolq/test/002823", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9568, 0.0432]}
+{"id": "boolq/test/001535", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8256, 0.1744]}
+{"id": "boolq/test/002661", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.09689999999999999, 0.9031]}
+{"id": "boolq/test/002355", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7615000000000001, 0.2385]}
+{"id": "boolq/test/000377", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7125, 0.2875]}
+{"id": "boolq/test/003043", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.4942, 0.5058]}
+{"id": "boolq/test/001000", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.04810000000000003, 0.9519]}
+{"id": "boolq/test/000733", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.36419999999999997, 0.6358]}
+{"id": "boolq/test/001985", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.07179999999999997, 0.9282]}
+{"id": "boolq/test/001071", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.09689999999999999, 0.9031]}
+{"id": "boolq/test/000973", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.024800000000000044, 0.9752]}
+{"id": "boolq/test/002009", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.20699999999999996, 0.793]}
+{"id": "boolq/test/002037", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8431, 0.1569]}
+{"id": "boolq/test/002476", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.804, 0.196]}
+{"id": "boolq/test/003026", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.031000000000000028, 0.969]}
+{"id": "boolq/test/002724", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8145, 0.1855]}
+{"id": "boolq/test/002760", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.31599999999999995, 0.684]}
+{"id": "boolq/test/000072", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.3819, 0.6181]}
+{"id": "boolq/test/001692", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.13139999999999996, 0.8686]}
+{"id": "boolq/test/003024", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.6335, 0.3665]}
+{"id": "boolq/test/000865", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.24029999999999996, 0.7597]}
+{"id": "boolq/test/002620", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.23219999999999996, 0.7678]}
+{"id": "boolq/test/002522", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.036599999999999966, 0.9634]}
+{"id": "boolq/test/002690", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.8056, 0.1944]}
+{"id": "boolq/test/002197", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.21009999999999995, 0.7899]}
+{"id": "boolq/test/001840", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7899, 0.2101]}
+{"id": "boolq/test/002824", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.37539999999999996, 0.6246]}
+{"id": "boolq/test/000436", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.02629999999999999, 0.9737]}
+{"id": "boolq/test/000922", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.19789999999999996, 0.8021]}
+{"id": "boolq/test/000108", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.10699999999999998, 0.893]}
+{"id": "boolq/test/002653", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.5387, 0.4613]}
+{"id": "boolq/test/000605", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8458, 0.1542]}
+{"id": "boolq/test/002675", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9277, 0.0723]}
+{"id": "boolq/test/002899", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.06330000000000002, 0.9367]}
+{"id": "boolq/test/002735", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.5524, 0.4476]}
+{"id": "boolq/test/000876", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.31200000000000006, 0.688]}
+{"id": "boolq/test/002598", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.24370000000000003, 0.7563]}
+{"id": "boolq/test/000301", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8517, 0.1483]}
+{"id": "boolq/test/002819", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.05069999999999997, 0.9493]}
+{"id": "boolq/test/001274", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.21650000000000003, 0.7835]}
+{"id": "boolq/test/000065", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.6866, 0.3134]}
+{"id": "boolq/test/003227", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.35840000000000005, 0.6416]}
+{"id": "boolq/test/001872", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.14780000000000004, 0.8522]}
+{"id": "boolq/test/001374", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.5341, 0.4659]}
+{"id": "boolq/test/002428", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.7855, 0.2145]}
+{"id": "boolq/test/000380", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.17079999999999995, 0.8292]}
+{"id": "boolq/test/000900", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.6858, 0.3142]}
+{"id": "boolq/test/001317", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7948999999999999, 0.2051]}
+{"id": "boolq/test/001210", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.8875, 0.1125]}
+{"id": "boolq/test/002571", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3387, 0.6613]}
+{"id": "boolq/test/000152", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.05249999999999999, 0.9475]}
+{"id": "boolq/test/000360", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.13839999999999997, 0.8616]}
+{"id": "boolq/test/003093", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.09260000000000002, 0.9074]}
+{"id": "boolq/test/001977", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.7723, 0.2277]}
+{"id": "boolq/test/002732", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.9495, 0.0505]}
+{"id": "boolq/test/000591", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.010399999999999965, 0.9896]}
+{"id": "boolq/test/001792", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.12150000000000005, 0.8785]}
+{"id": "boolq/test/002052", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.2319, 0.7681]}
+{"id": "boolq/test/001055", "task": "boolq", "qtype": "noul", "target": [1.0, 0.0], "probs": [0.2711, 0.7289]}
+{"id": "boolq/test/001100", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3167, 0.6833]}
+{"id": "boolq/test/000107", "task": "boolq", "qtype": "noul", "target": [0.0, 1.0], "probs": [0.3789, 0.6211]}
+{"id": "typed_decisions/security_incidents_000053/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.45, 0.55], "probs": [0.4485, 0.5515]}
+{"id": "typed_decisions/invoice_processing_000072/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.023333, 0.7, 0.25, 0.026667], "probs": [0.0835, 0.5089, 0.3382, 0.0693]}
+{"id": "typed_decisions/security_incidents_000038/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.023333000000000003, 0.26666700000000004, 0.6000000000000001, 0.11000000000000001], "probs": [0.0627, 0.3875, 0.4238, 0.126]}
+{"id": "typed_decisions/customer_service_000073/action", "task": "typed_decisions", "qtype": "choice", "target": [0.4666665333334666, 0.026666973333026662, 0.10666689333310665, 0.0, 0.39999960000039997], "probs": [0.2443, 0.0289, 0.3195, 0.0204, 0.3869]}
+{"id": "typed_decisions/invoice_processing_000057/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.036667, 0.963333], "probs": [0.13690000000000002, 0.8631]}
+{"id": "typed_decisions/agent_trace_observability_000076/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.383333, 0.616667], "probs": [0.5875, 0.4125]}
+{"id": "typed_decisions/agent_trace_observability_000080/action", "task": "typed_decisions", "qtype": "choice", "target": [0.1, 0.6, 0.25, 0.05], "probs": [0.2627, 0.3202, 0.3285, 0.0885]}
+{"id": "typed_decisions/agent_trace_observability_000022/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.5333335333335333, 0.3333333333333333, 0.11000011000011001, 0.023333023333023332], "probs": [0.417, 0.4466, 0.1176, 0.0188]}
+{"id": "typed_decisions/agent_trace_observability_000061/action", "task": "typed_decisions", "qtype": "choice", "target": [0.08333308333308333, 0.4333334333334333, 0.4333334333334333, 0.05000005000005], "probs": [0.1194, 0.4102, 0.3922, 0.0782]}
+{"id": "typed_decisions/agent_trace_observability_000031/action", "task": "typed_decisions", "qtype": "choice", "target": [0.1, 0.516667, 0.333333, 0.05], "probs": [0.1915, 0.3192, 0.4365, 0.0527]}
+{"id": "typed_decisions/invoice_processing_000005/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.21666678333321668, 0.1666668333331667, 0.5999994000006, 0.01666698333301667], "probs": [0.5611, 0.2355, 0.1636, 0.0398]}
+{"id": "typed_decisions/customer_service_000016/category", "task": "typed_decisions", "qtype": "choice", "target": [0.013333013333013333, 0.008333008333008334, 0.97000097000097, 0.003333003333003333, 0.005000005000005], "probs": [0.0109, 0.0133, 0.9418, 0.004, 0.0301]}
+{"id": "typed_decisions/customer_service_000084/action", "task": "typed_decisions", "qtype": "choice", "target": [0.12, 0.003333, 0.46, 0.25, 0.166667], "probs": [0.1184, 0.0217, 0.4615, 0.2257, 0.1726]}
+{"id": "typed_decisions/agent_trace_observability_000043/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.3, 0.7], "probs": [0.4182, 0.5818]}
+{"id": "typed_decisions/invoice_processing_000054/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.023333023333023332, 0.38333338333338335, 0.49333349333349336, 0.10000010000010001], "probs": [0.067, 0.5154, 0.3141, 0.1035]}
+{"id": "typed_decisions/invoice_processing_000089/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.023333000000000003, 0.16666700000000004, 0.6933330000000001, 0.11666700000000002], "probs": [0.0462, 0.5951, 0.2812, 0.0775]}
+{"id": "typed_decisions/customer_service_000076/category", "task": "typed_decisions", "qtype": "choice", "target": [0.003333003333003333, 0.003333003333003333, 0.9866679866679866, 0.003333003333003333, 0.003333003333003333], "probs": [0.006, 0.0073, 0.8531, 0.0063, 0.1273]}
+{"id": "typed_decisions/invoice_processing_000001/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.033333, 0.416667, 0.483333, 0.066667], "probs": [0.0502, 0.1642, 0.6355, 0.1501]}
+{"id": "typed_decisions/customer_service_000079/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.16666683333316665, 0.4666665333334666, 0.36666663333336663], "probs": [0.0225, 0.4204, 0.3043, 0.2528]}
+{"id": "typed_decisions/customer_service_000032/category", "task": "typed_decisions", "qtype": "choice", "target": [0.0, 0.03, 0.0, 0.97, 0.0], "probs": [0.0334, 0.4007, 0.0048, 0.5444, 0.0167]}
+{"id": "typed_decisions/security_incidents_000012/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.083333, 0.466667, 0.4, 0.05], "probs": [0.0401, 0.2575, 0.3367, 0.3657]}
+{"id": "typed_decisions/agent_trace_observability_000029/risk", "task": "typed_decisions", "qtype": "score", "target": [0.38333338333338335, 0.5000005000005001, 0.08333308333308335, 0.03333303333303334], "probs": [0.3314, 0.4674, 0.1773, 0.0239]}
+{"id": "typed_decisions/invoice_processing_000028/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.006667, 0.043333, 0.2, 0.75], "probs": [0.0261, 0.0309, 0.2984, 0.6446]}
+{"id": "typed_decisions/security_incidents_000068/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.05, 0.316667, 0.4, 0.233333], "probs": [0.1577, 0.4485, 0.2535, 0.1403]}
+{"id": "typed_decisions/invoice_processing_000021/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.399667, 0.433667, 0.133333, 0.033333], "probs": [0.0635, 0.7303, 0.1243, 0.082]}
+{"id": "typed_decisions/agent_trace_observability_000088/risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.05, 0.283333, 0.666667], "probs": [0.0264, 0.0775, 0.3025, 0.5935]}
+{"id": "typed_decisions/customer_service_000021/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.616667, 0.383333], "probs": [0.4296, 0.5704]}
+{"id": "typed_decisions/invoice_processing_000022/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.103333, 0.896667], "probs": [0.24119999999999997, 0.7588]}
+{"id": "typed_decisions/customer_service_000066/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.04999995000005001, 0.31666668333331666, 0.5166664833335167, 0.11666688333311669], "probs": [0.0305, 0.2557, 0.5601, 0.1537]}
+{"id": "typed_decisions/security_incidents_000053/severity", "task": "typed_decisions", "qtype": "score", "target": [0.0033330000000000005, 0.04666700000000001, 0.16666700000000004, 0.6833330000000001, 0.10000000000000002], "probs": [0.0336, 0.1757, 0.2786, 0.4447, 0.0673]}
+{"id": "typed_decisions/security_incidents_000017/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.366667, 0.633333], "probs": [0.2639, 0.7361]}
+{"id": "typed_decisions/customer_service_000043/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.266667, 0.733333], "probs": [0.3466, 0.6534]}
+{"id": "typed_decisions/customer_service_000078/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.006666993333006668, 0.14999985000015, 0.5166664833335167, 0.32666667333332666], "probs": [0.0133, 0.0695, 0.6536, 0.2637]}
+{"id": "typed_decisions/security_incidents_000067/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.633333, 0.366667], "probs": [0.24229999999999996, 0.7577]}
+{"id": "typed_decisions/security_incidents_000099/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.366667, 0.633333], "probs": [0.2892, 0.7108]}
+{"id": "typed_decisions/agent_trace_observability_000033/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.083333, 0.316667, 0.6], "probs": [0.0141, 0.1304, 0.4717, 0.3838]}
+{"id": "typed_decisions/security_incidents_000068/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.126667, 0.04, 0.46, 0.373333], "probs": [0.2843, 0.0716, 0.2377, 0.4064]}
+{"id": "typed_decisions/customer_service_000088/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.033333033333033335, 0.3000003000003, 0.5833335833335833, 0.08333308333308334], "probs": [0.0308, 0.4677, 0.4488, 0.0528]}
+{"id": "typed_decisions/security_incidents_000077/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.7, 0.3], "probs": [0.6619999999999999, 0.338]}
+{"id": "typed_decisions/invoice_processing_000030/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.9233339233339232, 0.05000005000005, 0.02333302333302333, 0.0033330033330033326], "probs": [0.7614, 0.0398, 0.0595, 0.1393]}
+{"id": "typed_decisions/customer_service_000075/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.0033330033330033326, 0.013333013333013332, 0.1000001000001, 0.8833338833338833], "probs": [0.0024, 0.0211, 0.1609, 0.8156]}
+{"id": "typed_decisions/security_incidents_000048/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.016667, 0.083333, 0.333333, 0.566667], "probs": [0.0731, 0.3315, 0.3384, 0.257]}
+{"id": "typed_decisions/agent_trace_observability_000045/risk", "task": "typed_decisions", "qtype": "score", "target": [0.333333, 0.6, 0.066667, 0.0], "probs": [0.3564, 0.4757, 0.1488, 0.019]}
+{"id": "typed_decisions/customer_service_000039/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.716667, 0.283333], "probs": [0.4917, 0.5083]}
+{"id": "typed_decisions/customer_service_000041/category", "task": "typed_decisions", "qtype": "choice", "target": [0.04, 0.033333, 0.0, 0.01, 0.916667], "probs": [0.0943, 0.1976, 0.0084, 0.1258, 0.5739]}
+{"id": "typed_decisions/agent_trace_observability_000015/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.123333, 0.876667], "probs": [0.0978, 0.9022]}
+{"id": "typed_decisions/customer_service_000096/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.016667, 0.45, 0.533333], "probs": [0.0088, 0.0578, 0.2898, 0.6436]}
+{"id": "typed_decisions/customer_service_000085/category", "task": "typed_decisions", "qtype": "choice", "target": [0.0, 0.0, 0.9333339333339333, 0.003333003333003333, 0.06333306333306334], "probs": [0.0136, 0.0111, 0.8343, 0.0099, 0.131]}
+{"id": "typed_decisions/agent_trace_observability_000023/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.06000006000006, 0.023333023333023332, 0.20333320333320334, 0.7133337133337133], "probs": [0.1382, 0.03, 0.212, 0.6198]}
+{"id": "typed_decisions/invoice_processing_000022/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.6166663833336167, 0.31666668333331666, 0.05999994000006, 0.006666993333006668], "probs": [0.5459, 0.1509, 0.2475, 0.0558]}
+{"id": "typed_decisions/security_incidents_000061/severity", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.049999950000049996, 0.5666664333335666, 0.3166666833333166, 0.06666693333306666], "probs": [0.0316, 0.1525, 0.4679, 0.2681, 0.0799]}
+{"id": "typed_decisions/agent_trace_observability_000021/action", "task": "typed_decisions", "qtype": "choice", "target": [0.68000068000068, 0.053333053333053326, 0.2533332533332533, 0.013333013333013332], "probs": [0.5698, 0.1063, 0.3048, 0.0192]}
+{"id": "typed_decisions/customer_service_000065/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.05, 0.133333, 0.816667], "probs": [0.0089, 0.0396, 0.2843, 0.6671]}
+{"id": "typed_decisions/invoice_processing_000009/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.2566667433332567, 0.3766666233333767, 0.36666663333336674, 0.0], "probs": [0.2757, 0.445, 0.2163, 0.0631]}
+{"id": "typed_decisions/security_incidents_000036/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.033333033333033335, 0.18333318333318332, 0.45000045000045, 0.3333333333333333], "probs": [0.1335, 0.4571, 0.2805, 0.129]}
+{"id": "typed_decisions/security_incidents_000034/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.266667, 0.733333], "probs": [0.30310000000000004, 0.6969]}
+{"id": "typed_decisions/agent_trace_observability_000055/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.049999950000049996, 0.006666993333006666, 0.3766666233333766, 0.5666664333335666], "probs": [0.0492, 0.0161, 0.2326, 0.702]}
+{"id": "typed_decisions/security_incidents_000071/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.183333, 0.816667], "probs": [0.2895, 0.7105]}
+{"id": "typed_decisions/customer_service_000017/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.113333, 0.886667], "probs": [0.3005, 0.6995]}
+{"id": "typed_decisions/security_incidents_000035/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.003333, 0.25, 0.466667, 0.28], "probs": [0.0606, 0.3882, 0.4192, 0.132]}
+{"id": "typed_decisions/invoice_processing_000066/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.376667, 0.623333], "probs": [0.379, 0.621]}
+{"id": "typed_decisions/security_incidents_000074/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.05, 0.116667, 0.6, 0.233333], "probs": [0.0535, 0.1813, 0.5578, 0.2074]}
+{"id": "typed_decisions/security_incidents_000011/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.6, 0.4], "probs": [0.8071, 0.1929]}
+{"id": "typed_decisions/agent_trace_observability_000085/risk", "task": "typed_decisions", "qtype": "score", "target": [0.6499993500006499, 0.2666667333332666, 0.07666692333307666, 0.006666993333006666], "probs": [0.3404, 0.5214, 0.1205, 0.0177]}
+{"id": "typed_decisions/security_incidents_000003/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.05, 0.2, 0.416667, 0.333333], "probs": [0.0669, 0.2527, 0.374, 0.3064]}
+{"id": "typed_decisions/customer_service_000084/category", "task": "typed_decisions", "qtype": "choice", "target": [0.006667, 0.043333, 0.003333, 0.946667, 0.0], "probs": [0.0094, 0.0412, 0.0038, 0.8889, 0.0567]}
+{"id": "typed_decisions/invoice_processing_000054/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.98, 0.02], "probs": [0.9621999999999999, 0.0378]}
+{"id": "typed_decisions/customer_service_000079/category", "task": "typed_decisions", "qtype": "choice", "target": [0.006667, 0.946667, 0.003333, 0.003333, 0.04], "probs": [0.0081, 0.9152, 0.0021, 0.0479, 0.0266]}
+{"id": "typed_decisions/security_incidents_000076/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.01, 0.666667, 0.283333, 0.04], "probs": [0.0595, 0.2991, 0.5213, 0.1201]}
+{"id": "typed_decisions/invoice_processing_000019/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.020000020000019998, 0.13333313333313332, 0.6333336333336334, 0.2133332133332133], "probs": [0.0443, 0.5119, 0.368, 0.0759]}
+{"id": "typed_decisions/customer_service_000058/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.016666983333016666, 0.16666683333316665, 0.8166661833338166], "probs": [0.0342, 0.1544, 0.4639, 0.3475]}
+{"id": "typed_decisions/invoice_processing_000091/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.383333, 0.616667], "probs": [0.7206, 0.2794]}
+{"id": "typed_decisions/invoice_processing_000015/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.006667, 0.993333], "probs": [0.10740000000000005, 0.8926]}
+{"id": "typed_decisions/customer_service_000046/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.083333, 0.55, 0.266667, 0.1], "probs": [0.0615, 0.2864, 0.4448, 0.2073]}
+{"id": "typed_decisions/agent_trace_observability_000071/action", "task": "typed_decisions", "qtype": "choice", "target": [0.5333330000000001, 0.11666700000000002, 0.33333300000000005, 0.016667000000000005], "probs": [0.2529, 0.3024, 0.4135, 0.0312]}
+{"id": "typed_decisions/agent_trace_observability_000021/risk", "task": "typed_decisions", "qtype": "score", "target": [0.9000009000008999, 0.08333308333308333, 0.013333013333013332, 0.0033330033330033326], "probs": [0.6645, 0.2952, 0.0334, 0.007]}
+{"id": "typed_decisions/invoice_processing_000020/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.986667, 0.013333, 0.0, 0.0], "probs": [0.9094, 0.0274, 0.0399, 0.0232]}
+{"id": "typed_decisions/security_incidents_000027/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.05, 0.2, 0.516667, 0.233333], "probs": [0.0213, 0.1678, 0.3203, 0.4906]}
+{"id": "typed_decisions/security_incidents_000032/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.94, 0.06], "probs": [0.7325999999999999, 0.2674]}
+{"id": "typed_decisions/agent_trace_observability_000051/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.65, 0.233333, 0.1, 0.016667], "probs": [0.3732, 0.4913, 0.1079, 0.0276]}
+{"id": "typed_decisions/security_incidents_000008/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.383333, 0.616667], "probs": [0.25539999999999996, 0.7446]}
+{"id": "typed_decisions/customer_service_000096/action", "task": "typed_decisions", "qtype": "choice", "target": [0.046666953333046664, 0.0, 0.4166665833334166, 0.44999955000044994, 0.08666691333308665], "probs": [0.174, 0.0247, 0.384, 0.2773, 0.14]}
+{"id": "typed_decisions/agent_trace_observability_000023/action", "task": "typed_decisions", "qtype": "choice", "target": [0.65, 0.08, 0.246667, 0.023333], "probs": [0.4688, 0.1439, 0.354, 0.0333]}
+{"id": "typed_decisions/agent_trace_observability_000037/risk", "task": "typed_decisions", "qtype": "score", "target": [0.016666983333016666, 0.10666689333310665, 0.36666663333336663, 0.5099994900005099], "probs": [0.0176, 0.084, 0.2992, 0.5992]}
+{"id": "typed_decisions/agent_trace_observability_000025/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.206667, 0.793333], "probs": [0.08789999999999998, 0.9121]}
+{"id": "typed_decisions/agent_trace_observability_000027/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.066667, 0.0, 0.233333, 0.7], "probs": [0.0957, 0.0238, 0.2008, 0.6797]}
+{"id": "typed_decisions/invoice_processing_000082/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.84, 0.09, 0.06, 0.01], "probs": [0.8433, 0.0784, 0.0561, 0.0222]}
+{"id": "typed_decisions/customer_service_000010/category", "task": "typed_decisions", "qtype": "choice", "target": [0.01, 0.0, 0.01, 0.0, 0.98], "probs": [0.0589, 0.0076, 0.0033, 0.0074, 0.9228]}
+{"id": "typed_decisions/agent_trace_observability_000068/action", "task": "typed_decisions", "qtype": "choice", "target": [0.083333, 0.416667, 0.433333, 0.066667], "probs": [0.2362, 0.2666, 0.4444, 0.0528]}
+{"id": "typed_decisions/invoice_processing_000033/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.95, 0.05], "probs": [0.6958, 0.3042]}
+{"id": "typed_decisions/customer_service_000007/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.25, 0.75], "probs": [0.41779999999999995, 0.5822]}
+{"id": "typed_decisions/agent_trace_observability_000039/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.1, 0.9], "probs": [0.08709999999999996, 0.9129]}
+{"id": "typed_decisions/customer_service_000074/action", "task": "typed_decisions", "qtype": "choice", "target": [0.21666678333321668, 0.019999980000020002, 0.7266662733337267, 0.006666993333006668, 0.02999997000003], "probs": [0.2006, 0.0131, 0.33, 0.2557, 0.2006]}
+{"id": "typed_decisions/agent_trace_observability_000056/action", "task": "typed_decisions", "qtype": "choice", "target": [0.633333, 0.06, 0.3, 0.006667], "probs": [0.4038, 0.1705, 0.4038, 0.0218]}
+{"id": "typed_decisions/agent_trace_observability_000059/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.13333313333313335, 0.5000005000005, 0.28333328333328334, 0.08333308333308334], "probs": [0.1952, 0.5967, 0.1808, 0.0273]}
+{"id": "typed_decisions/agent_trace_observability_000054/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.766667, 0.233333, 0.0, 0.0], "probs": [0.3206, 0.5082, 0.1339, 0.0374]}
+{"id": "typed_decisions/security_incidents_000072/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.133333, 0.066667, 0.466667, 0.333333], "probs": [0.2913, 0.0652, 0.1911, 0.4525]}
+{"id": "typed_decisions/security_incidents_000008/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.016667000000000005, 0.10666700000000001, 0.5333330000000001, 0.34333300000000005], "probs": [0.0981, 0.1578, 0.531, 0.2131]}
+{"id": "typed_decisions/customer_service_000001/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.23333323333323336, 0.4333334333334334, 0.3333333333333333], "probs": [0.0421, 0.7115, 0.2121, 0.0343]}
+{"id": "typed_decisions/customer_service_000054/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.046667, 0.953333], "probs": [0.31810000000000005, 0.6819]}
+{"id": "typed_decisions/agent_trace_observability_000043/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.08333308333308333, 0.28333328333328334, 0.4333334333334333, 0.2000002000002], "probs": [0.1816, 0.4659, 0.2633, 0.0893]}
+{"id": "typed_decisions/agent_trace_observability_000099/risk", "task": "typed_decisions", "qtype": "score", "target": [0.1, 0.216667, 0.583333, 0.1], "probs": [0.0524, 0.2616, 0.5808, 0.1052]}
+{"id": "typed_decisions/security_incidents_000082/severity", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.05, 0.216667, 0.633333, 0.1], "probs": [0.026, 0.1063, 0.3024, 0.4961, 0.0692]}
+{"id": "typed_decisions/invoice_processing_000073/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.973333, 0.026667], "probs": [0.9581, 0.0419]}
+{"id": "typed_decisions/customer_service_000093/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.016667, 0.133333, 0.85], "probs": [0.0039, 0.0233, 0.1736, 0.7991]}
+{"id": "typed_decisions/security_incidents_000094/severity", "task": "typed_decisions", "qtype": "score", "target": [0.010000000000000002, 0.023333000000000003, 0.25000000000000006, 0.6000000000000001, 0.11666700000000002], "probs": [0.0344, 0.1318, 0.3223, 0.4128, 0.0987]}
+{"id": "typed_decisions/agent_trace_observability_000038/action", "task": "typed_decisions", "qtype": "choice", "target": [0.2, 0.233333, 0.516667, 0.05], "probs": [0.213, 0.3246, 0.4138, 0.0486]}
+{"id": "typed_decisions/agent_trace_observability_000009/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.15, 0.666667, 0.15, 0.033333], "probs": [0.2452, 0.5343, 0.1973, 0.0232]}
+{"id": "typed_decisions/customer_service_000043/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.016667, 0.183333, 0.6, 0.2], "probs": [0.0344, 0.3735, 0.3839, 0.2082]}
+{"id": "typed_decisions/invoice_processing_000062/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.216667, 0.643333, 0.116667, 0.023333], "probs": [0.0679, 0.6918, 0.1649, 0.0753]}
+{"id": "typed_decisions/agent_trace_observability_000030/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.2, 0.006667, 0.583333, 0.21], "probs": [0.1322, 0.0566, 0.2994, 0.5118]}
+{"id": "typed_decisions/invoice_processing_000076/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.01000001000001, 0.023333023333023332, 0.38333338333338335, 0.5833335833335833], "probs": [0.0289, 0.0567, 0.498, 0.4164]}
+{"id": "typed_decisions/agent_trace_observability_000053/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.3, 0.466667, 0.2, 0.033333], "probs": [0.3338, 0.5148, 0.124, 0.0273]}
+{"id": "typed_decisions/agent_trace_observability_000076/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.083333, 0.266667, 0.483333, 0.166667], "probs": [0.2994, 0.4878, 0.1739, 0.039]}
+{"id": "typed_decisions/agent_trace_observability_000023/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.34999965000035, 0.4666665333334667, 0.14666685333314666, 0.03666696333303667], "probs": [0.5314, 0.4149, 0.0427, 0.011]}
+{"id": "typed_decisions/customer_service_000011/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.016666983333016666, 0.3166666833333166, 0.54999945000055, 0.11666688333311666], "probs": [0.1092, 0.286, 0.3978, 0.207]}
+{"id": "typed_decisions/customer_service_000027/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.26, 0.74], "probs": [0.47, 0.53]}
+{"id": "typed_decisions/invoice_processing_000043/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.1, 0.366667, 0.533333], "probs": [0.0288, 0.231, 0.4563, 0.2839]}
+{"id": "typed_decisions/agent_trace_observability_000081/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.183333, 0.483333, 0.266667, 0.066667], "probs": [0.3065, 0.5538, 0.1143, 0.0254]}
+{"id": "typed_decisions/customer_service_000088/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.21666678333321662, 0.6666663333336665, 0.11666688333311666], "probs": [0.0285, 0.1719, 0.5927, 0.207]}
+{"id": "typed_decisions/security_incidents_000008/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.533333, 0.466667], "probs": [0.278, 0.722]}
+{"id": "typed_decisions/invoice_processing_000098/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.096667, 0.903333], "probs": [0.3084, 0.6916]}
+{"id": "typed_decisions/customer_service_000094/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.44, 0.56], "probs": [0.42300000000000004, 0.577]}
+{"id": "typed_decisions/agent_trace_observability_000050/action", "task": "typed_decisions", "qtype": "choice", "target": [0.1, 0.45, 0.4, 0.05], "probs": [0.1692, 0.4083, 0.3686, 0.0539]}
+{"id": "typed_decisions/agent_trace_observability_000098/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.133333, 0.566667, 0.266667, 0.033333], "probs": [0.3062, 0.4854, 0.1672, 0.0412]}
+{"id": "typed_decisions/agent_trace_observability_000040/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.11666688333311669, 0.5666664333335667, 0.24999975000025002, 0.06666693333306668], "probs": [0.3469, 0.4859, 0.1338, 0.0334]}
+{"id": "typed_decisions/invoice_processing_000019/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.963333, 0.036667], "probs": [0.9682, 0.0318]}
+{"id": "typed_decisions/customer_service_000012/category", "task": "typed_decisions", "qtype": "choice", "target": [0.023333, 0.963, 0.0, 0.006667, 0.007], "probs": [0.0202, 0.9257, 0.0032, 0.0214, 0.0295]}
+{"id": "typed_decisions/invoice_processing_000028/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.033333, 0.233333, 0.666667, 0.066667], "probs": [0.024, 0.2326, 0.5967, 0.1467]}
+{"id": "typed_decisions/invoice_processing_000079/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.963333, 0.036667], "probs": [0.9323, 0.0677]}
+{"id": "typed_decisions/customer_service_000085/action", "task": "typed_decisions", "qtype": "choice", "target": [0.12333300000000001, 0.020000000000000004, 0.7766670000000001, 0.006667000000000001, 0.07333300000000001], "probs": [0.0928, 0.0342, 0.6587, 0.0095, 0.2048]}
+{"id": "typed_decisions/security_incidents_000083/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.173333, 0.826667], "probs": [0.3067, 0.6933]}
+{"id": "typed_decisions/invoice_processing_000011/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.983333, 0.008, 0.008, 0.000667], "probs": [0.8794, 0.0614, 0.0406, 0.0187]}
+{"id": "typed_decisions/customer_service_000010/action", "task": "typed_decisions", "qtype": "choice", "target": [0.083333, 0.033333, 0.616667, 0.0, 0.266667], "probs": [0.2933, 0.0486, 0.3146, 0.0103, 0.3332]}
+{"id": "typed_decisions/agent_trace_observability_000020/action", "task": "typed_decisions", "qtype": "choice", "target": [0.333333, 0.196667, 0.466667, 0.003333], "probs": [0.3453, 0.2223, 0.3923, 0.0402]}
+{"id": "typed_decisions/security_incidents_000030/severity", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.033333033333033335, 0.23333323333323333, 0.23333323333323333, 0.5000005000005], "probs": [0.0067, 0.0265, 0.1489, 0.5029, 0.315]}
+{"id": "typed_decisions/customer_service_000039/action", "task": "typed_decisions", "qtype": "choice", "target": [0.216667, 0.02, 0.04, 0.013333, 0.71], "probs": [0.3084, 0.0276, 0.4353, 0.0089, 0.2198]}
+{"id": "typed_decisions/invoice_processing_000026/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.65000065000065, 0.02333302333302333, 0.02333302333302333, 0.30333330333330333], "probs": [0.8391, 0.0476, 0.054, 0.0594]}
+{"id": "typed_decisions/customer_service_000053/category", "task": "typed_decisions", "qtype": "choice", "target": [0.02, 0.953333, 0.001667, 0.005, 0.02], "probs": [0.012, 0.9127, 0.0021, 0.0679, 0.0054]}
+{"id": "typed_decisions/customer_service_000021/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.033333, 0.3, 0.55, 0.116667], "probs": [0.0761, 0.6416, 0.2319, 0.0504]}
+{"id": "typed_decisions/agent_trace_observability_000087/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.366667, 0.266667, 0.333333, 0.033333], "probs": [0.4254, 0.4749, 0.077, 0.0226]}
+{"id": "typed_decisions/customer_service_000077/action", "task": "typed_decisions", "qtype": "choice", "target": [0.066667, 0.03, 0.743333, 0.016667, 0.143333], "probs": [0.1617, 0.027, 0.6505, 0.044, 0.1168]}
+{"id": "typed_decisions/security_incidents_000032/severity", "task": "typed_decisions", "qtype": "score", "target": [0.35999964000036, 0.15666684333315667, 0.4166665833334167, 0.06666693333306668, 0.0], "probs": [0.1321, 0.2093, 0.5225, 0.1143, 0.0218]}
+{"id": "typed_decisions/customer_service_000077/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.003333, 0.05, 0.206667, 0.74], "probs": [0.0159, 0.095, 0.5053, 0.3838]}
+{"id": "typed_decisions/agent_trace_observability_000014/action", "task": "typed_decisions", "qtype": "choice", "target": [0.5000005000005, 0.11333311333311333, 0.3833333833333833, 0.0033330033330033326], "probs": [0.2404, 0.2819, 0.4243, 0.0534]}
+{"id": "typed_decisions/agent_trace_observability_000060/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.903333, 0.096667], "probs": [0.8003, 0.1997]}
+{"id": "typed_decisions/customer_service_000090/action", "task": "typed_decisions", "qtype": "choice", "target": [0.02333302333302333, 0.02333302333302333, 0.7333337333337333, 0.013333013333013332, 0.20666720666720664], "probs": [0.2207, 0.0193, 0.5126, 0.0224, 0.225]}
+{"id": "typed_decisions/agent_trace_observability_000030/action", "task": "typed_decisions", "qtype": "choice", "target": [0.10000010000010001, 0.5333335333335333, 0.28333328333328334, 0.08333308333308334], "probs": [0.1789, 0.3431, 0.4208, 0.0572]}
+{"id": "typed_decisions/security_incidents_000042/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.5, 0.5], "probs": [0.4659, 0.5341]}
+{"id": "typed_decisions/agent_trace_observability_000097/action", "task": "typed_decisions", "qtype": "choice", "target": [0.08333308333308334, 0.48333348333348336, 0.28333328333328334, 0.15000015000015], "probs": [0.1769, 0.3224, 0.4465, 0.0541]}
+{"id": "typed_decisions/agent_trace_observability_000043/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.233333, 0.083333, 0.416667, 0.266667], "probs": [0.1519, 0.0436, 0.3311, 0.4734]}
+{"id": "typed_decisions/invoice_processing_000063/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.673333, 0.08, 0.226667, 0.02], "probs": [0.8329, 0.0831, 0.0624, 0.0216]}
+{"id": "typed_decisions/security_incidents_000074/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.666667, 0.333333], "probs": [0.4625, 0.5375]}
+{"id": "typed_decisions/security_incidents_000000/severity", "task": "typed_decisions", "qtype": "score", "target": [0.016666999999999998, 0.08333299999999999, 0.36666699999999997, 0.4499999999999999, 0.08333299999999999], "probs": [0.014, 0.1233, 0.2701, 0.5084, 0.0842]}
+{"id": "typed_decisions/security_incidents_000030/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.0033330033330033326, 0.56000056000056, 0.18333318333318332, 0.2533332533332533], "probs": [0.036, 0.6258, 0.266, 0.0723]}
+{"id": "typed_decisions/agent_trace_observability_000072/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.123333, 0.026667, 0.533333, 0.316667], "probs": [0.2558, 0.0756, 0.3705, 0.2982]}
+{"id": "typed_decisions/invoice_processing_000055/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.013333, 0.986667], "probs": [0.08709999999999996, 0.9129]}
+{"id": "typed_decisions/agent_trace_observability_000004/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.7333337333337333, 0.23333323333323333, 0.033333033333033335, 0.0], "probs": [0.3938, 0.5185, 0.0703, 0.0174]}
+{"id": "typed_decisions/security_incidents_000022/severity", "task": "typed_decisions", "qtype": "score", "target": [0.01666698333301667, 0.1666668333331667, 0.3999996000004001, 0.34999965000035, 0.06666693333306668], "probs": [0.0602, 0.1797, 0.4215, 0.2848, 0.0538]}
+{"id": "typed_decisions/invoice_processing_000028/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.973333, 0.026667], "probs": [0.9046, 0.0954]}
+{"id": "typed_decisions/security_incidents_000085/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.02, 0.113333, 0.316667, 0.55], "probs": [0.0255, 0.1181, 0.2723, 0.5842]}
+{"id": "typed_decisions/agent_trace_observability_000091/action", "task": "typed_decisions", "qtype": "choice", "target": [0.016667, 0.716667, 0.083333, 0.183333], "probs": [0.0578, 0.5144, 0.2084, 0.2194]}
+{"id": "typed_decisions/invoice_processing_000019/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.006667, 0.043333, 0.283333, 0.666667], "probs": [0.0381, 0.0781, 0.4085, 0.4752]}
+{"id": "typed_decisions/security_incidents_000028/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.116667, 0.883333], "probs": [0.11929999999999996, 0.8807]}
+{"id": "typed_decisions/invoice_processing_000052/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.973333, 0.026667], "probs": [0.9592, 0.0408]}
+{"id": "typed_decisions/customer_service_000090/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.023333, 0.11, 0.866667], "probs": [0.0023, 0.0102, 0.1554, 0.8321]}
+{"id": "typed_decisions/agent_trace_observability_000061/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.06333306333306334, 0.003333003333003333, 0.25000025000025, 0.6833336833336833], "probs": [0.1446, 0.0624, 0.281, 0.512]}
+{"id": "typed_decisions/agent_trace_observability_000092/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.04666695333304667, 0.019999980000020002, 0.4666665333334667, 0.4666665333334667], "probs": [0.0865, 0.0333, 0.3732, 0.507]}
+{"id": "typed_decisions/agent_trace_observability_000078/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.08666691333308665, 0.01999998000002, 0.3266666733333266, 0.5666664333335666], "probs": [0.1489, 0.0564, 0.2143, 0.5803]}
+{"id": "typed_decisions/invoice_processing_000061/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.016667, 0.15, 0.5, 0.333333], "probs": [0.0318, 0.3773, 0.3986, 0.1923]}
+{"id": "typed_decisions/agent_trace_observability_000050/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.4, 0.6], "probs": [0.4476, 0.5524]}
+{"id": "typed_decisions/customer_service_000002/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.066667, 0.65, 0.25, 0.033333], "probs": [0.0347, 0.4834, 0.3826, 0.0992]}
+{"id": "typed_decisions/agent_trace_observability_000022/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.766667, 0.233333], "probs": [0.739, 0.261]}
+{"id": "typed_decisions/security_incidents_000082/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.4, 0.6], "probs": [0.45840000000000003, 0.5416]}
+{"id": "typed_decisions/security_incidents_000058/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.1, 0.366667, 0.533333], "probs": [0.0283, 0.2009, 0.2795, 0.4912]}
+{"id": "typed_decisions/customer_service_000098/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.466667, 0.533333], "probs": [0.381, 0.619]}
+{"id": "typed_decisions/agent_trace_observability_000068/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.30666669333330665, 0.016666983333016666, 0.54999945000055, 0.12666687333312665], "probs": [0.1447, 0.0261, 0.3035, 0.5256]}
+{"id": "typed_decisions/invoice_processing_000086/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.013333, 0.986667], "probs": [0.14180000000000004, 0.8582]}
+{"id": "typed_decisions/agent_trace_observability_000049/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.5, 0.35, 0.113333, 0.036667], "probs": [0.373, 0.4523, 0.1454, 0.0293]}
+{"id": "typed_decisions/customer_service_000053/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.016667, 0.216667, 0.583333, 0.183333], "probs": [0.0107, 0.1086, 0.6446, 0.2362]}
+{"id": "typed_decisions/agent_trace_observability_000029/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.45, 0.55], "probs": [0.5325, 0.4675]}
+{"id": "typed_decisions/security_incidents_000090/severity", "task": "typed_decisions", "qtype": "score", "target": [0.033333, 0.15, 0.416667, 0.333333, 0.066667], "probs": [0.0974, 0.3312, 0.4421, 0.1125, 0.0167]}
+{"id": "typed_decisions/agent_trace_observability_000078/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.066667, 0.283333, 0.433333, 0.216667], "probs": [0.1582, 0.4391, 0.3267, 0.076]}
+{"id": "typed_decisions/customer_service_000047/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.7, 0.3], "probs": [0.35, 0.65]}
+{"id": "typed_decisions/customer_service_000072/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.056667, 0.343333, 0.6], "probs": [0.0126, 0.0674, 0.3278, 0.5922]}
+{"id": "typed_decisions/agent_trace_observability_000090/risk", "task": "typed_decisions", "qtype": "score", "target": [0.793333, 0.19, 0.016667, 0.0], "probs": [0.5582, 0.3695, 0.0638, 0.0085]}
+{"id": "typed_decisions/customer_service_000079/action", "task": "typed_decisions", "qtype": "choice", "target": [0.08333300000000002, 0.016667000000000005, 0.7000000000000001, 0.016667000000000005, 0.18333300000000002], "probs": [0.2089, 0.0229, 0.5238, 0.0509, 0.1935]}
+{"id": "typed_decisions/customer_service_000032/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.033333033333033335, 0.23333323333323336, 0.6000006000006, 0.13333313333313335], "probs": [0.0585, 0.27, 0.4193, 0.2521]}
+{"id": "typed_decisions/security_incidents_000017/severity", "task": "typed_decisions", "qtype": "score", "target": [0.06666693333306666, 0.36666663333336663, 0.44999955000044994, 0.10999989000010998, 0.006666993333006666], "probs": [0.077, 0.5299, 0.332, 0.0401, 0.021]}
+{"id": "typed_decisions/security_incidents_000014/severity", "task": "typed_decisions", "qtype": "score", "target": [0.003333003333003333, 0.013333013333013333, 0.18333318333318332, 0.6666676666676667, 0.13333313333313335], "probs": [0.0085, 0.0388, 0.1376, 0.4522, 0.3629]}
+{"id": "typed_decisions/customer_service_000017/action", "task": "typed_decisions", "qtype": "choice", "target": [0.03000003000003, 0.04333304333304334, 0.8533338533338534, 0.01000001000001, 0.06333306333306334], "probs": [0.1705, 0.0245, 0.5483, 0.0083, 0.2484]}
+{"id": "typed_decisions/security_incidents_000085/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.213333, 0.786667], "probs": [0.24639999999999995, 0.7536]}
+{"id": "typed_decisions/security_incidents_000042/severity", "task": "typed_decisions", "qtype": "score", "target": [0.0066669999999999984, 0.059999999999999984, 0.3999999999999999, 0.4499999999999999, 0.08333299999999999], "probs": [0.0238, 0.1002, 0.3052, 0.4486, 0.1223]}
+{"id": "typed_decisions/customer_service_000031/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.050000050000050006, 0.4333334333334334, 0.4333334333334334, 0.08333308333308334], "probs": [0.0257, 0.1872, 0.6111, 0.176]}
+{"id": "typed_decisions/customer_service_000092/category", "task": "typed_decisions", "qtype": "choice", "target": [0.006666993333006668, 0.006666993333006668, 0.8866661133338867, 0.05666694333305668, 0.04333295666704334], "probs": [0.0367, 0.0439, 0.7338, 0.0867, 0.0988]}
+{"id": "typed_decisions/invoice_processing_000082/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.046667, 0.953333], "probs": [0.15500000000000003, 0.845]}
+{"id": "typed_decisions/invoice_processing_000003/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.033333, 0.566667, 0.333333, 0.066667], "probs": [0.0798, 0.4176, 0.4451, 0.0575]}
+{"id": "typed_decisions/customer_service_000028/action", "task": "typed_decisions", "qtype": "choice", "target": [0.13333313333313332, 0.013333013333013332, 0.09000009000008999, 0.020000020000019998, 0.7433337433337432], "probs": [0.215, 0.0364, 0.3134, 0.0382, 0.3969]}
+{"id": "typed_decisions/agent_trace_observability_000086/risk", "task": "typed_decisions", "qtype": "score", "target": [0.01, 0.056667, 0.3, 0.633333], "probs": [0.0185, 0.1004, 0.3509, 0.5302]}
+{"id": "typed_decisions/customer_service_000019/action", "task": "typed_decisions", "qtype": "choice", "target": [0.15, 0.033333, 0.6, 0.05, 0.166667], "probs": [0.4269, 0.0253, 0.4056, 0.052, 0.0902]}
+{"id": "typed_decisions/invoice_processing_000084/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.973333, 0.026667], "probs": [0.9543, 0.0457]}
+{"id": "typed_decisions/security_incidents_000072/severity", "task": "typed_decisions", "qtype": "score", "target": [0.26000026000026, 0.04000004000004, 0.18333318333318332, 0.3333333333333333, 0.18333318333318332], "probs": [0.1815, 0.2596, 0.3922, 0.0919, 0.0748]}
+{"id": "typed_decisions/invoice_processing_000016/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.016667, 0.2, 0.733333, 0.05], "probs": [0.0389, 0.2866, 0.5496, 0.125]}
+{"id": "typed_decisions/agent_trace_observability_000060/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.053333, 0.01, 0.186667, 0.75], "probs": [0.0827, 0.0261, 0.2611, 0.6301]}
+{"id": "typed_decisions/invoice_processing_000012/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.023333, 0.976667], "probs": [0.09689999999999999, 0.9031]}
+{"id": "typed_decisions/invoice_processing_000009/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.283333, 0.166667, 0.483333, 0.066667], "probs": [0.3253, 0.1368, 0.3944, 0.1435]}
+{"id": "typed_decisions/security_incidents_000024/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.15, 0.483333, 0.366667], "probs": [0.0526, 0.2259, 0.3707, 0.3508]}
+{"id": "typed_decisions/customer_service_000090/category", "task": "typed_decisions", "qtype": "choice", "target": [0.7333329999999999, 0.09666699999999998, 0.019999999999999997, 0.023332999999999996, 0.12666699999999997], "probs": [0.5363, 0.0379, 0.015, 0.0589, 0.3519]}
+{"id": "typed_decisions/invoice_processing_000076/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.966667, 0.033333], "probs": [0.9501, 0.0499]}
+{"id": "typed_decisions/security_incidents_000005/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.03, 0.103333, 0.266667, 0.6], "probs": [0.0352, 0.2359, 0.3444, 0.3844]}
+{"id": "typed_decisions/customer_service_000086/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.15, 0.616667, 0.233333], "probs": [0.0182, 0.2287, 0.4519, 0.3012]}
+{"id": "typed_decisions/invoice_processing_000029/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.97, 0.03], "probs": [0.9565, 0.0435]}
+{"id": "typed_decisions/security_incidents_000060/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.866667, 0.133333], "probs": [0.7743, 0.2257]}
+{"id": "typed_decisions/invoice_processing_000089/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.016667, 0.983333], "probs": [0.09009999999999996, 0.9099]}
+{"id": "typed_decisions/invoice_processing_000071/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.043333, 0.416667, 0.5, 0.04], "probs": [0.061, 0.6129, 0.2524, 0.0737]}
+{"id": "typed_decisions/security_incidents_000039/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.02, 0.316667, 0.5, 0.163333], "probs": [0.0803, 0.2567, 0.459, 0.204]}
+{"id": "typed_decisions/security_incidents_000026/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.05000005000005, 0.18333318333318332, 0.4833334833334833, 0.28333328333328334], "probs": [0.0341, 0.2089, 0.3255, 0.4315]}
+{"id": "typed_decisions/invoice_processing_000035/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.976667, 0.023333], "probs": [0.9409, 0.0591]}
+{"id": "typed_decisions/security_incidents_000050/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.116667, 0.883333], "probs": [0.26559999999999995, 0.7344]}
+{"id": "typed_decisions/agent_trace_observability_000082/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.70999929000071, 0.006666993333006668, 0.2466667533332467, 0.03666696333303667], "probs": [0.3273, 0.0284, 0.3671, 0.2772]}
+{"id": "typed_decisions/invoice_processing_000071/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.986667, 0.013333], "probs": [0.9674, 0.0326]}
+{"id": "typed_decisions/agent_trace_observability_000085/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.466667, 0.383333, 0.143333, 0.006667], "probs": [0.3795, 0.4997, 0.1017, 0.0191]}
+{"id": "typed_decisions/agent_trace_observability_000091/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.1, 0.75, 0.133333, 0.016667], "probs": [0.1846, 0.6289, 0.1604, 0.0262]}
+{"id": "typed_decisions/agent_trace_observability_000058/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.133333, 0.566667, 0.283333, 0.016667], "probs": [0.3129, 0.5499, 0.1085, 0.0287]}
+{"id": "typed_decisions/agent_trace_observability_000044/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.13333313333313335, 0.5000005000005, 0.28333328333328334, 0.08333308333308334], "probs": [0.153, 0.4474, 0.3086, 0.0909]}
+{"id": "typed_decisions/customer_service_000038/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.133333, 0.416667, 0.383333, 0.066667], "probs": [0.0373, 0.4023, 0.4429, 0.1175]}
+{"id": "typed_decisions/customer_service_000009/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.006667, 0.093333, 0.516667, 0.383333], "probs": [0.0103, 0.0928, 0.6636, 0.2333]}
+{"id": "typed_decisions/agent_trace_observability_000032/risk", "task": "typed_decisions", "qtype": "score", "target": [0.05000005000005, 0.13333313333313332, 0.3833333833333833, 0.4333334333334333], "probs": [0.024, 0.0842, 0.3206, 0.5713]}
+{"id": "typed_decisions/customer_service_000070/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.08333308333308333, 0.6000006000006, 0.28333328333328334, 0.033333033333033335], "probs": [0.0636, 0.626, 0.2898, 0.0206]}
+{"id": "typed_decisions/invoice_processing_000034/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.016667, 0.983333], "probs": [0.09350000000000003, 0.9065]}
+{"id": "typed_decisions/customer_service_000018/action", "task": "typed_decisions", "qtype": "choice", "target": [0.08, 0.01, 0.466667, 0.383333, 0.06], "probs": [0.2135, 0.0301, 0.4594, 0.194, 0.1029]}
+{"id": "typed_decisions/customer_service_000083/action", "task": "typed_decisions", "qtype": "choice", "target": [0.25, 0.006667, 0.29, 0.003333, 0.45], "probs": [0.1744, 0.0155, 0.6667, 0.0297, 0.1137]}
+{"id": "typed_decisions/invoice_processing_000034/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.976667, 0.023333], "probs": [0.9425, 0.0575]}
+{"id": "typed_decisions/security_incidents_000091/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.483333, 0.516667], "probs": [0.5267, 0.4733]}
+{"id": "typed_decisions/security_incidents_000087/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.01666698333301667, 0.5666664333335667, 0.34999965000035, 0.06666693333306668], "probs": [0.0516, 0.237, 0.554, 0.1575]}
+{"id": "typed_decisions/agent_trace_observability_000063/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.073333, 0.743333, 0.166667, 0.016667], "probs": [0.1605, 0.6664, 0.1496, 0.0235]}
+{"id": "typed_decisions/customer_service_000080/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.05, 0.233333, 0.566667, 0.15], "probs": [0.0498, 0.1883, 0.4356, 0.3264]}
+{"id": "typed_decisions/agent_trace_observability_000092/risk", "task": "typed_decisions", "qtype": "score", "target": [0.2000002000002, 0.3833333833333833, 0.3833333833333833, 0.033333033333033335], "probs": [0.1151, 0.3272, 0.4679, 0.0898]}
+{"id": "typed_decisions/invoice_processing_000020/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.4066665933334066, 0.5766664233335766, 0.016666983333016666], "probs": [0.0609, 0.5805, 0.2441, 0.1145]}
+{"id": "typed_decisions/customer_service_000036/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.856667, 0.143333], "probs": [0.6226, 0.3774]}
+{"id": "typed_decisions/security_incidents_000015/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.296667, 0.703333], "probs": [0.22219999999999995, 0.7778]}
+{"id": "typed_decisions/security_incidents_000022/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.6, 0.4], "probs": [0.6616, 0.3384]}
+{"id": "typed_decisions/security_incidents_000057/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.11666688333311669, 0.4666665333334667, 0.34999965000035, 0.06666693333306668], "probs": [0.0756, 0.4794, 0.3239, 0.1212]}
+{"id": "typed_decisions/invoice_processing_000026/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.033333, 0.5, 0.45, 0.016667], "probs": [0.0831, 0.5449, 0.2566, 0.1155]}
+{"id": "typed_decisions/customer_service_000039/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.133333, 0.566667, 0.25, 0.05], "probs": [0.0133, 0.5304, 0.3892, 0.0672]}
+{"id": "typed_decisions/agent_trace_observability_000081/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.2, 0.033333, 0.526667, 0.24], "probs": [0.1851, 0.0286, 0.3982, 0.3881]}
+{"id": "typed_decisions/agent_trace_observability_000099/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.333333, 0.666667], "probs": [0.41979999999999995, 0.5802]}
+{"id": "typed_decisions/security_incidents_000070/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.06, 0.09, 0.6, 0.25], "probs": [0.0582, 0.3396, 0.401, 0.2012]}
+{"id": "typed_decisions/customer_service_000034/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.033333033333033335, 0.23333323333323333, 0.7333337333337333], "probs": [0.0147, 0.1902, 0.3784, 0.4166]}
+{"id": "typed_decisions/agent_trace_observability_000048/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.283333, 0.466667, 0.2, 0.05], "probs": [0.3123, 0.568, 0.0994, 0.0204]}
+{"id": "typed_decisions/security_incidents_000091/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.683333, 0.316667], "probs": [0.5761000000000001, 0.4239]}
+{"id": "typed_decisions/agent_trace_observability_000017/action", "task": "typed_decisions", "qtype": "choice", "target": [0.133333, 0.5, 0.316667, 0.05], "probs": [0.1773, 0.3522, 0.3977, 0.0728]}
+{"id": "typed_decisions/invoice_processing_000007/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.01666698333301667, 0.12666687333312668, 0.58999941000059, 0.2666667333332667], "probs": [0.0139, 0.1336, 0.4902, 0.3622]}
+{"id": "typed_decisions/agent_trace_observability_000056/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.866667, 0.133333], "probs": [0.7818, 0.2182]}
+{"id": "typed_decisions/customer_service_000078/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.006667, 0.066667, 0.223333, 0.703333], "probs": [0.0245, 0.1994, 0.3363, 0.4398]}
+{"id": "typed_decisions/invoice_processing_000020/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.006667, 0.993333], "probs": [0.08919999999999995, 0.9108]}
+{"id": "typed_decisions/invoice_processing_000045/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.982667, 0.017333], "probs": [0.9425, 0.0575]}
+{"id": "typed_decisions/invoice_processing_000069/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.986667, 0.013333], "probs": [0.9686, 0.0314]}
+{"id": "typed_decisions/security_incidents_000022/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.1, 0.066667, 0.6, 0.233333], "probs": [0.1562, 0.09, 0.3493, 0.4045]}
+{"id": "typed_decisions/security_incidents_000005/severity", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.043333, 0.206667, 0.5, 0.25], "probs": [0.0191, 0.0664, 0.3078, 0.363, 0.2436]}
+{"id": "typed_decisions/agent_trace_observability_000071/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.6333336333336334, 0.28333328333328334, 0.08333308333308334, 0.0], "probs": [0.321, 0.5413, 0.1102, 0.0276]}
+{"id": "typed_decisions/agent_trace_observability_000087/action", "task": "typed_decisions", "qtype": "choice", "target": [0.35, 0.183333, 0.416667, 0.05], "probs": [0.3689, 0.1961, 0.3933, 0.0417]}
+{"id": "typed_decisions/security_incidents_000056/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.05, 0.216667, 0.533333, 0.2], "probs": [0.0343, 0.1852, 0.4197, 0.3608]}
+{"id": "typed_decisions/agent_trace_observability_000066/risk", "task": "typed_decisions", "qtype": "score", "target": [0.4, 0.516667, 0.083333, 0.0], "probs": [0.3108, 0.5463, 0.1187, 0.0242]}
+{"id": "typed_decisions/invoice_processing_000091/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.016667000000000005, 0.33333300000000005, 0.31666700000000003, 0.33333300000000005], "probs": [0.1156, 0.5187, 0.2451, 0.1205]}
+{"id": "typed_decisions/security_incidents_000073/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.426667, 0.573333], "probs": [0.6631, 0.3369]}
+{"id": "typed_decisions/agent_trace_observability_000076/risk", "task": "typed_decisions", "qtype": "score", "target": [0.11666699999999998, 0.23333299999999996, 0.5499999999999999, 0.09999999999999998], "probs": [0.2167, 0.2933, 0.4311, 0.0589]}
+{"id": "typed_decisions/security_incidents_000011/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.083333, 0.116667, 0.583333, 0.216667], "probs": [0.206, 0.062, 0.3241, 0.4079]}
+{"id": "typed_decisions/agent_trace_observability_000002/action", "task": "typed_decisions", "qtype": "choice", "target": [0.38333338333338335, 0.27000027000027005, 0.3133333133333133, 0.03333303333303334], "probs": [0.2601, 0.2808, 0.4066, 0.0525]}
+{"id": "typed_decisions/agent_trace_observability_000035/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.483333, 0.366667, 0.126667, 0.023333], "probs": [0.4784, 0.4169, 0.084, 0.0207]}
+{"id": "typed_decisions/customer_service_000049/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.516667, 0.483333], "probs": [0.36860000000000004, 0.6314]}
+{"id": "typed_decisions/security_incidents_000086/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.05, 0.233333, 0.566667, 0.15], "probs": [0.037, 0.1913, 0.3938, 0.3779]}
+{"id": "typed_decisions/agent_trace_observability_000009/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.033333, 0.133333, 0.416667, 0.416667], "probs": [0.0145, 0.1293, 0.4369, 0.4192]}
+{"id": "typed_decisions/invoice_processing_000043/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.273333, 0.126667, 0.25, 0.35], "probs": [0.5793, 0.1392, 0.1481, 0.1334]}
+{"id": "typed_decisions/agent_trace_observability_000006/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.23333323333323333, 0.3333333333333333, 0.3833333833333833, 0.05000005000005], "probs": [0.1653, 0.7041, 0.1113, 0.0193]}
+{"id": "typed_decisions/customer_service_000020/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.033333, 0.08, 0.676667, 0.21], "probs": [0.0118, 0.1136, 0.2139, 0.6607]}
+{"id": "typed_decisions/security_incidents_000010/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.616667, 0.383333], "probs": [0.594, 0.406]}
+{"id": "typed_decisions/security_incidents_000071/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.383333, 0.616667], "probs": [0.3611, 0.6389]}
+{"id": "typed_decisions/security_incidents_000049/severity", "task": "typed_decisions", "qtype": "score", "target": [0.15000015000015, 0.4333334333334334, 0.3333333333333333, 0.08000008000008, 0.003333003333003333], "probs": [0.0852, 0.2632, 0.4259, 0.1841, 0.0416]}
+{"id": "typed_decisions/invoice_processing_000072/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.03, 0.053333, 0.15, 0.766667], "probs": [0.0477, 0.043, 0.277, 0.6323]}
+{"id": "typed_decisions/invoice_processing_000053/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.146667, 0.693333, 0.136667, 0.023333], "probs": [0.071, 0.5703, 0.2414, 0.1172]}
+{"id": "typed_decisions/customer_service_000069/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.2, 0.633333, 0.166667], "probs": [0.0163, 0.1846, 0.6194, 0.1796]}
+{"id": "typed_decisions/invoice_processing_000052/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.016666983333016666, 0.049999950000049996, 0.2666667333332666, 0.6666663333336665], "probs": [0.0302, 0.0319, 0.2913, 0.6467]}
+{"id": "typed_decisions/customer_service_000060/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.01666698333301667, 0.06666693333306668, 0.9166660833339167], "probs": [0.0192, 0.1494, 0.4584, 0.373]}
+{"id": "typed_decisions/invoice_processing_000090/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.986667, 0.013333], "probs": [0.8789, 0.1211]}
+{"id": "typed_decisions/security_incidents_000010/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.55, 0.45], "probs": [0.6075999999999999, 0.3924]}
+{"id": "typed_decisions/agent_trace_observability_000095/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.233333, 0.533333, 0.216667, 0.016667], "probs": [0.4636, 0.421, 0.0913, 0.0241]}
+{"id": "typed_decisions/invoice_processing_000009/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.366667, 0.633333], "probs": [0.4468, 0.5532]}
+{"id": "typed_decisions/security_incidents_000077/severity", "task": "typed_decisions", "qtype": "score", "target": [0.2, 0.483333, 0.266667, 0.04, 0.01], "probs": [0.2272, 0.3529, 0.3205, 0.0799, 0.0195]}
+{"id": "typed_decisions/invoice_processing_000046/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.043333, 0.023333, 0.316667, 0.616667], "probs": [0.0699, 0.089, 0.3447, 0.4963]}
+{"id": "typed_decisions/security_incidents_000099/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.016667, 0.1, 0.333333, 0.55], "probs": [0.0227, 0.0915, 0.3944, 0.4914]}
+{"id": "typed_decisions/customer_service_000095/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.1, 0.5, 0.333333, 0.066667], "probs": [0.123, 0.6725, 0.1771, 0.0274]}
+{"id": "typed_decisions/security_incidents_000002/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.8, 0.2], "probs": [0.7615000000000001, 0.2385]}
+{"id": "typed_decisions/agent_trace_observability_000085/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.086667, 0.013333, 0.466667, 0.433333], "probs": [0.1642, 0.0223, 0.4145, 0.399]}
+{"id": "typed_decisions/security_incidents_000029/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.266667, 0.733333], "probs": [0.37660000000000005, 0.6234]}
+{"id": "typed_decisions/invoice_processing_000077/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.006666993333006666, 0.07666692333307666, 0.24999975000024996, 0.6666663333336665], "probs": [0.0793, 0.0783, 0.3665, 0.4759]}
+{"id": "typed_decisions/customer_service_000049/action", "task": "typed_decisions", "qtype": "choice", "target": [0.233333, 0.0, 0.266667, 0.0, 0.5], "probs": [0.2191, 0.027, 0.3173, 0.0522, 0.3843]}
+{"id": "typed_decisions/security_incidents_000052/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.55, 0.45], "probs": [0.5818, 0.4182]}
+{"id": "typed_decisions/security_incidents_000035/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.436667, 0.563333], "probs": [0.16069999999999995, 0.8393]}
+{"id": "typed_decisions/customer_service_000025/category", "task": "typed_decisions", "qtype": "choice", "target": [0.77999922000078, 0.19999980000020004, 0.006666993333006668, 0.006666993333006668, 0.006666993333006668], "probs": [0.2901, 0.3425, 0.0104, 0.0316, 0.3255]}
+{"id": "typed_decisions/invoice_processing_000037/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.96, 0.028333, 0.011667, 0.0], "probs": [0.9389, 0.0232, 0.023, 0.0149]}
+{"id": "typed_decisions/security_incidents_000057/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.166667, 0.033333, 0.35, 0.45], "probs": [0.1455, 0.1149, 0.4121, 0.3275]}
+{"id": "typed_decisions/security_incidents_000041/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.666667, 0.333333], "probs": [0.29510000000000003, 0.7049]}
+{"id": "typed_decisions/agent_trace_observability_000002/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.593333, 0.406667], "probs": [0.6234, 0.3766]}
+{"id": "typed_decisions/agent_trace_observability_000032/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.25, 0.383333, 0.316667, 0.05], "probs": [0.2526, 0.5505, 0.1722, 0.0246]}
+{"id": "typed_decisions/security_incidents_000092/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.05, 0.1, 0.616667, 0.233333], "probs": [0.0915, 0.1418, 0.64, 0.1266]}
+{"id": "typed_decisions/customer_service_000040/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.133333, 0.566667, 0.3], "probs": [0.03, 0.2363, 0.47, 0.2638]}
+{"id": "typed_decisions/security_incidents_000078/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.03666696333303666, 0.54999945000055, 0.3166666833333166, 0.09666690333309666], "probs": [0.0422, 0.4361, 0.4039, 0.1178]}
+{"id": "typed_decisions/security_incidents_000032/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.7666662333337666, 0.0, 0.06666693333306666, 0.16666683333316665], "probs": [0.3239, 0.0644, 0.2461, 0.3656]}
+{"id": "typed_decisions/agent_trace_observability_000038/risk", "task": "typed_decisions", "qtype": "score", "target": [0.6000000000000001, 0.30000000000000004, 0.09000000000000001, 0.010000000000000002], "probs": [0.3123, 0.5489, 0.1234, 0.0154]}
+{"id": "typed_decisions/invoice_processing_000093/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.483333, 0.516667], "probs": [0.5794, 0.4206]}
+{"id": "typed_decisions/customer_service_000096/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.0, 0.133333, 0.866667], "probs": [0.0034, 0.0176, 0.1453, 0.8337]}
+{"id": "typed_decisions/agent_trace_observability_000084/action", "task": "typed_decisions", "qtype": "choice", "target": [0.493333, 0.086667, 0.416667, 0.003333], "probs": [0.5688, 0.1054, 0.3043, 0.0215]}
+{"id": "typed_decisions/customer_service_000026/category", "task": "typed_decisions", "qtype": "choice", "target": [0.0, 0.88, 0.0, 0.116667, 0.003333], "probs": [0.0799, 0.6164, 0.0159, 0.1764, 0.1114]}
+{"id": "typed_decisions/agent_trace_observability_000062/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.85, 0.15], "probs": [0.7332000000000001, 0.2668]}
+{"id": "typed_decisions/security_incidents_000089/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.45, 0.55], "probs": [0.39149999999999996, 0.6085]}
+{"id": "typed_decisions/security_incidents_000083/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.3, 0.7], "probs": [0.41700000000000004, 0.583]}
+{"id": "typed_decisions/customer_service_000068/action", "task": "typed_decisions", "qtype": "choice", "target": [0.7666662333337667, 0.006666993333006668, 0.15999984000016002, 0.0, 0.06666693333306668], "probs": [0.1296, 0.0269, 0.6274, 0.0135, 0.2026]}
+{"id": "typed_decisions/invoice_processing_000020/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.993333, 0.006667], "probs": [0.9675, 0.0325]}
+{"id": "typed_decisions/customer_service_000028/category", "task": "typed_decisions", "qtype": "choice", "target": [0.019869, 0.009935, 0.933856, 0.026471, 0.009869], "probs": [0.0015, 0.0016, 0.9875, 0.0046, 0.0048]}
+{"id": "typed_decisions/security_incidents_000015/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.06333306333306332, 0.1000001000001, 0.6333336333336334, 0.20333320333320334], "probs": [0.1111, 0.1192, 0.5552, 0.2145]}
+{"id": "typed_decisions/invoice_processing_000037/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.886667, 0.056667, 0.043333, 0.013333], "probs": [0.9097, 0.0416, 0.0331, 0.0156]}
+{"id": "typed_decisions/agent_trace_observability_000055/risk", "task": "typed_decisions", "qtype": "score", "target": [0.7, 0.266667, 0.03, 0.003333], "probs": [0.5333, 0.4164, 0.0421, 0.0082]}
+{"id": "typed_decisions/customer_service_000080/action", "task": "typed_decisions", "qtype": "choice", "target": [0.066667, 0.016667, 0.453846, 0.135897, 0.326923], "probs": [0.1275, 0.0324, 0.5311, 0.0606, 0.2484]}
+{"id": "typed_decisions/agent_trace_observability_000073/risk", "task": "typed_decisions", "qtype": "score", "target": [0.10666700000000001, 0.21000000000000002, 0.5833330000000001, 0.10000000000000002], "probs": [0.044, 0.2128, 0.5348, 0.2085]}
+{"id": "typed_decisions/customer_service_000026/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.05000000000000001, 0.23333300000000004, 0.6166670000000001, 0.10000000000000002], "probs": [0.0779, 0.2989, 0.477, 0.1462]}
+{"id": "typed_decisions/agent_trace_observability_000082/action", "task": "typed_decisions", "qtype": "choice", "target": [0.08333300000000002, 0.5000000000000001, 0.31666700000000003, 0.10000000000000002], "probs": [0.3247, 0.2144, 0.4035, 0.0574]}
+{"id": "typed_decisions/security_incidents_000027/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.323333, 0.676667], "probs": [0.2156, 0.7844]}
+{"id": "typed_decisions/customer_service_000042/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.083333, 0.416667, 0.5], "probs": [0.0218, 0.0819, 0.3809, 0.5154]}
+{"id": "typed_decisions/invoice_processing_000072/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.06666693333306666, 0.6499993500006499, 0.2666667333332666, 0.016666983333016666], "probs": [0.0544, 0.4901, 0.3499, 0.1056]}
+{"id": "typed_decisions/invoice_processing_000086/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.913333, 0.056667, 0.03, 0.0], "probs": [0.6519, 0.1684, 0.139, 0.0407]}
+{"id": "typed_decisions/customer_service_000048/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.2, 0.8], "probs": [0.3003, 0.6997]}
+{"id": "typed_decisions/security_incidents_000044/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.433333, 0.566667], "probs": [0.6683, 0.3317]}
+{"id": "typed_decisions/customer_service_000068/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.733333, 0.266667], "probs": [0.47, 0.53]}
+{"id": "typed_decisions/security_incidents_000047/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.516667, 0.483333], "probs": [0.2972, 0.7028]}
+{"id": "typed_decisions/security_incidents_000003/severity", "task": "typed_decisions", "qtype": "score", "target": [0.05000005000005, 0.15000015000015, 0.5333335333335333, 0.23333323333323333, 0.033333033333033335], "probs": [0.0632, 0.2018, 0.5507, 0.1543, 0.0299]}
+{"id": "typed_decisions/agent_trace_observability_000007/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.483333, 0.516667], "probs": [0.5457000000000001, 0.4543]}
+{"id": "typed_decisions/customer_service_000002/category", "task": "typed_decisions", "qtype": "choice", "target": [0.02666697333302667, 0.9666660333339668, 0.0016669983330016673, 0.0016669983330016673, 0.003332996667003333], "probs": [0.0145, 0.9257, 0.0036, 0.0427, 0.0136]}
+{"id": "typed_decisions/invoice_processing_000041/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.626667, 0.03, 0.023333, 0.32], "probs": [0.8057, 0.0361, 0.0663, 0.0919]}
+{"id": "typed_decisions/agent_trace_observability_000052/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.05666694333305666, 0.00999999000001, 0.36666663333336663, 0.5666664333335666], "probs": [0.0715, 0.0286, 0.2708, 0.629]}
+{"id": "typed_decisions/agent_trace_observability_000096/risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.083333, 0.316667, 0.6], "probs": [0.0106, 0.0647, 0.3179, 0.6068]}
+{"id": "typed_decisions/agent_trace_observability_000018/action", "task": "typed_decisions", "qtype": "choice", "target": [0.7433337433337434, 0.06333306333306334, 0.18333318333318332, 0.01000001000001], "probs": [0.4857, 0.1033, 0.3859, 0.0251]}
+{"id": "typed_decisions/security_incidents_000012/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.466667, 0.533333], "probs": [0.46340000000000003, 0.5366]}
+{"id": "typed_decisions/security_incidents_000019/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.466667, 0.533333], "probs": [0.43400000000000005, 0.566]}
+{"id": "typed_decisions/customer_service_000060/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.5, 0.5], "probs": [0.4567, 0.5433]}
+{"id": "typed_decisions/customer_service_000098/churn_risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.2, 0.616667, 0.183333], "probs": [0.0608, 0.3488, 0.3611, 0.2293]}
+{"id": "typed_decisions/security_incidents_000095/severity", "task": "typed_decisions", "qtype": "score", "target": [0.02, 0.063333, 0.31, 0.52, 0.086667], "probs": [0.0214, 0.086, 0.2657, 0.5583, 0.0685]}
+{"id": "typed_decisions/invoice_processing_000053/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.44, 0.56], "probs": [0.17390000000000005, 0.8261]}
+{"id": "typed_decisions/security_incidents_000029/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.373333, 0.626667], "probs": [0.38139999999999996, 0.6186]}
+{"id": "typed_decisions/agent_trace_observability_000046/risk", "task": "typed_decisions", "qtype": "score", "target": [0.9133330000000001, 0.08000000000000002, 0.006667000000000001, 0.0], "probs": [0.7443, 0.2219, 0.0281, 0.0056]}
+{"id": "typed_decisions/invoice_processing_000091/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.9133339133339132, 0.07000007000007, 0.013333013333013332, 0.0033330033330033326], "probs": [0.8237, 0.0605, 0.0577, 0.0581]}
+{"id": "typed_decisions/customer_service_000089/action", "task": "typed_decisions", "qtype": "choice", "target": [0.93999906000094, 0.006666993333006668, 0.024999975000025005, 0.0016669983330016673, 0.02666697333302667], "probs": [0.4259, 0.0622, 0.3678, 0.027, 0.1171]}
+{"id": "typed_decisions/invoice_processing_000036/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.936667, 0.023333, 0.033333, 0.006667], "probs": [0.8062, 0.0968, 0.0703, 0.0267]}
+{"id": "typed_decisions/agent_trace_observability_000083/action", "task": "typed_decisions", "qtype": "choice", "target": [0.34999965000035, 0.12666687333312668, 0.5166664833335167, 0.006666993333006668], "probs": [0.1979, 0.294, 0.4656, 0.0425]}
+{"id": "typed_decisions/agent_trace_observability_000026/risk", "task": "typed_decisions", "qtype": "score", "target": [0.02, 0.13, 0.433333, 0.416667], "probs": [0.0149, 0.0875, 0.3255, 0.572]}
+{"id": "typed_decisions/agent_trace_observability_000087/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.666667, 0.333333], "probs": [0.6735, 0.3265]}
+{"id": "typed_decisions/invoice_processing_000015/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.25, 0.666667, 0.083333], "probs": [0.0285, 0.5177, 0.3621, 0.0917]}
+{"id": "typed_decisions/agent_trace_observability_000017/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.033333, 0.216667, 0.5, 0.25], "probs": [0.1652, 0.4012, 0.3378, 0.0958]}
+{"id": "typed_decisions/security_incidents_000098/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.06666693333306668, 0.21666678333321668, 0.34999965000035, 0.36666663333336674], "probs": [0.0212, 0.0716, 0.3377, 0.5695]}
+{"id": "typed_decisions/customer_service_000069/action", "task": "typed_decisions", "qtype": "choice", "target": [0.1666668333331667, 0.01666698333301667, 0.6266663733336267, 0.08999991000009, 0.09999990000010002], "probs": [0.0996, 0.0365, 0.6037, 0.0961, 0.1641]}
+{"id": "typed_decisions/invoice_processing_000037/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.023333, 0.976667], "probs": [0.1269, 0.8731]}
+{"id": "typed_decisions/customer_service_000021/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.033333, 0.366667, 0.5, 0.1], "probs": [0.0407, 0.6655, 0.2576, 0.0362]}
+{"id": "typed_decisions/customer_service_000084/needs_human", "task": "typed_decisions", "qtype": "noul", "target": [0.39, 0.61], "probs": [0.25970000000000004, 0.7403]}
+{"id": "typed_decisions/security_incidents_000062/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.10666689333310665, 0.06666693333306666, 0.44999955000044994, 0.3766666233333766], "probs": [0.2726, 0.0736, 0.3019, 0.3519]}
+{"id": "typed_decisions/agent_trace_observability_000039/risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.05, 0.433333, 0.516667], "probs": [0.016, 0.0799, 0.308, 0.5961]}
+{"id": "typed_decisions/invoice_processing_000067/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.94, 0.036667, 0.02, 0.003333], "probs": [0.8107, 0.0862, 0.0794, 0.0237]}
+{"id": "typed_decisions/invoice_processing_000085/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.98, 0.02], "probs": [0.9649, 0.0351]}
+{"id": "typed_decisions/customer_service_000033/action", "task": "typed_decisions", "qtype": "choice", "target": [0.4666665333334666, 0.00999999000001, 0.11999988000011998, 0.03666696333303666, 0.36666663333336663], "probs": [0.1263, 0.0375, 0.4698, 0.141, 0.2254]}
+{"id": "typed_decisions/agent_trace_observability_000056/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.526667, 0.333333, 0.133333, 0.006667], "probs": [0.395, 0.4991, 0.0829, 0.0229]}
+{"id": "typed_decisions/security_incidents_000081/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.55, 0.45], "probs": [0.5688, 0.4312]}
+{"id": "typed_decisions/invoice_processing_000075/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.9568650000000001, 0.019901000000000002, 0.014950000000000001, 0.008284000000000001], "probs": [0.8694, 0.0716, 0.0391, 0.0198]}
+{"id": "typed_decisions/agent_trace_observability_000004/risk", "task": "typed_decisions", "qtype": "score", "target": [0.7166662833337166, 0.2666667333332666, 0.016666983333016666, 0.0], "probs": [0.3652, 0.515, 0.1081, 0.0117]}
+{"id": "typed_decisions/agent_trace_observability_000074/action", "task": "typed_decisions", "qtype": "choice", "target": [0.6, 0.05, 0.35, 0.0], "probs": [0.4865, 0.1419, 0.3446, 0.0271]}
+{"id": "typed_decisions/security_incidents_000049/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.55, 0.45], "probs": [0.5711999999999999, 0.4288]}
+{"id": "typed_decisions/agent_trace_observability_000065/risk", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.05, 0.25, 0.7], "probs": [0.0126, 0.0884, 0.3133, 0.5857]}
+{"id": "typed_decisions/security_incidents_000021/credential_compromise", "task": "typed_decisions", "qtype": "noul", "target": [0.4, 0.6], "probs": [0.27869999999999995, 0.7213]}
+{"id": "typed_decisions/invoice_processing_000066/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.36, 0.273333, 0.326667, 0.04], "probs": [0.3526, 0.1621, 0.3991, 0.0861]}
+{"id": "typed_decisions/security_incidents_000029/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.083333, 0.25, 0.366667, 0.3], "probs": [0.0585, 0.2481, 0.5072, 0.1862]}
+{"id": "typed_decisions/customer_service_000094/category", "task": "typed_decisions", "qtype": "choice", "target": [0.016667, 0.883333, 0.003333, 0.08, 0.016667], "probs": [0.0102, 0.9092, 0.0032, 0.0439, 0.0335]}
+{"id": "typed_decisions/security_incidents_000033/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.083333, 0.066667, 0.566667, 0.283333], "probs": [0.1507, 0.2512, 0.3501, 0.248]}
+{"id": "typed_decisions/security_incidents_000048/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.05, 0.116667, 0.65, 0.183333], "probs": [0.2133, 0.1067, 0.3335, 0.3465]}
+{"id": "typed_decisions/customer_service_000080/category", "task": "typed_decisions", "qtype": "choice", "target": [0.0, 0.016667, 0.633333, 0.033333, 0.316667], "probs": [0.0034, 0.0061, 0.9291, 0.016, 0.0453]}
+{"id": "typed_decisions/security_incidents_000004/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.36, 0.353333, 0.22, 0.066667], "probs": [0.0761, 0.4812, 0.2539, 0.1889]}
+{"id": "typed_decisions/customer_service_000064/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.0, 0.083333, 0.666667, 0.25], "probs": [0.0098, 0.1121, 0.617, 0.2612]}
+{"id": "typed_decisions/agent_trace_observability_000015/action", "task": "typed_decisions", "qtype": "choice", "target": [0.13333313333313332, 0.4333334333334333, 0.13333313333313332, 0.3000003000003], "probs": [0.0251, 0.4083, 0.1115, 0.4551]}
+{"id": "typed_decisions/security_incidents_000094/true_positive", "task": "typed_decisions", "qtype": "noul", "target": [0.093333, 0.906667], "probs": [0.2844, 0.7156]}
+{"id": "typed_decisions/invoice_processing_000039/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.01666698333301667, 0.31666668333331666, 0.6499993500006501, 0.01666698333301667], "probs": [0.0661, 0.289, 0.4941, 0.1507]}
+{"id": "typed_decisions/customer_service_000043/category", "task": "typed_decisions", "qtype": "choice", "target": [0.21666678333321668, 0.7666662333337667, 0.0, 0.0, 0.01666698333301667], "probs": [0.0831, 0.8221, 0.0071, 0.0477, 0.0401]}
+{"id": "typed_decisions/invoice_processing_000019/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.95, 0.05], "probs": [0.931, 0.069]}
+{"id": "typed_decisions/agent_trace_observability_000095/outcome", "task": "typed_decisions", "qtype": "choice", "target": [0.036667, 0.003333, 0.11, 0.85], "probs": [0.0709, 0.0202, 0.1213, 0.7876]}
+{"id": "typed_decisions/invoice_processing_000090/discrepancy_severity", "task": "typed_decisions", "qtype": "score", "target": [0.003333003333003333, 0.013333013333013333, 0.15000015000015, 0.8333338333338334], "probs": [0.0832, 0.0625, 0.3949, 0.4594]}
+{"id": "typed_decisions/invoice_processing_000010/duplicate", "task": "typed_decisions", "qtype": "noul", "target": [0.986667, 0.013333], "probs": [0.9661, 0.0339]}
+{"id": "typed_decisions/agent_trace_observability_000040/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.233333, 0.766667], "probs": [0.6194, 0.3806]}
+{"id": "typed_decisions/customer_service_000013/urgency", "task": "typed_decisions", "qtype": "score", "target": [0.25, 0.233333, 0.4, 0.116667], "probs": [0.0172, 0.3847, 0.4236, 0.1745]}
+{"id": "typed_decisions/agent_trace_observability_000092/needs_review", "task": "typed_decisions", "qtype": "noul", "target": [0.86, 0.14], "probs": [0.5745, 0.4255]}
+{"id": "typed_decisions/invoice_processing_000064/matches_order", "task": "typed_decisions", "qtype": "noul", "target": [0.006667, 0.993333], "probs": [0.0807, 0.9193]}
+{"id": "typed_decisions/invoice_processing_000007/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.013333000000000001, 0.17666700000000002, 0.7566670000000001, 0.053333000000000005], "probs": [0.186, 0.2677, 0.4879, 0.0584]}
+{"id": "typed_decisions/security_incidents_000009/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.1, 0.05, 0.333333, 0.516667], "probs": [0.2118, 0.1539, 0.3644, 0.2699]}
+{"id": "typed_decisions/invoice_processing_000066/disposition", "task": "typed_decisions", "qtype": "choice", "target": [0.45999954000045995, 0.14666685333314664, 0.3766666233333766, 0.016666983333016666], "probs": [0.3016, 0.4124, 0.2351, 0.051]}
+{"id": "typed_decisions/agent_trace_observability_000068/risk", "task": "typed_decisions", "qtype": "score", "target": [0.65000065000065, 0.27333327333327334, 0.07333307333307333, 0.003333003333003333], "probs": [0.3917, 0.4814, 0.1046, 0.0223]}

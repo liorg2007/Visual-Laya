@@ -1,0 +1,110 @@
+{
+ "question": "Robustness of the Python API, HTTP /v1/systemone and web UI to edge cases",
+ "checkpoint": "runs/stage2_c/wise085_calibrated",
+ "parts": {
+  "part1_python_api": {
+   "n": 137,
+   "pass": 123,
+   "fail": 14,
+   "source": "part1.txt/run_api.log"
+  },
+  "part2_python_http_inproc": {
+   "n": 51,
+   "pass": 43,
+   "fail": 8,
+   "source": "part2.log; 7 FAILs are NameError test bug, 1 wrong expectation"
+  },
+  "part3_http_cli_ui_server": {
+   "n": 31,
+   "pass": 30,
+   "fail": 1,
+   "source": "results_part3.json; server 'python -m laya_vision.ui' on port 8793, shut down cleanly; cold first request 34s under GPU contention"
+  },
+  "part4_modes": {
+   "n": 2,
+   "pass": 2,
+   "fail": 0,
+   "note": "load(compile=True) ok; image predict raises clear ValueError. Text-only predict under compile=True did not finish within the 600s timeout (inductor compile under a contended GPU/CPU): UNRESOLVED, not a pass/fail."
+  },
+  "part4b_nocompile": {
+   "n": 5,
+   "pass": 1,
+   "fail": 3,
+   "info": 1,
+   "source": "results_part4b.json; the 3 FAILs are the surrogate TypeError (B1)"
+  }
+ },
+ "part2_fail_classification": [
+  {
+   "test": "HTTP POST image PNG / BMP / TIFF / RGBA PNG / CMYK JPEG / 1x1 / 7000x7000 (7 checks)",
+   "class": "test bug",
+   "evidence": "run_part2.py calls enc() which is not defined in that script (NameError, no request sent). Re-run in part3_http.py with enc defined: all 7 PASS (200/400/400/200/200/200/413).",
+   "repro": "part3_http.py"
+  },
+  {
+   "test": "HTTP POST max_len=64 expect 422",
+   "class": "wrong test expectation",
+   "evidence": "Image requests need 63 tokens at max_len=64 (head + 49 image tokens + SEP fits exactly; diag _encode_state len=63). max_len=40 correctly gives 422 with a clear message (part3 PASS).",
+   "repro": "POST /v1/systemone {max_len:64} -> 200; {max_len:40} -> 422"
+  }
+ ],
+ "part1_fail_classification": [
+  {
+   "test": "batch composition / batch_size invariance (max dp 0.022-0.031)",
+   "class": "wrong tolerance (fp16 padding noise), not a logic bug",
+   "evidence": "Same-batch repeats are bit-identical (max dp 0); differences only appear with different padding/batch shapes, probabilities in 4dp, max 0.03."
+  },
+  {
+   "test": "ndarray empty 0x0 accepted",
+   "class": "REAL minor bug",
+   "evidence": "laya_vision.images._from_array only checks the upper pixel limit; zero-size arrays pass load_image (size (0,0)) and predict returns the same probs as a blank 1x1 image. Not reachable over HTTP (cannot encode a 0x0 image).",
+   "repro": "laya_vision.images.load_image(np.zeros((0,0,3),np.uint8)) -> no error (probe_images.py)"
+  },
+  {
+   "test": "state None raises TypeError",
+   "class": "wrong test expectation",
+   "evidence": "Clear message 'state must not be None; pass a string, dict, or list'; TypeError is reasonable."
+  },
+  {
+   "test": "1-option choice / int label keys / noul without criteria / 20k-char instructions / max_len=100000 / head_max_len=8 / long option descriptions: no error",
+   "class": "design choices / wrong expectations",
+   "evidence": "All return valid normalized outputs; long text is silently truncated to head_max_len / max_len rather than rejected (documented in sequence.py: options are clipped per budget). Caveat: head_max_len=8 is silently accepted."
+  },
+  {
+   "test": "noul 2 options KeyError 'probabilities'",
+   "class": "test bug",
+   "evidence": "noul answers have 'noul' not 'probabilities'; HTTP noul request in part3 PASSes."
+  },
+  {
+   "test": "max_len=64 -> image does not fit",
+   "class": "wrong test expectation",
+   "evidence": "see above"
+  },
+  {
+   "test": "load(fast=True) then image predict: no error",
+   "class": "wrong test expectation",
+   "evidence": "Without tilelang, load(fast=True) falls back to the stock forward with a warning, so images work. With a simulated _fast object, a clear ValueError is raised (part4b PASS)."
+  }
+ ],
+ "real_bugs": [
+  {
+   "id": "B1",
+   "severity": "medium",
+   "where": "POST /v1/systemone and Agent.predict",
+   "title": "Lone surrogate (e.g. \\ud800 from JSON) in question text, option label or state text -> TypeError -> HTTP 500 'inference failed'",
+   "expected": "4xx / ValueError",
+   "repro": "POST /v1/systemone {\"state\":{\"image\":<b64>},\"questions\":{\"q\":{\"type\":\"choice\",\"instructions\":\"?\",\"criteria\":{\"a\\ud800\":null,\"b\":null}}}}  (part3_http.py); Python: agent.predict({'text':'hi\\ud800'}, Q) -> TypeError: TextEncodeInput must be Union[...] (part4b_nocompile.py). Traceback: laya/common.py encode_text -> tokenizers encode_batch. serve.py maps only ValueError to 422."
+  },
+  {
+   "id": "B2",
+   "severity": "low",
+   "where": "laya_vision/images.py::_from_array",
+   "title": "Zero-size ndarray images are accepted and treated as a blank image",
+   "repro": "load_image(np.zeros((0,0,3),np.uint8))"
+  }
+ ],
+ "notes": [
+  "No repo source edited.",
+  "Part3 re-ran all part2 HTTP checks that failed, with the test bug fixed."
+ ]
+}

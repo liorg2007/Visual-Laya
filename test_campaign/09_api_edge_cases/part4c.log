@@ -1,0 +1,336 @@
+Traceback (most recent call last):
+  File "/home/zera/laya-vision/test_campaign/09_api_edge_cases/part4c_compile_diag.py", line 15, in <module>
+    t1=time.time(); r=a.predict("The match ended 2-1 after extra time.",QT); ts.append(round(time.time()-t1,2))
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 1318, in system_one
+    return self.predict_batch([state], questions, lang=lang, hooks=hooks,
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 45, in wrapped
+    return fn(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 1041, in predict_batch
+    logits, act = self._forward(b)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 866, in _forward
+    logits, act = self._infer(b)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 823, in _infer
+    return run()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 814, in run
+    return self.model(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 574, in _fn
+    return fn(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 314, in forward
+    h = self.encoder(input_ids=input_ids, attention_mask=attention_mask).last_hidden_state
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 1380, in __call__
+    return self._torchdynamo_orig_callable(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 1164, in __call__
+    result = self._inner_convert(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 547, in __call__
+    return _compile(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 986, in _compile
+    guarded_code = compile_inner(code, one_graph, hooks, transform)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 715, in compile_inner
+    return _compile_inner(code, one_graph, hooks, transform)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_utils_internal.py", line 95, in wrapper_function
+    return function(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 750, in _compile_inner
+    out_code = transform_code_object(code, transform)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/bytecode_transformation.py", line 1361, in transform_code_object
+    transformations(instructions, code_options)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 231, in _fn
+    return fn(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 662, in transform
+    tracer.run()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 2868, in run
+    super().run()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 1052, in run
+    while self.step():
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 962, in step
+    self.dispatch_table[inst.opcode](self, inst)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 314, in impl
+    self.push(fn_var.call_function(self, self.popn(nargs), {}))
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builtin.py", line 1004, in call_function
+    return handler(tx, args, kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builtin.py", line 980, in _handle_insert_op_in_graph
+    return wrap_fx_proxy(tx, proxy)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builder.py", line 2153, in wrap_fx_proxy
+    return wrap_fx_proxy_cls(target_cls=TensorVariable, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builder.py", line 2219, in wrap_fx_proxy_cls
+    return _wrap_fx_proxy(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builder.py", line 2315, in _wrap_fx_proxy
+    example_value = get_fake_value(proxy.node, tx, allow_non_graph_fake=True)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2536, in get_fake_value
+    raise TorchRuntimeError(str(e)).with_traceback(e.__traceback__) from None
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2471, in get_fake_value
+    ret_val = wrap_fake_exception(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2017, in wrap_fake_exception
+    return fn()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2472, in <lambda>
+    lambda: run_node(tx.output, node, args, kwargs, nnmodule)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2604, in run_node
+    raise RuntimeError(make_error_message(e)).with_traceback(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2586, in run_node
+    return node.target(*args, **kwargs)
+torch._dynamo.exc.TorchRuntimeError: Failed running call_function <built-in function add>(*(None, FakeTensor(..., device='cuda:0', size=(1, 1, 1024))), **{}):
+unsupported operand type(s) for +: 'NoneType' and 'FakeTensor'
+
+from user code:
+   File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 317, in torch_dynamo_resume_in_forward_at_314
+    h = h + self.type_emb(qtype)[:, None, :]
+
+Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+
+
+You can suppress this exception and fall back to eager by setting:
+    import torch._dynamo
+    torch._dynamo.config.suppress_errors = True
+
+laya.Agent(vision ckpt dir) -> TorchRuntimeError: Failed running call_function <built-in function add>(*(None, FakeTensor(..., device='cuda:0', size=(1, 1, 1024))), **{}):
+unsupported operand type(s) for +: 'NoneType' and 'FakeTensor'
+
+from user code:
+   File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 317, in t
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 813.20it/s]
+/home/zera/laya-vision/test_campaign/09_api_edge_cases/part4c_compile_diag.py:9: RuntimeWarning: laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated.
+  ("laya.Agent(convaiinnovations/laya)",lambda:laya.Agent("convaiinnovations/laya",device="cuda",compile=True)),
+Traceback (most recent call last):
+  File "/home/zera/laya-vision/test_campaign/09_api_edge_cases/part4c_compile_diag.py", line 15, in <module>
+    t1=time.time(); r=a.predict("The match ended 2-1 after extra time.",QT); ts.append(round(time.time()-t1,2))
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 1318, in system_one
+    return self.predict_batch([state], questions, lang=lang, hooks=hooks,
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 45, in wrapped
+    return fn(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 1041, in predict_batch
+    logits, act = self._forward(b)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 866, in _forward
+    logits, act = self._infer(b)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 823, in _infer
+    return run()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 814, in run
+    return self.model(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 574, in _fn
+    return fn(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 314, in forward
+    h = self.encoder(input_ids=input_ids, attention_mask=attention_mask).last_hidden_state
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 1380, in __call__
+    return self._torchdynamo_orig_callable(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 1164, in __call__
+    result = self._inner_convert(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 547, in __call__
+    return _compile(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 986, in _compile
+    guarded_code = compile_inner(code, one_graph, hooks, transform)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 715, in compile_inner
+    return _compile_inner(code, one_graph, hooks, transform)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_utils_internal.py", line 95, in wrapper_function
+    return function(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 750, in _compile_inner
+    out_code = transform_code_object(code, transform)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/bytecode_transformation.py", line 1361, in transform_code_object
+    transformations(instructions, code_options)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 231, in _fn
+    return fn(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 662, in transform
+    tracer.run()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 2868, in run
+    super().run()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 1052, in run
+    while self.step():
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 962, in step
+    self.dispatch_table[inst.opcode](self, inst)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 314, in impl
+    self.push(fn_var.call_function(self, self.popn(nargs), {}))
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builtin.py", line 1004, in call_function
+    return handler(tx, args, kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builtin.py", line 980, in _handle_insert_op_in_graph
+    return wrap_fx_proxy(tx, proxy)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builder.py", line 2153, in wrap_fx_proxy
+    return wrap_fx_proxy_cls(target_cls=TensorVariable, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builder.py", line 2219, in wrap_fx_proxy_cls
+    return _wrap_fx_proxy(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builder.py", line 2315, in _wrap_fx_proxy
+    example_value = get_fake_value(proxy.node, tx, allow_non_graph_fake=True)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2536, in get_fake_value
+    raise TorchRuntimeError(str(e)).with_traceback(e.__traceback__) from None
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2471, in get_fake_value
+    ret_val = wrap_fake_exception(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2017, in wrap_fake_exception
+    return fn()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2472, in <lambda>
+    lambda: run_node(tx.output, node, args, kwargs, nnmodule)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2604, in run_node
+    raise RuntimeError(make_error_message(e)).with_traceback(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2586, in run_node
+    return node.target(*args, **kwargs)
+torch._dynamo.exc.TorchRuntimeError: Failed running call_function <built-in function add>(*(None, FakeTensor(..., device='cuda:0', size=(1, 1, 1024))), **{}):
+unsupported operand type(s) for +: 'NoneType' and 'FakeTensor'
+
+from user code:
+   File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 317, in torch_dynamo_resume_in_forward_at_314
+    h = h + self.type_emb(qtype)[:, None, :]
+
+Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+
+
+You can suppress this exception and fall back to eager by setting:
+    import torch._dynamo
+    torch._dynamo.config.suppress_errors = True
+
+laya.Agent(convaiinnovations/laya) -> TorchRuntimeError: Failed running call_function <built-in function add>(*(None, FakeTensor(..., device='cuda:0', size=(1, 1, 1024))), **{}):
+unsupported operand type(s) for +: 'NoneType' and 'FakeTensor'
+
+from user code:
+   File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 317, in t
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 2582.93it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Traceback (most recent call last):
+  File "/home/zera/laya-vision/test_campaign/09_api_edge_cases/part4c_compile_diag.py", line 15, in <module>
+    t1=time.time(); r=a.predict("The match ended 2-1 after extra time.",QT); ts.append(round(time.time()-t1,2))
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 1318, in system_one
+    return self.predict_batch([state], questions, lang=lang, hooks=hooks,
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 45, in wrapped
+    return fn(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 1041, in predict_batch
+    logits, act = self._forward(b)
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 147, in _forward
+    return super()._forward(b)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 866, in _forward
+    logits, act = self._infer(b)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 823, in _infer
+    return run()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 814, in run
+    return self.model(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 574, in _fn
+    return fn(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 314, in forward
+    h = self.encoder(input_ids=input_ids, attention_mask=attention_mask).last_hidden_state
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 1380, in __call__
+    return self._torchdynamo_orig_callable(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 1164, in __call__
+    result = self._inner_convert(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 547, in __call__
+    return _compile(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 986, in _compile
+    guarded_code = compile_inner(code, one_graph, hooks, transform)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 715, in compile_inner
+    return _compile_inner(code, one_graph, hooks, transform)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_utils_internal.py", line 95, in wrapper_function
+    return function(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 750, in _compile_inner
+    out_code = transform_code_object(code, transform)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/bytecode_transformation.py", line 1361, in transform_code_object
+    transformations(instructions, code_options)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 231, in _fn
+    return fn(*args, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 662, in transform
+    tracer.run()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 2868, in run
+    super().run()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 1052, in run
+    while self.step():
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 962, in step
+    self.dispatch_table[inst.opcode](self, inst)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 314, in impl
+    self.push(fn_var.call_function(self, self.popn(nargs), {}))
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builtin.py", line 1004, in call_function
+    return handler(tx, args, kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builtin.py", line 980, in _handle_insert_op_in_graph
+    return wrap_fx_proxy(tx, proxy)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builder.py", line 2153, in wrap_fx_proxy
+    return wrap_fx_proxy_cls(target_cls=TensorVariable, **kwargs)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builder.py", line 2219, in wrap_fx_proxy_cls
+    return _wrap_fx_proxy(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/variables/builder.py", line 2315, in _wrap_fx_proxy
+    example_value = get_fake_value(proxy.node, tx, allow_non_graph_fake=True)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2536, in get_fake_value
+    raise TorchRuntimeError(str(e)).with_traceback(e.__traceback__) from None
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2471, in get_fake_value
+    ret_val = wrap_fake_exception(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2017, in wrap_fake_exception
+    return fn()
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2472, in <lambda>
+    lambda: run_node(tx.output, node, args, kwargs, nnmodule)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2604, in run_node
+    raise RuntimeError(make_error_message(e)).with_traceback(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 2586, in run_node
+    return node.target(*args, **kwargs)
+torch._dynamo.exc.TorchRuntimeError: Failed running call_function <built-in function add>(*(None, FakeTensor(..., device='cuda:0', size=(1, 1, 1024))), **{}):
+unsupported operand type(s) for +: 'NoneType' and 'FakeTensor'
+
+from user code:
+   File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 317, in torch_dynamo_resume_in_forward_at_314
+    h = h + self.type_emb(qtype)[:, None, :]
+
+Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+
+
+You can suppress this exception and fall back to eager by setting:
+    import torch._dynamo
+    torch._dynamo.config.suppress_errors = True
+
+laya_vision.load(ckpt) -> TorchRuntimeError: Failed running call_function <built-in function add>(*(None, FakeTensor(..., device='cuda:0', size=(1, 1, 1024))), **{}):
+unsupported operand type(s) for +: 'NoneType' and 'FakeTensor'
+
+from user code:
+   File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py", line 317, in t

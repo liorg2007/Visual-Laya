@@ -1,0 +1,33 @@
+PASS CLI python -m laya_vision.ui starts and serves /health 11.688306331634521
+PASS HTTP first request (cold) status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.012,"dog":0.988},"confidence":0.9059,"answer_confidence":0.988,"action":{"act_probability":1.0}}},"usag
+cold s 34.3192458152771
+PASS HTTP PNG status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0098,"dog":0.9902},"confidence":0.9205,"answer_confidence":0.9902,"action":{"act_probability":1.0}}},"u
+PASS HTTP WEBP status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0096,"dog":0.9904},"confidence":0.922,"answer_confidence":0.9904,"action":{"act_probability":1.0}}},"us
+PASS HTTP GIF status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0049,"dog":0.9951},"confidence":0.955,"answer_confidence":0.9951,"action":{"act_probability":1.0}}},"us
+PASS HTTP BMP (server allows JPEG/PNG/WEBP/GIF only) expect 400 status=400 {"detail":"image format BMP not allowed (allowed: JPEG, PNG, WEBP, GIF)"}
+PASS HTTP TIFF expect 400 status=400 {"detail":"image format TIFF not allowed (allowed: JPEG, PNG, WEBP, GIF)"}
+PASS HTTP RGBA PNG status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0098,"dog":0.9902},"confidence":0.9205,"answer_confidence":0.9902,"action":{"act_probability":1.0}}},"u
+PASS HTTP grayscale PNG status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0051,"dog":0.9949},"confidence":0.9536,"answer_confidence":0.9949,"action":{"act_probability":1.0}}},"u
+PASS HTTP palette PNG status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0049,"dog":0.9951},"confidence":0.955,"answer_confidence":0.9951,"action":{"act_probability":1.0}}},"us
+PASS HTTP CMYK JPEG status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0061,"dog":0.9939},"confidence":0.9465,"answer_confidence":0.9939,"action":{"act_probability":1.0}}},"u
+PASS HTTP 1x1 PNG status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"cat","probabilities":{"cat":0.6862,"dog":0.3138},"confidence":0.1025,"answer_confidence":0.6862,"action":{"act_probability":1.0}}},"u
+PASS HTTP non-square 4000x100 PNG status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0065,"dog":0.9935},"confidence":0.9432,"answer_confidence":0.9935,"action":{"act_probability":1.0}}},"u
+PASS HTTP 7000x7000 PNG expect 413 status=413 {"detail":"image too large (7000x7000 > 40000000 pixels)"}
+PASS HTTP max_len=64 (exactly fits) 200 status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.012,"dog":0.988},"confidence":0.9059,"answer_confidence":0.988,"action":{"act_probability":1.0}}},"usag
+PASS HTTP max_len=40 image does not fit expect 422 status=422 {"detail":"question 'q': image does not fit: 49 image tokens but only 26 state tokens left after the question (max_len=40). Shorten the options or use a longer-context checkpoint."}
+PASS HTTP head_max_len=8 status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.012,"dog":0.988},"confidence":0.9059,"answer_confidence":0.988,"action":{"act_probability":1.0}}},"usag
+PASS HTTP 64 questions (server cap) status=200 {"model":"laya-rl-agent","answers":{"q0":{"type":"choice","choice":"dog","probabilities":{"cat":0.0116,"dog":0.9884},"confidence":0.9091,"answer_confidence":0.9884,"action":{"act_probability":1.0}},"q
+PASS HTTP 65 questions expect 413 status=413 {"detail":"too many questions (65 > 64)"}
+PASS HTTP options 100 (limit?) status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"o21","probabilities":{"o0":0.0097,"o1":0.0106,"o2":0.0092,"o3":0.0119,"o4":0.0099,"o5":0.0113,"o6":0.0112,"o7":0.0132,"o8":0.0106,"o9
+PASS HTTP options 300 status=413 {"detail":"too many choice options for 'q' (300 > 100)"}
+PASS HTTP very long option text 60k chars status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"b","probabilities":{"a":0.3833,"b":0.6167},"confidence":0.0397,"answer_confidence":0.6167,"action":{"act_probability":1.0}}},"usage":
+PASS HTTP noul question status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"noul","noul":0.6324,"confidence":0.6324,"answer_confidence":0.6324,"action":{"act_probability":1.0}}},"usage":{"input_tokens":70,"output_tokens":0}}
+PASS HTTP score question status=422 {"detail":"question 'q': a score question takes 'criteria' as a list of level descriptions, index 0 first"}
+FAIL HTTP lone surrogate in options (JSON) status=500 {"detail":"inference failed"}
+PASS HTTP duplicate JSON key 200
+PASS HTTP NaN literal in JSON 200 {"model":"laya-rl-agent","answers":{},"usage":{"input_tokens":0,"output_tokens":0}}
+PASS HTTP deeply nested JSON (no 500) 400 {"detail":"request body must be valid JSON"}
+PASS HTTP OPTIONS (CORS) info 405
+PASS UI page contains 'systemone' fetch and file input 8178
+PASS health ok after abuse 200
+TOTAL 31

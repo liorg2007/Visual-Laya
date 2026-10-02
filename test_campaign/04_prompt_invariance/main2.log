@@ -1,0 +1,300 @@
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 78/208 [00:00<00:00, 757.04it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 1389.65it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+loaded 101s
+resumed 72
+scienceqa 72 20 102s
+aokvqa 73 20 142s
+cifar10 74 19 144s
+food101 75 20 154s
+oxford_pets 76 20 165s
+eurosat 77 20 165s
+prog 78 166s
+scienceqa 78 20 166s
+aokvqa 79 20 166s
+cifar10 80 19 166s
+food101 81 20 167s
+oxford_pets 82 20 175s
+eurosat 83 20 176s
+prog 84 176s
+scienceqa 84 20 176s
+aokvqa 85 20 187s
+cifar10 86 19 188s
+food101 87 20 188s
+oxford_pets 88 20 189s
+eurosat 89 20 189s
+prog 90 190s
+scienceqa 90 20 190s
+aokvqa 91 20 207s
+cifar10 92 19 208s
+food101 93 20 208s
+oxford_pets 94 20 208s
+eurosat 95 20 209s
+prog 96 209s
+scienceqa 96 20 209s
+aokvqa 97 20 221s
+cifar10 98 19 221s
+food101 99 20 221s
+oxford_pets 100 20 221s
+eurosat 101 20 222s
+prog 102 222s
+scienceqa 102 20 222s
+aokvqa 103 20 223s
+cifar10 104 19 223s
+food101 105 20 235s
+oxford_pets 106 20 235s
+eurosat 107 20 235s
+prog 108 236s
+scienceqa 108 20 236s
+aokvqa 109 20 247s
+cifar10 110 19 247s
+food101 111 20 248s
+oxford_pets 112 20 248s
+eurosat 113 20 248s
+prog 114 249s
+scienceqa 114 20 249s
+aokvqa 115 20 249s
+cifar10 116 19 260s
+food101 117 20 260s
+oxford_pets 118 20 261s
+eurosat 119 20 261s
+prog 120 261s
+scienceqa 120 20 261s
+aokvqa 121 20 273s
+cifar10 122 19 273s
+food101 123 20 273s
+oxford_pets 124 20 274s
+eurosat 125 20 274s
+prog 126 287s
+scienceqa 126 20 287s
+aokvqa 127 20 287s
+cifar10 128 19 287s
+food101 129 20 287s
+oxford_pets 130 20 288s
+eurosat 131 20 288s
+prog 132 301s
+scienceqa 132 20 301s
+aokvqa 133 20 302s
+cifar10 134 19 302s
+food101 135 20 303s
+oxford_pets 136 20 303s
+eurosat 137 20 303s
+prog 138 304s
+scienceqa 138 20 304s
+aokvqa 139 20 304s
+cifar10 140 19 304s
+food101 141 20 305s
+oxford_pets 142 20 317s
+eurosat 143 20 318s
+prog 144 318s
+scienceqa 144 20 318s
+aokvqa 145 20 318s
+cifar10 146 19 318s
+food101 147 20 331s
+oxford_pets 148 20 332s
+eurosat 149 20 332s
+prog 150 333s
+scienceqa 150 20 333s
+aokvqa 151 20 346s
+cifar10 152 19 347s
+food101 153 20 347s
+oxford_pets 154 20 362s
+eurosat 155 20 364s
+prog 156 377s
+scienceqa 156 20 377s
+aokvqa 157 20 392s
+cifar10 158 19 394s
+food101 159 20 394s
+oxford_pets 160 20 406s
+eurosat 161 20 422s
+prog 162 422s
+scienceqa 162 20 422s
+aokvqa 163 20 423s
+cifar10 164 19 423s
+food101 165 20 423s
+oxford_pets 166 20 423s
+eurosat 167 20 424s
+prog 168 434s
+scienceqa 168 20 434s
+aokvqa 169 20 434s
+cifar10 170 19 434s
+food101 171 20 435s
+oxford_pets 172 20 435s
+eurosat 173 20 435s
+prog 174 448s
+scienceqa 174 20 448s
+aokvqa 175 20 449s
+cifar10 176 19 449s
+food101 177 20 450s
+oxford_pets 178 20 464s
+eurosat 179 20 465s
+prog 180 466s
+scienceqa 180 20 466s
+aokvqa 181 20 467s
+cifar10 182 19 467s
+food101 183 20 468s
+oxford_pets 184 20 468s
+eurosat 185 20 480s
+prog 186 481s
+scienceqa 186 20 481s
+aokvqa 187 20 482s
+cifar10 188 19 482s
+food101 189 20 482s
+oxford_pets 190 20 493s
+eurosat 191 20 494s
+prog 192 495s
+scienceqa 192 20 495s
+aokvqa 193 20 495s
+cifar10 194 19 495s
+food101 195 20 496s
+oxford_pets 196 20 496s
+eurosat 197 20 505s
+prog 198 505s
+scienceqa 198 20 505s
+aokvqa 199 20 505s
+cifar10 200 19 505s
+food101 201 20 506s
+oxford_pets 202 20 515s
+eurosat 203 20 526s
+prog 204 527s
+scienceqa 204 20 527s
+aokvqa 205 20 527s
+cifar10 206 19 542s
+food101 207 20 542s
+oxford_pets 208 20 542s
+eurosat 209 20 543s
+prog 210 543s
+scienceqa 210 20 543s
+aokvqa 211 20 545s
+cifar10 212 19 545s
+food101 213 20 546s
+oxford_pets 214 20 546s
+eurosat 215 20 555s
+prog 216 555s
+scienceqa 216 20 555s
+aokvqa 217 20 555s
+cifar10 218 19 556s
+food101 219 20 556s
+oxford_pets 220 20 567s
+eurosat 221 20 567s
+prog 222 567s
+scienceqa 222 20 567s
+aokvqa 223 20 568s
+cifar10 224 19 568s
+food101 225 20 568s
+oxford_pets 226 20 569s
+eurosat 227 20 578s
+prog 228 579s
+scienceqa 228 20 579s
+aokvqa 229 20 579s
+cifar10 230 19 579s
+food101 231 20 580s
+oxford_pets 232 20 580s
+eurosat 233 20 590s
+prog 234 590s
+scienceqa 234 20 590s
+aokvqa 235 20 590s
+cifar10 236 19 591s
+food101 237 20 591s
+oxford_pets 238 20 591s
+eurosat 239 20 593s
+prog 240 604s
+scienceqa 240 20 604s
+aokvqa 241 20 604s
+cifar10 242 19 605s
+food101 243 20 605s
+oxford_pets 244 20 605s
+eurosat 245 20 606s
+prog 246 618s
+scienceqa 246 20 618s
+aokvqa 247 20 619s
+cifar10 248 19 619s
+food101 249 20 620s
+oxford_pets 250 20 620s
+eurosat 251 20 621s
+prog 252 638s
+scienceqa 252 20 638s
+aokvqa 253 20 638s
+cifar10 254 19 639s
+food101 255 20 639s
+oxford_pets 256 20 640s
+eurosat 257 20 641s
+prog 258 657s
+scienceqa 258 20 658s
+aokvqa 259 20 658s
+cifar10 260 19 658s
+food101 261 20 659s
+oxford_pets 262 20 660s
+eurosat 263 20 660s
+prog 264 660s
+scienceqa 264 20 661s
+aokvqa 265 20 703s
+cifar10 266 19 703s
+food101 267 20 704s
+oxford_pets 268 20 704s
+eurosat 269 20 704s
+prog 270 705s
+scienceqa 270 20 705s
+aokvqa 271 20 705s
+cifar10 272 19 706s
+food101 273 20 723s
+oxford_pets 274 20 723s
+eurosat 275 20 724s
+prog 276 724s
+scienceqa 276 20 724s
+aokvqa 277 20 725s
+cifar10 278 19 726s
+food101 279 20 726s
+oxford_pets 280 20 741s
+eurosat 281 20 741s
+prog 282 742s
+scienceqa 282 20 742s
+aokvqa 283 20 742s
+cifar10 284 19 742s
+food101 285 20 743s
+oxford_pets 286 20 743s
+eurosat 287 20 756s
+prog 288 757s
+scienceqa 288 20 757s
+aokvqa 289 20 757s
+cifar10 290 19 757s
+food101 291 20 757s
+oxford_pets 292 20 758s
+eurosat 293 20 772s
+prog 294 788s
+scienceqa 294 20 788s
+aokvqa 295 20 789s
+cifar10 296 19 789s
+food101 297 20 789s
+oxford_pets 298 20 789s
+eurosat 299 20 790s
+prog 300 790s
+done 790s

@@ -1,0 +1,27 @@
+[
+ {
+  "test": "simulated _fast set + image (expect clear ValueError)",
+  "status": "PASS",
+  "detail": "ValueError: image states are not supported on the TileLang fast path; load without fast=True (or call deaccelerate()) to send images"
+ },
+ {
+  "test": "accelerate(strict=True) without tilelang",
+  "status": "INFO",
+  "detail": "ModuleNotFoundError: No module named 'tilelang'"
+ },
+ {
+  "test": "Python API surrogate in option (expect ValueError or success)",
+  "status": "FAIL",
+  "detail": "TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]"
+ },
+ {
+  "test": "Python API surrogate in instructions (expect ValueError or success)",
+  "status": "FAIL",
+  "detail": "TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]"
+ },
+ {
+  "test": "Python API surrogate in state text",
+  "status": "FAIL",
+  "detail": "TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]"
+ }
+]

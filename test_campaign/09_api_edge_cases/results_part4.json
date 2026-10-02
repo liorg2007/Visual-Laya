@@ -1,0 +1,27 @@
+[
+ {
+  "test": "load(compile=True) succeeded",
+  "status": "INFO",
+  "detail": "_compiled=True load_s=4.8"
+ },
+ {
+  "test": "compile=True + image predict (expect clear ValueError)",
+  "status": "PASS",
+  "detail": "ValueError: image states are not supported with compile=True; load without it to send images"
+ },
+ {
+  "test": "compile=True + text-only surrogate (expect ValueError)",
+  "status": "PASS",
+  "detail": "ValueError: state contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"
+ },
+ {
+  "test": "compile=True text-only predict call 1",
+  "status": "FAIL",
+  "detail": "TorchRuntimeError: Failed running call_function <built-in function add>(*(None, FakeTensor(..., device='cuda:0', size=(1, 1, 1024))), **{}):\nunsupported operand type(s) for +: 'NoneType' and 'FakeTensor'\n\nfrom user code:\n   File \"/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/common.py\", line 317, in t after 7.1s"
+ },
+ {
+  "test": "compile=True vs eager text-only probabilities (info)",
+  "status": "INFO",
+  "detail": "eager={\"sports\": 0.9624, \"world\": 0.0376} compiled_last=n/a"
+ }
+]
