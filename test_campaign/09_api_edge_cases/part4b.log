@@ -1,0 +1,38 @@
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 3427.47it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+PASS simulated _fast set + image (expect clear ValueError) ValueError: image states are not supported on the TileLang fast path; load without fast=True (or call deaccelerate()) to send images
+INFO accelerate(strict=True) without tilelang ModuleNotFoundError: No module named 'tilelang'
+PASS Python API surrogate in option (expect ValueError) ValueError: question 'q' contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS Python API surrogate in instructions (expect ValueError) ValueError: question 'q' contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS Python API surrogate in state text (expect ValueError) ValueError: state contains an invalid character '\ud800' at position 2 (a lone surrogate cannot be encoded as UTF-8)
+PASS Python API surrogate in image-state text (expect ValueError) ValueError: state text contains an invalid character '\ud800' at position 2 (a lone surrogate cannot be encoded as UTF-8)
+FAIL Python API text-only predict_long surrogate (expect ValueError) TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]

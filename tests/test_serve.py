@@ -1,5 +1,6 @@
 import base64
 import io
+import json
 
 import numpy as np
 import pytest
@@ -124,6 +125,20 @@ def test_request_validation(client):
     assert client.post("/v1/systemone", json={"state": {"image": img}, "questions": bad_q}).status_code == 422
     h = client.get("/health").json()
     assert h["status"] == "ok" and h["vision"] and h["limits"]["max_image_bytes"] == 10 * 1024 * 1024
+
+
+@pytest.mark.parametrize("where", ["label", "instructions", "image_text", "text_state", "qid", "qid_text"])
+def test_lone_surrogate_is_422(client, where):
+    # JSON "\ud800" decodes to a lone surrogate the tokenizer cannot encode; it used to be a 500.
+    bad = "a\ud800b"
+    img = _b64(_img_bytes())
+    q = {"type": "choice", "instructions": bad if where == "instructions" else "Which?",
+         "criteria": {(bad if where == "label" else "cat"): None, "dog": None}}
+    state = {"image_text": {"image": img, "text": bad}, "text_state": bad, "qid_text": "hi"}.get(where, {"image": img})
+    body = json.dumps({"state": state, "questions": {(bad if where.startswith("qid") else "q"): q}})  # ensure_ascii escapes the surrogate
+    r = client.post("/v1/systemone", content=body.encode(), headers={"content-type": "application/json"})
+    assert r.status_code == 422, r.text
+    assert "surrogate" in r.json()["detail"]
 
 
 def test_bearer_token(agent, monkeypatch):

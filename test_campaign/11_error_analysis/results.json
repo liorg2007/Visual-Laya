@@ -1,0 +1,2222 @@
+{
+ "oxford_pets": {
+  "overall": {
+   "n": 347,
+   "acc": 0.6513,
+   "ci": [
+    0.6,
+    0.7
+   ]
+  },
+  "per_class": {
+   "abyssinian": {
+    "n": 5,
+    "acc": 1.0,
+    "ci": [
+     0.566,
+     1.0
+    ]
+   },
+   "american bulldog": {
+    "n": 9,
+    "acc": 0.1111,
+    "ci": [
+     0.02,
+     0.435
+    ]
+   },
+   "american pit bull terrier": {
+    "n": 7,
+    "acc": 0.5714,
+    "ci": [
+     0.25,
+     0.842
+    ]
+   },
+   "basset hound": {
+    "n": 8,
+    "acc": 0.625,
+    "ci": [
+     0.306,
+     0.863
+    ]
+   },
+   "beagle": {
+    "n": 12,
+    "acc": 0.75,
+    "ci": [
+     0.468,
+     0.911
+    ]
+   },
+   "bengal": {
+    "n": 8,
+    "acc": 1.0,
+    "ci": [
+     0.676,
+     1.0
+    ]
+   },
+   "birman": {
+    "n": 3,
+    "acc": 0.6667,
+    "ci": [
+     0.208,
+     0.939
+    ]
+   },
+   "bombay": {
+    "n": 12,
+    "acc": 0.4167,
+    "ci": [
+     0.193,
+     0.68
+    ]
+   },
+   "boxer": {
+    "n": 12,
+    "acc": 0.75,
+    "ci": [
+     0.468,
+     0.911
+    ]
+   },
+   "british shorthair": {
+    "n": 11,
+    "acc": 0.4545,
+    "ci": [
+     0.213,
+     0.72
+    ]
+   },
+   "chihuahua": {
+    "n": 13,
+    "acc": 0.9231,
+    "ci": [
+     0.667,
+     0.986
+    ]
+   },
+   "egyptian mau": {
+    "n": 6,
+    "acc": 1.0,
+    "ci": [
+     0.61,
+     1.0
+    ]
+   },
+   "english cocker spaniel": {
+    "n": 5,
+    "acc": 0.2,
+    "ci": [
+     0.036,
+     0.624
+    ]
+   },
+   "english setter": {
+    "n": 14,
+    "acc": 0.5,
+    "ci": [
+     0.268,
+     0.732
+    ]
+   },
+   "german shorthaired": {
+    "n": 9,
+    "acc": 0.5556,
+    "ci": [
+     0.267,
+     0.811
+    ]
+   },
+   "great pyrenees": {
+    "n": 8,
+    "acc": 0.875,
+    "ci": [
+     0.529,
+     0.978
+    ]
+   },
+   "havanese": {
+    "n": 5,
+    "acc": 1.0,
+    "ci": [
+     0.566,
+     1.0
+    ]
+   },
+   "japanese chin": {
+    "n": 6,
+    "acc": 0.5,
+    "ci": [
+     0.188,
+     0.812
+    ]
+   },
+   "keeshond": {
+    "n": 13,
+    "acc": 0.6923,
+    "ci": [
+     0.424,
+     0.873
+    ]
+   },
+   "leonberger": {
+    "n": 14,
+    "acc": 0.1429,
+    "ci": [
+     0.04,
+     0.399
+    ]
+   },
+   "maine coon": {
+    "n": 5,
+    "acc": 1.0,
+    "ci": [
+     0.566,
+     1.0
+    ]
+   },
+   "miniature pinscher": {
+    "n": 8,
+    "acc": 0.25,
+    "ci": [
+     0.071,
+     0.591
+    ]
+   },
+   "newfoundland": {
+    "n": 7,
+    "acc": 0.7143,
+    "ci": [
+     0.359,
+     0.918
+    ]
+   },
+   "persian": {
+    "n": 9,
+    "acc": 0.3333,
+    "ci": [
+     0.121,
+     0.646
+    ]
+   },
+   "pomeranian": {
+    "n": 7,
+    "acc": 0.5714,
+    "ci": [
+     0.25,
+     0.842
+    ]
+   },
+   "pug": {
+    "n": 9,
+    "acc": 0.8889,
+    "ci": [
+     0.565,
+     0.98
+    ]
+   },
+   "ragdoll": {
+    "n": 17,
+    "acc": 0.7059,
+    "ci": [
+     0.469,
+     0.867
+    ]
+   },
+   "russian blue": {
+    "n": 11,
+    "acc": 0.9091,
+    "ci": [
+     0.623,
+     0.984
+    ]
+   },
+   "saint bernard": {
+    "n": 9,
+    "acc": 0.3333,
+    "ci": [
+     0.121,
+     0.646
+    ]
+   },
+   "samoyed": {
+    "n": 14,
+    "acc": 0.3571,
+    "ci": [
+     0.163,
+     0.612
+    ]
+   },
+   "scottish terrier": {
+    "n": 11,
+    "acc": 0.6364,
+    "ci": [
+     0.354,
+     0.848
+    ]
+   },
+   "shiba inu": {
+    "n": 11,
+    "acc": 1.0,
+    "ci": [
+     0.741,
+     1.0
+    ]
+   },
+   "siamese": {
+    "n": 9,
+    "acc": 1.0,
+    "ci": [
+     0.701,
+     1.0
+    ]
+   },
+   "sphynx": {
+    "n": 7,
+    "acc": 1.0,
+    "ci": [
+     0.646,
+     1.0
+    ]
+   },
+   "staffordshire bull terrier": {
+    "n": 11,
+    "acc": 0.7273,
+    "ci": [
+     0.434,
+     0.903
+    ]
+   },
+   "wheaten terrier": {
+    "n": 13,
+    "acc": 0.7692,
+    "ci": [
+     0.497,
+     0.918
+    ]
+   },
+   "yorkshire terrier": {
+    "n": 9,
+    "acc": 0.7778,
+    "ci": [
+     0.453,
+     0.937
+    ]
+   }
+  },
+  "top_confusions": [
+   {
+    "n": 5,
+    "true": "samoyed",
+    "pred": "great pyrenees"
+   },
+   {
+    "n": 5,
+    "true": "british shorthair",
+    "pred": "russian blue"
+   },
+   {
+    "n": 4,
+    "true": "persian",
+    "pred": "ragdoll"
+   },
+   {
+    "n": 3,
+    "true": "pomeranian",
+    "pred": "havanese"
+   },
+   {
+    "n": 3,
+    "true": "leonberger",
+    "pred": "japanese chin"
+   },
+   {
+    "n": 3,
+    "true": "leonberger",
+    "pred": "great pyrenees"
+   },
+   {
+    "n": 3,
+    "true": "english setter",
+    "pred": "english cocker spaniel"
+   },
+   {
+    "n": 3,
+    "true": "basset hound",
+    "pred": "beagle"
+   },
+   {
+    "n": 3,
+    "true": "american bulldog",
+    "pred": "boxer"
+   },
+   {
+    "n": 2,
+    "true": "wheaten terrier",
+    "pred": "scottish terrier"
+   },
+   {
+    "n": 2,
+    "true": "staffordshire bull terrier",
+    "pred": "american pit bull terrier"
+   },
+   {
+    "n": 2,
+    "true": "scottish terrier",
+    "pred": "newfoundland"
+   }
+  ],
+  "verify_binary": {
+   "n": 347,
+   "acc": 0.879,
+   "ci": [
+    0.84,
+    0.909
+   ],
+   "tp": 167,
+   "fp": 23,
+   "fn": 19,
+   "tn": 138
+  }
+ },
+ "eurosat": {
+  "overall": {
+   "n": 1334,
+   "acc": 0.9603,
+   "ci": [
+    0.948,
+    0.969
+   ]
+  },
+  "per_class": {
+   "Annual Crop": {
+    "n": 149,
+    "acc": 0.9866,
+    "ci": [
+     0.952,
+     0.996
+    ]
+   },
+   "Forest": {
+    "n": 146,
+    "acc": 1.0,
+    "ci": [
+     0.974,
+     1.0
+    ]
+   },
+   "Herbaceous Vegetation": {
+    "n": 163,
+    "acc": 0.9693,
+    "ci": [
+     0.93,
+     0.987
+    ]
+   },
+   "Highway": {
+    "n": 113,
+    "acc": 0.9381,
+    "ci": [
+     0.878,
+     0.97
+    ]
+   },
+   "Industrial Buildings": {
+    "n": 129,
+    "acc": 0.9845,
+    "ci": [
+     0.945,
+     0.996
+    ]
+   },
+   "Pasture": {
+    "n": 76,
+    "acc": 0.9737,
+    "ci": [
+     0.909,
+     0.993
+    ]
+   },
+   "Permanent Crop": {
+    "n": 126,
+    "acc": 0.8571,
+    "ci": [
+     0.785,
+     0.908
+    ]
+   },
+   "Residential Buildings": {
+    "n": 153,
+    "acc": 0.9608,
+    "ci": [
+     0.917,
+     0.982
+    ]
+   },
+   "River": {
+    "n": 120,
+    "acc": 0.9333,
+    "ci": [
+     0.874,
+     0.966
+    ]
+   },
+   "SeaLake": {
+    "n": 159,
+    "acc": 0.9811,
+    "ci": [
+     0.946,
+     0.994
+    ]
+   }
+  },
+  "top_confusions": [
+   {
+    "n": 8,
+    "true": "Permanent Crop",
+    "pred": "Annual Crop"
+   },
+   {
+    "n": 5,
+    "true": "Permanent Crop",
+    "pred": "Herbaceous Vegetation"
+   },
+   {
+    "n": 4,
+    "true": "River",
+    "pred": "Highway"
+   },
+   {
+    "n": 4,
+    "true": "Highway",
+    "pred": "Annual Crop"
+   },
+   {
+    "n": 3,
+    "true": "SeaLake",
+    "pred": "River"
+   },
+   {
+    "n": 3,
+    "true": "Permanent Crop",
+    "pred": "Pasture"
+   },
+   {
+    "n": 3,
+    "true": "Herbaceous Vegetation",
+    "pred": "Pasture"
+   },
+   {
+    "n": 2,
+    "true": "River",
+    "pred": "Annual Crop"
+   },
+   {
+    "n": 2,
+    "true": "Residential Buildings",
+    "pred": "Industrial Buildings"
+   },
+   {
+    "n": 2,
+    "true": "Residential Buildings",
+    "pred": "Herbaceous Vegetation"
+   },
+   {
+    "n": 2,
+    "true": "Pasture",
+    "pred": "Forest"
+   },
+   {
+    "n": 2,
+    "true": "Highway",
+    "pred": "River"
+   }
+  ],
+  "verify_binary": {
+   "n": 1334,
+   "acc": 0.9798,
+   "ci": [
+    0.971,
+    0.986
+   ],
+   "tp": 646,
+   "fp": 15,
+   "fn": 12,
+   "tn": 661
+  }
+ },
+ "vqav2": {
+  "by_type": {
+   "ALL": {
+    "n": 3075,
+    "acc": 0.6085,
+    "ci": [
+     0.591,
+     0.626
+    ],
+    "gt_yes_rate": 0.467,
+    "pred_yes_rate": 0.389,
+    "yes_recall": null
+   },
+   "is the": {
+    "n": 691,
+    "acc": 0.6049,
+    "ci": [
+     0.568,
+     0.641
+    ],
+    "gt_yes_rate": 0.434,
+    "pred_yes_rate": 0.389,
+    "yes_recall": null
+   },
+   "is this": {
+    "n": 608,
+    "acc": 0.653,
+    "ci": [
+     0.614,
+     0.69
+    ],
+    "gt_yes_rate": 0.433,
+    "pred_yes_rate": 0.359,
+    "yes_recall": null
+   },
+   "is there": {
+    "n": 288,
+    "acc": 0.5694,
+    "ci": [
+     0.512,
+     0.625
+    ],
+    "gt_yes_rate": 0.51,
+    "pred_yes_rate": 0.358,
+    "yes_recall": null
+   },
+   "are the": {
+    "n": 210,
+    "acc": 0.6048,
+    "ci": [
+     0.537,
+     0.668
+    ],
+    "gt_yes_rate": 0.519,
+    "pred_yes_rate": 0.419,
+    "yes_recall": null
+   },
+   "are there": {
+    "n": 158,
+    "acc": 0.6139,
+    "ci": [
+     0.536,
+     0.686
+    ],
+    "gt_yes_rate": 0.551,
+    "pred_yes_rate": 0.468,
+    "yes_recall": null
+   },
+   "is it": {
+    "n": 138,
+    "acc": 0.6232,
+    "ci": [
+     0.54,
+     0.7
+    ],
+    "gt_yes_rate": 0.514,
+    "pred_yes_rate": 0.428,
+    "yes_recall": null
+   },
+   "does the": {
+    "n": 108,
+    "acc": 0.5185,
+    "ci": [
+     0.425,
+     0.61
+    ],
+    "gt_yes_rate": 0.546,
+    "pred_yes_rate": 0.38,
+    "yes_recall": null
+   },
+   "are these": {
+    "n": 100,
+    "acc": 0.61,
+    "ci": [
+     0.512,
+     0.7
+    ],
+    "gt_yes_rate": 0.44,
+    "pred_yes_rate": 0.41,
+    "yes_recall": null
+   },
+   "are": {
+    "n": 84,
+    "acc": 0.5714,
+    "ci": [
+     0.465,
+     0.672
+    ],
+    "gt_yes_rate": 0.44,
+    "pred_yes_rate": 0.464,
+    "yes_recall": null
+   },
+   "does this": {
+    "n": 82,
+    "acc": 0.622,
+    "ci": [
+     0.514,
+     0.719
+    ],
+    "gt_yes_rate": 0.402,
+    "pred_yes_rate": 0.439,
+    "yes_recall": null
+   },
+   "is": {
+    "n": 75,
+    "acc": 0.6,
+    "ci": [
+     0.487,
+     0.703
+    ],
+    "gt_yes_rate": 0.48,
+    "pred_yes_rate": 0.347,
+    "yes_recall": null
+   },
+   "are they": {
+    "n": 58,
+    "acc": 0.6207,
+    "ci": [
+     0.492,
+     0.734
+    ],
+    "gt_yes_rate": 0.414,
+    "pred_yes_rate": 0.345,
+    "yes_recall": null
+   },
+   "would": {
+    "n": 47,
+    "acc": 0.6383,
+    "ci": [
+     0.495,
+     0.76
+    ],
+    "gt_yes_rate": 0.447,
+    "pred_yes_rate": 0.298,
+    "yes_recall": null
+   },
+   "has": {
+    "n": 38,
+    "acc": 0.5526,
+    "ci": [
+     0.397,
+     0.699
+    ],
+    "gt_yes_rate": 0.474,
+    "pred_yes_rate": 0.342,
+    "yes_recall": null
+   },
+   "does": {
+    "n": 34,
+    "acc": 0.7941,
+    "ci": [
+     0.632,
+     0.897
+    ],
+    "gt_yes_rate": 0.471,
+    "pred_yes_rate": 0.324,
+    "yes_recall": null
+   },
+   "is that": {
+    "n": 33,
+    "acc": 0.6667,
+    "ci": [
+     0.496,
+     0.802
+    ],
+    "gt_yes_rate": 0.424,
+    "pred_yes_rate": 0.394,
+    "yes_recall": null
+   },
+   "do you": {
+    "n": 32,
+    "acc": 0.5,
+    "ci": [
+     0.336,
+     0.664
+    ],
+    "gt_yes_rate": 0.438,
+    "pred_yes_rate": 0.375,
+    "yes_recall": null
+   },
+   "is she": {
+    "n": 30,
+    "acc": 0.6333,
+    "ci": [
+     0.455,
+     0.781
+    ],
+    "gt_yes_rate": 0.567,
+    "pred_yes_rate": 0.333,
+    "yes_recall": null
+   },
+   "can you": {
+    "n": 28,
+    "acc": 0.5357,
+    "ci": [
+     0.358,
+     0.705
+    ],
+    "gt_yes_rate": 0.429,
+    "pred_yes_rate": 0.536,
+    "yes_recall": null
+   },
+   "could": {
+    "n": 28,
+    "acc": 0.6071,
+    "ci": [
+     0.424,
+     0.764
+    ],
+    "gt_yes_rate": 0.607,
+    "pred_yes_rate": 0.357,
+    "yes_recall": null
+   },
+   "is he": {
+    "n": 28,
+    "acc": 0.5,
+    "ci": [
+     0.326,
+     0.674
+    ],
+    "gt_yes_rate": 0.393,
+    "pred_yes_rate": 0.393,
+    "yes_recall": null
+   },
+   "do the": {
+    "n": 27,
+    "acc": 0.4815,
+    "ci": [
+     0.307,
+     0.66
+    ],
+    "gt_yes_rate": 0.333,
+    "pred_yes_rate": 0.407,
+    "yes_recall": null
+   },
+   "can": {
+    "n": 25,
+    "acc": 0.48,
+    "ci": [
+     0.3,
+     0.665
+    ],
+    "gt_yes_rate": 0.48,
+    "pred_yes_rate": 0.6,
+    "yes_recall": null
+   },
+   "did": {
+    "n": 24,
+    "acc": 0.5833,
+    "ci": [
+     0.388,
+     0.755
+    ],
+    "gt_yes_rate": 0.542,
+    "pred_yes_rate": 0.375,
+    "yes_recall": null
+   },
+   "was": {
+    "n": 21,
+    "acc": 0.5714,
+    "ci": [
+     0.365,
+     0.755
+    ],
+    "gt_yes_rate": 0.524,
+    "pred_yes_rate": 0.286,
+    "yes_recall": null
+   },
+   "do": {
+    "n": 20,
+    "acc": 0.5,
+    "ci": [
+     0.299,
+     0.701
+    ],
+    "gt_yes_rate": 0.45,
+    "pred_yes_rate": 0.25,
+    "yes_recall": null
+   },
+   "other": {
+    "n": 20,
+    "acc": 0.75,
+    "ci": [
+     0.531,
+     0.888
+    ],
+    "gt_yes_rate": 0.6,
+    "pred_yes_rate": 0.45,
+    "yes_recall": null
+   },
+   "will": {
+    "n": 17,
+    "acc": 0.7647,
+    "ci": [
+     0.527,
+     0.904
+    ],
+    "gt_yes_rate": 0.412,
+    "pred_yes_rate": 0.412,
+    "yes_recall": null
+   },
+   "do these": {
+    "n": 15,
+    "acc": 0.6,
+    "ci": [
+     0.357,
+     0.802
+    ],
+    "gt_yes_rate": 0.667,
+    "pred_yes_rate": 0.533,
+    "yes_recall": null
+   },
+   "have": {
+    "n": 5,
+    "acc": 0.6,
+    "ci": [
+     0.231,
+     0.882
+    ],
+    "gt_yes_rate": 0.4,
+    "pred_yes_rate": 0.4,
+    "yes_recall": null
+   },
+   "are you": {
+    "n": 3,
+    "acc": 1.0,
+    "ci": [
+     0.438,
+     1.0
+    ],
+    "gt_yes_rate": 0.667,
+    "pred_yes_rate": 0.667,
+    "yes_recall": null
+   }
+  },
+  "yes_recall": 0.498,
+  "no_recall": 0.706,
+  "majority_baseline": 0.533,
+  "by_keyword": {
+   "color": {
+    "n": 26,
+    "acc": 0.4615,
+    "ci": [
+     0.288,
+     0.645
+    ]
+   },
+   "number/count-ish": {
+    "n": 131,
+    "acc": 0.542,
+    "ci": [
+     0.457,
+     0.625
+    ]
+   },
+   "people/animal": {
+    "n": 533,
+    "acc": 0.6248,
+    "ci": [
+     0.583,
+     0.665
+    ]
+   },
+   "\"there\"": {
+    "n": 453,
+    "acc": 0.585,
+    "ci": [
+     0.539,
+     0.629
+    ]
+   },
+   "sky/weather": {
+    "n": 93,
+    "acc": 0.6774,
+    "ci": [
+     0.577,
+     0.764
+    ]
+   },
+   "negation": {
+    "n": 1,
+    "acc": 0.0,
+    "ci": [
+     0.0,
+     0.793
+    ]
+   }
+  }
+ },
+ "confidence": {
+  "oxford_pets": {
+   "n": 347,
+   "acc": 0.6513,
+   "mean_conf": 0.6233,
+   "wrong_at_conf>=0.7": {
+    "n_wrong": 20,
+    "n_above": 145,
+    "err_rate_above": 0.1379
+   },
+   "wrong_at_conf>=0.8": {
+    "n_wrong": 9,
+    "n_above": 105,
+    "err_rate_above": 0.0857
+   },
+   "wrong_at_conf>=0.9": {
+    "n_wrong": 4,
+    "n_above": 58,
+    "err_rate_above": 0.069
+   },
+   "wrong_at_conf>=0.95": {
+    "n_wrong": 0,
+    "n_above": 32,
+    "err_rate_above": 0.0
+   },
+   "correct_at_conf<0.4": {
+    "n_correct": 31,
+    "n_below": 82,
+    "acc_below": 0.378
+   },
+   "correct_at_conf<0.5": {
+    "n_correct": 52,
+    "n_below": 126,
+    "acc_below": 0.4127
+   },
+   "correct_at_conf<0.6": {
+    "n_correct": 77,
+    "n_below": 163,
+    "acc_below": 0.4724
+   },
+   "reliability(bin_lo,n,acc,conf)": [
+    [
+     0.1,
+     6,
+     0.167,
+     0.163
+    ],
+    [
+     0.2,
+     27,
+     0.296,
+     0.252
+    ],
+    [
+     0.3,
+     49,
+     0.449,
+     0.349
+    ],
+    [
+     0.4,
+     44,
+     0.477,
+     0.46
+    ],
+    [
+     0.5,
+     38,
+     0.658,
+     0.55
+    ],
+    [
+     0.6,
+     38,
+     0.632,
+     0.657
+    ],
+    [
+     0.7,
+     40,
+     0.725,
+     0.751
+    ],
+    [
+     0.8,
+     47,
+     0.894,
+     0.856
+    ],
+    [
+     0.9,
+     58,
+     0.931,
+     0.949
+    ]
+   ]
+  },
+  "eurosat": {
+   "n": 1334,
+   "acc": 0.9603,
+   "mean_conf": 0.9671,
+   "wrong_at_conf>=0.7": {
+    "n_wrong": 35,
+    "n_above": 1293,
+    "err_rate_above": 0.0271
+   },
+   "wrong_at_conf>=0.8": {
+    "n_wrong": 27,
+    "n_above": 1272,
+    "err_rate_above": 0.0212
+   },
+   "wrong_at_conf>=0.9": {
+    "n_wrong": 13,
+    "n_above": 1222,
+    "err_rate_above": 0.0106
+   },
+   "wrong_at_conf>=0.95": {
+    "n_wrong": 8,
+    "n_above": 1160,
+    "err_rate_above": 0.0069
+   },
+   "correct_at_conf<0.4": {
+    "n_correct": 0,
+    "n_below": 1,
+    "acc_below": 0.0
+   },
+   "correct_at_conf<0.5": {
+    "n_correct": 4,
+    "n_below": 8,
+    "acc_below": 0.5
+   },
+   "correct_at_conf<0.6": {
+    "n_correct": 12,
+    "n_below": 26,
+    "acc_below": 0.4615
+   },
+   "reliability(bin_lo,n,acc,conf)": [
+    [
+     0.3,
+     1,
+     0.0,
+     0.368
+    ],
+    [
+     0.4,
+     7,
+     0.571,
+     0.467
+    ],
+    [
+     0.5,
+     18,
+     0.444,
+     0.554
+    ],
+    [
+     0.6,
+     15,
+     0.733,
+     0.639
+    ],
+    [
+     0.7,
+     21,
+     0.619,
+     0.749
+    ],
+    [
+     0.8,
+     50,
+     0.72,
+     0.862
+    ],
+    [
+     0.9,
+     1222,
+     0.989,
+     0.989
+    ]
+   ]
+  },
+  "vqav2_yesno": {
+   "n": 3075,
+   "acc": 0.6085,
+   "mean_conf": 0.6144,
+   "wrong_at_conf>=0.7": {
+    "n_wrong": 152,
+    "n_above": 555,
+    "err_rate_above": 0.2739
+   },
+   "wrong_at_conf>=0.8": {
+    "n_wrong": 39,
+    "n_above": 192,
+    "err_rate_above": 0.2031
+   },
+   "wrong_at_conf>=0.9": {
+    "n_wrong": 4,
+    "n_above": 30,
+    "err_rate_above": 0.1333
+   },
+   "wrong_at_conf>=0.95": {
+    "n_wrong": 0,
+    "n_above": 3,
+    "err_rate_above": 0.0
+   },
+   "correct_at_conf<0.4": {
+    "n_correct": 0,
+    "n_below": 0,
+    "acc_below": null
+   },
+   "correct_at_conf<0.5": {
+    "n_correct": 0,
+    "n_below": 0,
+    "acc_below": null
+   },
+   "correct_at_conf<0.6": {
+    "n_correct": 911,
+    "n_below": 1691,
+    "acc_below": 0.5387
+   },
+   "reliability(bin_lo,n,acc,conf)": [
+    [
+     0.5,
+     1691,
+     0.539,
+     0.546
+    ],
+    [
+     0.6,
+     829,
+     0.672,
+     0.642
+    ],
+    [
+     0.7,
+     363,
+     0.689,
+     0.742
+    ],
+    [
+     0.8,
+     162,
+     0.784,
+     0.84
+    ],
+    [
+     0.9,
+     30,
+     0.867,
+     0.926
+    ]
+   ]
+  },
+  "ag_news": {
+   "n": 5000,
+   "acc": 0.9244,
+   "mean_conf": 0.9537,
+   "wrong_at_conf>=0.7": {
+    "n_wrong": 279,
+    "n_above": 4788,
+    "err_rate_above": 0.0583
+   },
+   "wrong_at_conf>=0.8": {
+    "n_wrong": 238,
+    "n_above": 4637,
+    "err_rate_above": 0.0513
+   },
+   "wrong_at_conf>=0.9": {
+    "n_wrong": 177,
+    "n_above": 4402,
+    "err_rate_above": 0.0402
+   },
+   "wrong_at_conf>=0.95": {
+    "n_wrong": 120,
+    "n_above": 4024,
+    "err_rate_above": 0.0298
+   },
+   "correct_at_conf<0.4": {
+    "n_correct": 4,
+    "n_below": 12,
+    "acc_below": 0.3333
+   },
+   "correct_at_conf<0.5": {
+    "n_correct": 16,
+    "n_below": 42,
+    "acc_below": 0.381
+   },
+   "correct_at_conf<0.6": {
+    "n_correct": 59,
+    "n_below": 125,
+    "acc_below": 0.472
+   },
+   "reliability(bin_lo,n,acc,conf)": [
+    [
+     0.2,
+     3,
+     0.333,
+     0.266
+    ],
+    [
+     0.3,
+     9,
+     0.333,
+     0.359
+    ],
+    [
+     0.4,
+     30,
+     0.4,
+     0.467
+    ],
+    [
+     0.5,
+     83,
+     0.518,
+     0.546
+    ],
+    [
+     0.6,
+     87,
+     0.621,
+     0.65
+    ],
+    [
+     0.7,
+     151,
+     0.728,
+     0.753
+    ],
+    [
+     0.8,
+     235,
+     0.74,
+     0.857
+    ],
+    [
+     0.9,
+     4402,
+     0.96,
+     0.984
+    ]
+   ]
+  },
+  "boolq": {
+   "n": 3270,
+   "acc": 0.7468,
+   "mean_conf": 0.8182,
+   "wrong_at_conf>=0.7": {
+    "n_wrong": 525,
+    "n_above": 2573,
+    "err_rate_above": 0.204
+   },
+   "wrong_at_conf>=0.8": {
+    "n_wrong": 336,
+    "n_above": 2014,
+    "err_rate_above": 0.1668
+   },
+   "wrong_at_conf>=0.9": {
+    "n_wrong": 124,
+    "n_above": 1136,
+    "err_rate_above": 0.1092
+   },
+   "wrong_at_conf>=0.95": {
+    "n_wrong": 48,
+    "n_above": 611,
+    "err_rate_above": 0.0786
+   },
+   "correct_at_conf<0.4": {
+    "n_correct": 0,
+    "n_below": 0,
+    "acc_below": null
+   },
+   "correct_at_conf<0.5": {
+    "n_correct": 0,
+    "n_below": 0,
+    "acc_below": null
+   },
+   "correct_at_conf<0.6": {
+    "n_correct": 156,
+    "n_below": 289,
+    "acc_below": 0.5398
+   },
+   "reliability(bin_lo,n,acc,conf)": [
+    [
+     0.5,
+     289,
+     0.54,
+     0.553
+    ],
+    [
+     0.6,
+     409,
+     0.582,
+     0.655
+    ],
+    [
+     0.7,
+     558,
+     0.663,
+     0.754
+    ],
+    [
+     0.8,
+     878,
+     0.759,
+     0.854
+    ],
+    [
+     0.9,
+     1136,
+     0.891,
+     0.948
+    ]
+   ]
+  }
+ },
+ "by_option_count": {
+  "vqav2_yesno": {
+   "noul_2opts": {
+    "n": 3075,
+    "acc": 0.6085,
+    "ci": [
+     0.591,
+     0.626
+    ]
+   }
+  },
+  "boolq": {
+   "noul_2opts": {
+    "n": 3270,
+    "acc": 0.7468,
+    "ci": [
+     0.732,
+     0.761
+    ]
+   }
+  },
+  "ag_news": {
+   "choice_4opts": {
+    "n": 5000,
+    "acc": 0.9244,
+    "ci": [
+     0.917,
+     0.931
+    ]
+   }
+  },
+  "eurosat": {
+   "choice_10opts": {
+    "n": 1334,
+    "acc": 0.9603,
+    "ci": [
+     0.948,
+     0.969
+    ]
+   },
+   "noul_2opts": {
+    "n": 1334,
+    "acc": 0.9798,
+    "ci": [
+     0.971,
+     0.986
+    ]
+   }
+  },
+  "oxford_pets": {
+   "choice_20opts": {
+    "n": 347,
+    "acc": 0.6513,
+    "ci": [
+     0.6,
+     0.7
+    ]
+   },
+   "noul_2opts": {
+    "n": 347,
+    "acc": 0.879,
+    "ci": [
+     0.84,
+     0.909
+    ]
+   }
+  },
+  "typed_decisions": {
+   "choice_4opts": {
+    "n": 400,
+    "acc": 0.6775,
+    "ci": [
+     0.63,
+     0.721
+    ]
+   },
+   "noul_2opts": {
+    "n": 600,
+    "acc": 0.8233,
+    "ci": [
+     0.791,
+     0.852
+    ]
+   },
+   "choice_5opts": {
+    "n": 200,
+    "acc": 0.705,
+    "ci": [
+     0.638,
+     0.764
+    ]
+   }
+  }
+ },
+ "by_position": {
+  "oxford_pets": {
+   "by_true_position_quartile": {
+    "Q1": {
+     "n": 82,
+     "acc": 0.7073,
+     "ci": [
+      0.601,
+      0.795
+     ]
+    },
+    "Q2": {
+     "n": 89,
+     "acc": 0.6404,
+     "ci": [
+      0.537,
+      0.732
+     ]
+    },
+    "Q3": {
+     "n": 85,
+     "acc": 0.7176,
+     "ci": [
+      0.614,
+      0.802
+     ]
+    },
+    "Q4": {
+     "n": 91,
+     "acc": 0.5495,
+     "ci": [
+      0.447,
+      0.648
+     ]
+    }
+   },
+   "pred_position_hist": [
+    20,
+    25,
+    14,
+    13,
+    17,
+    17,
+    17,
+    12,
+    25,
+    28,
+    18,
+    14,
+    15,
+    23,
+    15,
+    16,
+    11,
+    14,
+    14,
+    19
+   ],
+   "K": 20,
+   "true_position_hist": [
+    17,
+    26,
+    7,
+    15,
+    17,
+    19,
+    18,
+    11,
+    22,
+    19,
+    23,
+    15,
+    14,
+    20,
+    13,
+    15,
+    11,
+    20,
+    19,
+    26
+   ],
+   "acc_by_true_position": [
+    0.588,
+    0.846,
+    0.857,
+    0.6,
+    0.647,
+    0.474,
+    0.556,
+    0.636,
+    0.682,
+    0.842,
+    0.696,
+    0.6,
+    0.643,
+    0.85,
+    0.769,
+    0.667,
+    0.727,
+    0.45,
+    0.474,
+    0.538
+   ]
+  },
+  "eurosat": {
+   "by_true_position_quartile": {
+    "Q1": {
+     "n": 407,
+     "acc": 0.9656,
+     "ci": [
+      0.943,
+      0.979
+     ]
+    },
+    "Q2": {
+     "n": 252,
+     "acc": 0.9563,
+     "ci": [
+      0.924,
+      0.975
+     ]
+    },
+    "Q3": {
+     "n": 419,
+     "acc": 0.9642,
+     "ci": [
+      0.942,
+      0.978
+     ]
+    },
+    "Q4": {
+     "n": 256,
+     "acc": 0.9492,
+     "ci": [
+      0.915,
+      0.97
+     ]
+    }
+   },
+   "pred_position_hist": [
+    146,
+    133,
+    133,
+    119,
+    129,
+    143,
+    166,
+    111,
+    130,
+    124
+   ],
+   "K": 10,
+   "true_position_hist": [
+    141,
+    136,
+    130,
+    123,
+    129,
+    144,
+    163,
+    112,
+    128,
+    128
+   ],
+   "acc_by_true_position": [
+    0.965,
+    0.956,
+    0.977,
+    0.951,
+    0.961,
+    0.958,
+    0.969,
+    0.964,
+    0.961,
+    0.938
+   ]
+  },
+  "ag_news": {
+   "by_true_position_quartile": {
+    "Q1": {
+     "n": 1244,
+     "acc": 0.9285,
+     "ci": [
+      0.913,
+      0.941
+     ]
+    },
+    "Q2": {
+     "n": 1239,
+     "acc": 0.9798,
+     "ci": [
+      0.97,
+      0.986
+     ]
+    },
+    "Q3": {
+     "n": 1283,
+     "acc": 0.8667,
+     "ci": [
+      0.847,
+      0.884
+     ]
+    },
+    "Q4": {
+     "n": 1234,
+     "acc": 0.9246,
+     "ci": [
+      0.909,
+      0.938
+     ]
+    }
+   },
+   "pred_position_hist": [
+    1215,
+    1244,
+    1229,
+    1312
+   ],
+   "K": 4,
+   "true_position_hist": [
+    1244,
+    1239,
+    1283,
+    1234
+   ],
+   "acc_by_true_position": [
+    0.928,
+    0.98,
+    0.867,
+    0.925
+   ]
+  },
+  "typed_decisions": {
+   "by_true_position_quartile": {
+    "Q1": {
+     "n": 124,
+     "acc": 0.5726,
+     "ci": [
+      0.485,
+      0.656
+     ]
+    },
+    "Q2": {
+     "n": 121,
+     "acc": 0.7438,
+     "ci": [
+      0.659,
+      0.813
+     ]
+    },
+    "Q3": {
+     "n": 238,
+     "acc": 0.7437,
+     "ci": [
+      0.685,
+      0.795
+     ]
+    },
+    "Q4": {
+     "n": 117,
+     "acc": 0.6325,
+     "ci": [
+      0.542,
+      0.714
+     ]
+    }
+   },
+   "pred_position_hist": [
+    98,
+    122,
+    265,
+    81
+   ],
+   "K": 4,
+   "true_position_hist": [
+    124,
+    121,
+    238,
+    73
+   ],
+   "acc_by_true_position": [
+    0.573,
+    0.744,
+    0.744,
+    0.671
+   ]
+  }
+ },
+ "image_props": {
+  "oxford_pets": {
+   "area": {
+    "quartile_edges": [
+     166500.0,
+     167000.0,
+     187500.0
+    ],
+    "acc_by_quartile": [
+     {
+      "n": 65,
+      "acc": 0.7231,
+      "ci": [
+       0.604,
+       0.817
+      ]
+     },
+     {
+      "n": 87,
+      "acc": 0.6322,
+      "ci": [
+       0.527,
+       0.726
+      ]
+     },
+     {
+      "n": 56,
+      "acc": 0.7143,
+      "ci": [
+       0.585,
+       0.816
+      ]
+     },
+     {
+      "n": 139,
+      "acc": 0.6043,
+      "ci": [
+       0.521,
+       0.682
+      ]
+     }
+    ],
+    "spearman_r_vs_correct": -0.057,
+    "p": 0.2928
+   },
+   "bright": {
+    "quartile_edges": [
+     0.377,
+     0.45,
+     0.527
+    ],
+    "acc_by_quartile": [
+     {
+      "n": 87,
+      "acc": 0.6667,
+      "ci": [
+       0.562,
+       0.757
+      ]
+     },
+     {
+      "n": 86,
+      "acc": 0.6395,
+      "ci": [
+       0.534,
+       0.733
+      ]
+     },
+     {
+      "n": 87,
+      "acc": 0.7011,
+      "ci": [
+       0.598,
+       0.787
+      ]
+     },
+     {
+      "n": 87,
+      "acc": 0.5977,
+      "ci": [
+       0.493,
+       0.694
+      ]
+     }
+    ],
+    "spearman_r_vs_correct": -0.067,
+    "p": 0.2151
+   },
+   "contrast": {
+    "quartile_edges": [
+     0.178,
+     0.216,
+     0.249
+    ],
+    "acc_by_quartile": [
+     {
+      "n": 87,
+      "acc": 0.6897,
+      "ci": [
+       0.586,
+       0.777
+      ]
+     },
+     {
+      "n": 86,
+      "acc": 0.6047,
+      "ci": [
+       0.499,
+       0.701
+      ]
+     },
+     {
+      "n": 87,
+      "acc": 0.6552,
+      "ci": [
+       0.551,
+       0.747
+      ]
+     },
+     {
+      "n": 87,
+      "acc": 0.6552,
+      "ci": [
+       0.551,
+       0.747
+      ]
+     }
+    ],
+    "spearman_r_vs_correct": 0.002,
+    "p": 0.9777
+   },
+   "n_unique_sizes": 122,
+   "aspect": {
+    "acc_by_quartile": [
+     {
+      "n": 67,
+      "acc": 0.6269,
+      "ci": [
+       0.507,
+       0.733
+      ]
+     },
+     {
+      "n": 90,
+      "acc": 0.6556,
+      "ci": [
+       0.553,
+       0.746
+      ]
+     },
+     {
+      "n": 95,
+      "acc": 0.6316,
+      "ci": [
+       0.531,
+       0.722
+      ]
+     },
+     {
+      "n": 95,
+      "acc": 0.6842,
+      "ci": [
+       0.585,
+       0.769
+      ]
+     }
+    ],
+    "edges": [
+     0.75,
+     1.33,
+     1.5
+    ]
+   }
+  },
+  "eurosat": {
+   "area": {
+    "quartile_edges": [
+     4096.0,
+     4096.0,
+     4096.0
+    ],
+    "acc_by_quartile": [
+     {
+      "n": 0,
+      "acc": 0.0,
+      "ci": [
+       0,
+       0
+      ]
+     },
+     {
+      "n": 0,
+      "acc": 0.0,
+      "ci": [
+       0,
+       0
+      ]
+     },
+     {
+      "n": 0,
+      "acc": 0.0,
+      "ci": [
+       0,
+       0
+      ]
+     },
+     {
+      "n": 1334,
+      "acc": 0.9603,
+      "ci": [
+       0.948,
+       0.969
+      ]
+     }
+    ],
+    "spearman_r_vs_correct": NaN,
+    "p": NaN
+   },
+   "bright": {
+    "quartile_edges": [
+     0.257,
+     0.327,
+     0.412
+    ],
+    "acc_by_quartile": [
+     {
+      "n": 334,
+      "acc": 0.976,
+      "ci": [
+       0.953,
+       0.988
+      ]
+     },
+     {
+      "n": 333,
+      "acc": 0.964,
+      "ci": [
+       0.938,
+       0.979
+      ]
+     },
+     {
+      "n": 333,
+      "acc": 0.97,
+      "ci": [
+       0.946,
+       0.984
+      ]
+     },
+     {
+      "n": 334,
+      "acc": 0.9311,
+      "ci": [
+       0.899,
+       0.954
+      ]
+     }
+    ],
+    "spearman_r_vs_correct": -0.076,
+    "p": 0.0055
+   },
+   "contrast": {
+    "quartile_edges": [
+     0.027,
+     0.059,
+     0.097
+    ],
+    "acc_by_quartile": [
+     {
+      "n": 334,
+      "acc": 0.982,
+      "ci": [
+       0.961,
+       0.992
+      ]
+     },
+     {
+      "n": 333,
+      "acc": 0.9459,
+      "ci": [
+       0.916,
+       0.966
+      ]
+     },
+     {
+      "n": 333,
+      "acc": 0.958,
+      "ci": [
+       0.931,
+       0.975
+      ]
+     },
+     {
+      "n": 334,
+      "acc": 0.9551,
+      "ci": [
+       0.927,
+       0.973
+      ]
+     }
+    ],
+    "spearman_r_vs_correct": -0.036,
+    "p": 0.1883
+   },
+   "n_unique_sizes": 1
+  },
+  "vqav2_yesno": {
+   "area": {
+    "quartile_edges": [
+     272000.0,
+     273920.0,
+     307200.0
+    ],
+    "acc_by_quartile": [
+     {
+      "n": 680,
+      "acc": 0.6015,
+      "ci": [
+       0.564,
+       0.638
+      ]
+     },
+     {
+      "n": 810,
+      "acc": 0.6284,
+      "ci": [
+       0.595,
+       0.661
+      ]
+     },
+     {
+      "n": 417,
+      "acc": 0.6283,
+      "ci": [
+       0.581,
+       0.673
+      ]
+     },
+     {
+      "n": 1168,
+      "acc": 0.5916,
+      "ci": [
+       0.563,
+       0.619
+      ]
+     }
+    ],
+    "spearman_r_vs_correct": -0.017,
+    "p": 0.3516
+   },
+   "bright": {
+    "quartile_edges": [
+     0.374,
+     0.439,
+     0.507
+    ],
+    "acc_by_quartile": [
+     {
+      "n": 761,
+      "acc": 0.6163,
+      "ci": [
+       0.581,
+       0.65
+      ]
+     },
+     {
+      "n": 775,
+      "acc": 0.6103,
+      "ci": [
+       0.576,
+       0.644
+      ]
+     },
+     {
+      "n": 770,
+      "acc": 0.5961,
+      "ci": [
+       0.561,
+       0.63
+      ]
+     },
+     {
+      "n": 769,
+      "acc": 0.6112,
+      "ci": [
+       0.576,
+       0.645
+      ]
+     }
+    ],
+    "spearman_r_vs_correct": -0.013,
+    "p": 0.4829
+   },
+   "contrast": {
+    "quartile_edges": [
+     0.17,
+     0.21,
+     0.248
+    ],
+    "acc_by_quartile": [
+     {
+      "n": 769,
+      "acc": 0.6216,
+      "ci": [
+       0.587,
+       0.655
+      ]
+     },
+     {
+      "n": 768,
+      "acc": 0.6016,
+      "ci": [
+       0.567,
+       0.636
+      ]
+     },
+     {
+      "n": 767,
+      "acc": 0.631,
+      "ci": [
+       0.596,
+       0.664
+      ]
+     },
+     {
+      "n": 771,
+      "acc": 0.5798,
+      "ci": [
+       0.545,
+       0.614
+      ]
+     }
+    ],
+    "spearman_r_vs_correct": -0.021,
+    "p": 0.2543
+   },
+   "n_unique_sizes": 257
+  }
+ },
+ "worst_listed": [
+  "oxford_pets TRUE:samoyed PRED:great pyrenees conf=0.94 p(true)=0.03",
+  "oxford_pets TRUE:persian PRED:ragdoll conf=0.94 p(true)=0.01",
+  "oxford_pets TRUE:basset hound PRED:beagle conf=0.92 p(true)=0.01",
+  "oxford_pets TRUE:samoyed PRED:great pyrenees conf=0.91 p(true)=0.06",
+  "oxford_pets TRUE:leonberger PRED:newfoundland conf=0.86 p(true)=0.04",
+  "oxford_pets TRUE:persian PRED:ragdoll conf=0.86 p(true)=0.01",
+  "oxford_pets TRUE:persian PRED:ragdoll conf=0.85 p(true)=0.09",
+  "oxford_pets TRUE:samoyed PRED:great pyrenees conf=0.85 p(true)=0.06",
+  "eurosat TRUE:Highway PRED:Annual Crop conf=1.00 p(true)=0.00",
+  "eurosat TRUE:Herbaceous Vegetation PRED:Pasture conf=1.00 p(true)=0.00",
+  "eurosat TRUE:Annual Crop PRED:Pasture conf=0.99 p(true)=0.00",
+  "eurosat TRUE:Herbaceous Vegetation PRED:Forest conf=0.98 p(true)=0.02",
+  "eurosat TRUE:Permanent Crop PRED:Annual Crop conf=0.97 p(true)=0.02",
+  "eurosat TRUE:Permanent Crop PRED:Herbaceous Vegetation conf=0.96 p(true)=0.02",
+  "eurosat TRUE:Residential Buildings PRED:Industrial Buildings conf=0.96 p(true)=0.02",
+  "eurosat TRUE:River PRED:Highway conf=0.96 p(true)=0.04",
+  "VQA Q:Is this a dessert scene? pred=no p(yes)=0.07 truth=yes",
+  "VQA Q:Can you see mountains? pred=no p(yes)=0.09 truth=yes",
+  "VQA Q:Are the women fighting? pred=no p(yes)=0.10 truth=yes",
+  "VQA Q:Is this a desert climate? pred=no p(yes)=0.10 truth=yes",
+  "VQA Q:Is the woman angry? pred=no p(yes)=0.10 truth=yes",
+  "VQA Q:Is she injured? pred=no p(yes)=0.11 truth=yes",
+  "VQA Q:Does he look angry? pred=no p(yes)=0.12 truth=yes",
+  "VQA Q:Are there any snowboarders? pred=yes p(yes)=0.87 truth=no"
+ ]
+}

@@ -1,0 +1,118 @@
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 28/208 [00:00<00:00, 257.73it/s]Loading weights:  32%|███▏      | 66/208 [00:00<00:00, 320.26it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 803.92it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+loaded 580s
+scienceqa 0 30 580s
+scienceqa 1 30 684s
+scienceqa 2 30 686s
+scienceqa 3 30 695s
+scienceqa 4 30 707s
+scienceqa 5 30 711s
+scienceqa 6 30 723s
+scienceqa 7 30 723s
+scienceqa 8 30 723s
+scienceqa 9 30 724s
+scienceqa 10 30 735s
+scienceqa 11 30 738s
+scienceqa 12 30 751s
+scienceqa 13 30 751s
+scienceqa 14 30 752s
+scienceqa 15 30 752s
+scienceqa 16 30 778s
+scienceqa 17 30 778s
+scienceqa 18 30 779s
+scienceqa 19 30 793s
+scienceqa 20 30 793s
+scienceqa 21 30 794s
+scienceqa 22 30 795s
+scienceqa 23 30 795s
+scienceqa 24 30 795s
+scienceqa 25 807s
+scienceqa 25 30 807s
+scienceqa 26 30 820s
+scienceqa 27 30 820s
+scienceqa 28 30 821s
+scienceqa 29 30 821s
+scienceqa 30 30 822s
+scienceqa 31 30 822s
+scienceqa 32 30 822s
+scienceqa 33 30 835s
+scienceqa 34 30 835s
+scienceqa 35 30 836s
+scienceqa 36 30 837s
+scienceqa 37 30 837s
+scienceqa 38 30 850s
+scienceqa 39 30 850s
+scienceqa 40 30 851s
+scienceqa 41 30 851s
+scienceqa 42 30 851s
+scienceqa 43 30 868s
+scienceqa 44 30 869s
+scienceqa 45 30 870s
+scienceqa 46 30 870s
+scienceqa 47 30 895s
+scienceqa 48 30 914s
+scienceqa 49 30 915s
+scienceqa 50 915s
+scienceqa 50 30 915s
+scienceqa 51 30 915s
+scienceqa 52 30 930s
+scienceqa 53 30 931s
+scienceqa 54 30 959s
+scienceqa 55 30 960s
+scienceqa 56 30 961s
+scienceqa 57 30 962s
+scienceqa 58 30 980s
+scienceqa 59 30 1075s
+scienceqa 60 30 1129s
+scienceqa 61 30 1131s
+scienceqa 62 30 1185s
+scienceqa 63 30 1212s
+scienceqa 64 30 1214s
+scienceqa 65 30 1215s
+scienceqa 66 30 1215s
+scienceqa 67 30 1216s
+scienceqa 68 30 1216s
+scienceqa 69 30 1240s
+scienceqa 70 30 1240s
+scienceqa 71 30 1241s
+scienceqa 72 30 1241s
+scienceqa 73 30 1264s
+scienceqa 74 30 1265s
+scienceqa 75 1265s
+scienceqa 75 30 1266s
+scienceqa 76 30 1280s
+scienceqa 77 30 1280s
+scienceqa 78 30 1281s
+scienceqa 79 30 1281s
+scienceqa 80 30 1296s
+scienceqa 81 30 1296s
+scienceqa 82 30 1297s

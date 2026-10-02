@@ -1,0 +1,13 @@
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 585.93it/s]
+/home/zera/laya-vision/test_campaign/07_text_retention/run_preds.py:44: RuntimeWarning: laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated.
+  import laya; ag = laya.Agent("convaiinnovations/laya", device=dev, revision=STOCK_REV)
+stock temps [1.6369030475616455, 1.2514300346374512, 1.983399510383606] {'choice:3-5': 1.7601518630981445, 'choice:6-10': 1.0000158548355103, 'score:3-5': 1.2514300346374512, 'noul:2': 1.983399510383606, 'choice:11+': 0.5, 'choice:2': 1.9063563346862793}
+[batch] 0/1200
+[batch] 160/1200
+[batch] 320/1200
+[batch] 480/1200
+[batch] 640/1200
+[batch] 800/1200
+[batch] 960/1200
+[batch] 1120/1200
+done stock 1200 0 failed

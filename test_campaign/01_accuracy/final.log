@@ -1,0 +1,90 @@
+2830
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 3145.58it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[run_eval] 200/1260 states, 27.8s
+[run_eval] 400/1260 states, 263.2s
+[run_eval] 600/1260 states, 490.8s
+[run_eval] 800/1260 states, 928.6s
+[run_eval] 1000/1260 states, 1786.7s
+[run_eval] 1200/1260 states, 2057.2s
+{
+"aokvqa": {
+"n": 310,
+"skipped": 0,
+"accuracy": 0.44193548387096776,
+"brier": 0.6711488237678267,
+"nll": 1.2314461039726938,
+"ece10": 0.06599320542531593,
+"ece15": 0.05736941455514255,
+"mean_confidence": 0.45206599885078586
+},
+"cifar10": {
+"n": 600,
+"skipped": 0,
+"accuracy": 0.96,
+"brier": 0.05878993125787654,
+"nll": 0.11561205891400068,
+"ece10": 0.018289592332415505,
+"ece15": 0.02215204723982506,
+"mean_confidence": 0.9706006280072025
+},
+"coco": {
+"n": 1200,
+"skipped": 0,
+"accuracy": 0.6833333333333333,
+"brier": 0.42536932984428544,
+"nll": 0.7102507988723115,
+"ece10": 0.06146094152218344,
+"ece15": 0.061460941522183475,
+"mean_confidence": 0.7426581222662236
+},
+"food101": {
+"n": 600,
+"skipped": 0,
+"accuracy": 0.8866666666666667,
+"brier": 0.16310139190155595,
+"nll": 0.3405377106038016,
+"ece10": 0.021730058984444557,
+"ece15": 0.021500076958528985,
+"mean_confidence": 0.9040468066353476
+},
+"oxford_pets": {
+"n": 120,
+"skipped": 0,
+"accuracy": 0.7583333333333333,
+"brier": 0.33511895549264104,
+"nll": 0.6621649053072927,
+"ece10": 0.07042806718116945,
+"ece15": 0.06652758237614438,
+"mean_confidence": 0.7579882892286837
+}
+}

@@ -1,0 +1,81 @@
+{
+ "case_upper_strings_not_rewritten": {
+  "scienceqa": {
+   "n_left": 165,
+   "n_allcaps": 378,
+   "records_with_left": 50,
+   "examples": [
+    "A",
+    "B",
+    "A",
+    "B",
+    "A",
+    "B"
+   ]
+  },
+  "aokvqa": {
+   "n_left": 219,
+   "n_allcaps": 450,
+   "records_with_left": 50,
+   "examples": [
+    "A",
+    "B",
+    "A",
+    "B",
+    "A",
+    "B"
+   ]
+  },
+  "cifar10": {
+   "n_left": 100,
+   "n_allcaps": 550,
+   "records_with_left": 50,
+   "examples": [
+    "DOG",
+    "CAT",
+    "DOG",
+    "CAT",
+    "CAT",
+    "DOG"
+   ]
+  },
+  "food101": {
+   "n_left": 16,
+   "n_allcaps": 1050,
+   "records_with_left": 16,
+   "examples": [
+    "PHO",
+    "HOT DOG",
+    "HOT DOG",
+    "PHO",
+    "HOT DOG",
+    "PHO"
+   ]
+  },
+  "oxford_pets": {
+   "n_left": 29,
+   "n_allcaps": 1050,
+   "records_with_left": 29,
+   "examples": [
+    "PUG",
+    "PUG",
+    "PUG",
+    "PUG",
+    "PUG",
+    "PUG"
+   ]
+  },
+  "eurosat": {
+   "n_left": 0,
+   "n_allcaps": 550,
+   "records_with_left": 0,
+   "examples": []
+  }
+ },
+ "padding_proxy": {
+  "records_longest_question_changes": 3,
+  "conf_drift_records": 9,
+  "conf_drift_and_longest_changes": 2,
+  "conf_drift_but_longest_unchanged": 7
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "checkpoint": "/home/zera/laya-vision/runs/stage2_c/wise085_calibrated",
+ "A_choice_real": {
+  "oxford_pets": {
+   "acc": 0.74,
+   "ci": [
+    0.604,
+    0.841
+   ],
+   "n": 50,
+   "chance": 0.05
+  },
+  "coco": {
+   "acc": 0.54,
+   "ci": [
+    0.404,
+    0.67
+   ],
+   "n": 50,
+   "chance": 0.25
+  },
+  "aokvqa": {
+   "acc": 0.4,
+   "ci": [
+    0.276,
+    0.538
+   ],
+   "n": 50,
+   "chance": 0.25
+  },
+  "scienceqa": {
+   "acc": 0.6,
+   "ci": [
+    0.462,
+    0.724
+   ],
+   "n": 50,
+   "chance": 0.25
+  }
+ }
+}

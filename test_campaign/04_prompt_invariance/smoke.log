@@ -1,0 +1,118 @@
+Timeout (0:02:00)!
+Thread 0x00007f2c61f37000 (most recent call first):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1329 in convert
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 930 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1343 in to
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 527 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 40 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 171 in load
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 138 in main
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 187 in <module>
+Timeout (0:02:00)!
+Thread 0x00007f2c61f37000 (most recent call first):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1329 in convert
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 930 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1343 in to
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 527 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 40 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 171 in load
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 138 in main
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 187 in <module>
+Timeout (0:02:00)!
+Thread 0x00007f2c61f37000 (most recent call first):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1329 in convert
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 930 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1343 in to
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 527 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 40 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 171 in load
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 138 in main
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 187 in <module>
+Timeout (0:02:00)!
+Thread 0x00007f2c61f37000 (most recent call first):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1329 in convert
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 930 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1343 in to
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 527 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 40 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 171 in load
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 138 in main
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 187 in <module>
+Timeout (0:02:00)!
+Thread 0x00007f2c61f37000 (most recent call first):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1329 in convert
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 930 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1343 in to
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 527 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 40 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 171 in load
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 138 in main
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 187 in <module>
+Timeout (0:02:00)!
+Thread 0x00007f2c61f37000 (most recent call first):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1329 in convert
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 930 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1343 in to
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 527 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 40 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 171 in load
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 138 in main
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 187 in <module>
+Timeout (0:02:00)!
+Thread 0x00007f2c61f37000 (most recent call first):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1329 in convert
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 930 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1343 in to
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 527 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 40 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 171 in load
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 138 in main
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 187 in <module>
+Timeout (0:02:00)!
+Thread 0x00007f2c61f37000 (most recent call first):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1329 in convert
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 930 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903 in _apply
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1343 in to
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/laya/agent.py", line 527 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 40 in __init__
+  File "/home/zera/laya-vision/laya_vision/agent.py", line 171 in load
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 138 in main
+  File "/home/zera/laya-vision/test_campaign/04_prompt_invariance/run.py", line 187 in <module>

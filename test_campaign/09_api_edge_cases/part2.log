@@ -1,0 +1,227 @@
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 3746.36it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+PASS DIAG max_len handling / fast availability a._fast=None _compiled=False; batch max_len=64 -> ok [0.0098, 0.9902]; batch max_len=40 -> ValueError: question 'q': image does not fit: 49 image tokens but only 26 state tokens left after the question (max_len=40). Shorten the options or use a longer-context checkpoint.; batch max_len=30 -> ValueEr
+PASS min_confidence=1.5 raised ValueError: min_confidence must be a float in [0.0, 1.0], got 1.5
+PASS HTTP GET /health status=200 body={"status":"ok","checkpoint":"/home/zera/laya-vision/runs/stage2_c/wise085_calibrated","device":"cuda","vision":true,"image_tokens":49,"limits":{"max_image_bytes":10485760,"max_image_pixels":40000000,"image_formats":["JPEG","PNG","WEBP","GIF
+PASS HTTP GET / (web UI html) status=200 body=<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laya Vision</title>
+<style>
+:root{--bg:#fff;--fg:#1c1c1e;--mut:#6b7280;--card:#f5f5f7;--bd:#d9d9de;--ac:#
+PASS HTTP / content is html w/ form len=8178
+PASS HTTP GET /docs status=200 body=
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui.css">
+    <link
+PASS HTTP GET /openapi.json status=200 body={"openapi":"3.1.0","info":{"title":"laya-vision-serve","summary":"Laya System-1 decisions over text and images (/v1/systemone)","version":"0.1.0"},"paths":{"/health":{"get":{"summary":"Health","operationId":"health_health_get","responses":{
+PASS HTTP GET /nonexistent -> 404 status=404 body={"detail":"Not Found"}
+PASS HTTP GET /v1/systemone -> 405 status=405 body={"detail":"Method Not Allowed"}
+PASS HTTP POST image b64 raw status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0098,"dog":0.9902},"confidence":0.9205,"answer_confidence":0.9902,"action":{"act_probability":1.0}}},"usage":{"input_tokens":63,"output_tokens"
+PASS HTTP result equals in-process d=0; headers Server-Timing=inference;dur=45.07
+PASS HTTP POST image dataurl+text status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0151,"dog":0.9849},"confidence":0.8873,"answer_confidence":0.9849,"action":{"act_probability":1.0}}},"usage":{"input_tokens":66,"output_tokens"
+PASS HTTP POST image PNG status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0098,"dog":0.9902},"confidence":0.9205,"answer_confidence":0.9902,"action":{"act_probability":1.0}}},"usage":{"input_tokens":63,"output_tokens"
+PASS HTTP POST image BMP (server allows only JPEG/PNG/WEBP/GIF) expect 400 status=400 body={"detail":"image format BMP not allowed (allowed: JPEG, PNG, WEBP, GIF)"}
+PASS HTTP POST image TIFF expect 400 status=400 body={"detail":"image format TIFF not allowed (allowed: JPEG, PNG, WEBP, GIF)"}
+PASS HTTP POST image RGBA PNG status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0098,"dog":0.9902},"confidence":0.9205,"answer_confidence":0.9902,"action":{"act_probability":1.0}}},"usage":{"input_tokens":63,"output_tokens"
+PASS HTTP POST image CMYK JPEG status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0061,"dog":0.9939},"confidence":0.9465,"answer_confidence":0.9939,"action":{"act_probability":1.0}}},"usage":{"input_tokens":63,"output_tokens"
+PASS HTTP POST image 1x1 status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"cat","probabilities":{"cat":0.6862,"dog":0.3138},"confidence":0.1025,"answer_confidence":0.6862,"action":{"act_probability":1.0}}},"usage":{"input_tokens":63,"output_tokens"
+PASS HTTP POST path as image (must NOT read file) expect 400 status=400 body={"detail":"'state.image' is not valid base64"}
+PASS HTTP POST invalid base64 expect 400 status=400 body={"detail":"'state.image' is not valid base64"}
+PASS HTTP POST corrupt image expect 400 status=400 body={"detail":"could not decode image: broken data stream when reading image file"}
+PASS HTTP POST truncated image expect 400 status=400 body={"detail":"could not decode image: image file is truncated (13 bytes not processed)"}
+PASS HTTP POST empty image expect 400 status=400 body={"detail":"'state.image' must be a base64 string or a data URL"}
+PASS HTTP POST image list expect 400 status=400 body={"detail":"only one image per state is supported in v1"}
+PASS HTTP POST image extra key expect 400 status=400 body={"detail":"image state accepts only the keys 'image' and 'text'; got extra keys ['x']"}
+PASS HTTP POST 7000x7000 PNG expect 413 status=413 body={"detail":"image too large (7000x7000 > 40000000 pixels)"}
+PASS HTTP POST >10MB image expect 413 status=413 body={"detail":"image too large (> 10485760 bytes decoded)"}
+PASS HTTP POST body >16MB expect 413 status=413 body={"detail":"request body too large"}
+PASS HTTP POST invalid JSON expect 400 status=400 body={"detail":"request body must be valid JSON"}
+PASS HTTP POST JSON array expect 400 status=400 body={"detail":"request body must be an object with a 'questions' field"}
+PASS HTTP POST missing questions expect 400 status=400 body={"detail":"request body must be an object with a 'questions' field"}
+PASS HTTP POST missing state, questions only status=400 body={"detail":"'state' is required"}
+PASS HTTP POST questions empty status=200 body={"model":"laya-rl-agent","answers":{},"usage":{"input_tokens":0,"output_tokens":0}}
+PASS HTTP POST questions not dict expect 4xx status=400 body={"detail":"'questions' must be an object"}
+PASS HTTP POST bad question type expect 4xx status=422 body={"detail":"question 'q': unknown type 'zzz'; use one of ['choice', 'noul', 'score']"}
+PASS HTTP POST 20 options status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"o0","probabilities":{"o0":0.0671,"o1":0.0482,"o2":0.039,"o3":0.0442,"o4":0.0411,"o5":0.0477,"o6":0.0548,"o7":0.0571,"o8":0.0528,"o9":0.0523,"o10":0.0442,"o11":0.0508,"o12":0
+PASS HTTP POST 60 options (limit?) status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"o7","probabilities":{"o0":0.0194,"o1":0.0187,"o2":0.0133,"o3":0.0163,"o4":0.0155,"o5":0.0235,"o6":0.023,"o7":0.0242,"o8":0.0167,"o9":0.0196,"o10":0.0138,"o11":0.0153,"o12":0
+PASS HTTP POST max_len=64 (fits exactly) expect 200 status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0098,"dog":0.9902},"confidence":0.9205,"answer_confidence":0.9902,"action":{"act_probability":1.0}}},"usage":{"input_tokens":63,"output_tokens"
+PASS HTTP POST image does not fit (max_len=40) expect 422 status=422 body={"detail":"question 'q': image does not fit: 49 image tokens but only 26 state tokens left after the question (max_len=40). Shorten the options or use a longer-context checkpoint."}
+PASS HTTP POST max_len string expect 400 status=422 body={"detail":"max_len must be an integer"}
+PASS HTTP POST max_len=10**9 expect 4xx status=422 body={"detail":"max_len exceeds server limit (1000000000 > 8192)"}
+PASS HTTP POST unicode options status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"猫","probabilities":{"猫":0.5475,"犬":0.2923,"🐱":0.1603},"confidence":0.1055,"answer_confidence":0.5475,"action":{"act_probability":1.0}}},"usage":{"input_tokens":72,"output_to
+PASS HTTP POST empty-string option status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"","probabilities":{"":0.6028,"b":0.3972},"confidence":0.0307,"answer_confidence":0.6028,"action":{"act_probability":1.0}}},"usage":{"input_tokens":63,"output_tokens":0}}
+PASS HTTP POST 100 questions status=413 body={"detail":"too many questions (100 > 64)"}
+PASS HTTP POST text-only state status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.4471,"dog":0.5529},"confidence":0.0081,"answer_confidence":0.5529,"action":{"act_probability":1.0}}},"usage":{"input_tokens":15,"output_tokens"
+PASS HTTP POST text-only dict state status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"cat","probabilities":{"cat":0.5564,"dog":0.4436},"confidence":0.0092,"answer_confidence":0.5564,"action":{"act_probability":1.0}}},"usage":{"input_tokens":19,"output_tokens"
+PASS HTTP POST text-only > 2MiB expect 413 status=413 body={"detail":"request body too large"}
+PASS HTTP POST image + text huge expect 4xx status=413 body={"detail":"state too large (300000 > 50000 chars)"}
+PASS HTTP POST wrong content-type status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.4185,"dog":0.5815},"confidence":0.0192,"answer_confidence":0.5815,"action":{"act_probability":1.0}}},"usage":{"input_tokens":15,"output_tokens"
+PASS HTTP POST min_confidence field ignored? status=200 body={"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"dog","probabilities":{"cat":0.0098,"dog":0.9902},"confidence":0.9205,"answer_confidence":0.9902,"action":{"act_probability":1.0}}},"usage":{"input_tokens":63,"output_tokens"
+PASS HTTP 12 concurrent requests {200: 12}
+PASS HTTP health after load status=200 body={"status":"ok","checkpoint":"/home/zera/laya-vision/runs/stage2_c/wise085_calibrated","device":"cuda","vision":true,"image_tokens":49,"limits":{"max_image_bytes":10485760,"max_image_pixels":40000000,"image_formats":["JPEG","PNG","WEBP","GIF
+PASS [new] HTTP B1 image: surrogate in option label -> 422 status=422 {"detail":"question 'q' contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"}
+PASS [new] HTTP B1 image: surrogate in instructions -> 422 status=422 {"detail":"question 'q' contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"}
+PASS [new] HTTP B1 image: surrogate in option description -> 422 status=422 {"detail":"question 'q' contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"}
+PASS [new] HTTP B1 image: surrogate in state text -> 422 status=422 {"detail":"state text contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"}
+PASS [new] HTTP B1 image: surrogate in state text dict -> 422 status=422 {"detail":"state text contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"}
+PASS [new] HTTP B1 text-only: surrogate in str state -> 422 status=422 {"detail":"state contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"}
+PASS [new] HTTP B1 text-only: surrogate in dict state value -> 422 status=422 {"detail":"state contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"}
+PASS [new] HTTP B1 text-only: surrogate in dict state key -> 422 status=422 {"detail":"state contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"}
+PASS [new] HTTP B1 text-only: surrogate in option label -> 422 status=422 {"detail":"question 'q' contains an invalid character '\\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)"}
+PASS [new] HTTP B1 low surrogate alone \udc00 in label -> 422 status=422 {"detail":"question 'q' contains an invalid character '\\udc00' at position 1 (a lone surrogate cannot be encoded as UTF-8)"}
+PASS [new] HTTP B1 control: escaped surrogate PAIR \ud83d\udc36 (valid emoji) -> 200 status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"🐶","probabilities":{"🐶":0.6468,"b":0.3532},"confidence":0.0631,"answer_confidence":0.6468,"action":{"act_probability":1.0}}},"usage":{"input_tokens":64,"
+FAIL [new] HTTP B1 surrogate in question id -> 4xx, not 500 status=500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 411, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/applications.py", line 1215, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/telemetry/_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 2782, in app
+    await route.handle(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 1314, in handle
+    await super().handle(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/routing.py", line 282, in handle
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 151, in app
+    response = await f(request)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 360, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/zera/laya-vision/laya_vision/serve.py", line 176, in systemone
+    return await _inner(request)
+  File "/home/zera/laya-vision/laya_vision/serve.py", line 209, in _inner
+    return JSONResponse(content=result, headers={"Server-Timing": "inference;dur=%.2f" % ms,
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 194, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 45, in __init__
+    self.body = self.render(content)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 203, in render
+    ).encode("utf-8")
+UnicodeEncodeError: 'utf-8' codec can't encode character '\ud800' in position 38: surrogates not allowed
+FAIL [new] HTTP B1 surrogate in question id, text-only -> 4xx, not 500 status=500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 411, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/applications.py", line 1215, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/telemetry/_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 2782, in app
+    await route.handle(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 1314, in handle
+    await super().handle(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/routing.py", line 282, in handle
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 151, in app
+    response = await f(request)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 360, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/zera/laya-vision/laya_vision/serve.py", line 176, in systemone
+    return await _inner(request)
+  File "/home/zera/laya-vision/laya_vision/serve.py", line 209, in _inner
+    return JSONResponse(content=result, headers={"Server-Timing": "inference;dur=%.2f" % ms,
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 194, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 45, in __init__
+    self.body = self.render(content)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 203, in render
+    ).encode("utf-8")
+UnicodeEncodeError: 'utf-8' codec can't encode character '\ud800' in position 38: surrogates not allowed
+PASS [new] HTTP B1 surrogate in question type -> 4xx status=422 {"detail":"question 'q': unknown type 'choice\\ud800'; use one of ['choice', 'noul', 'score']"}
+PASS [new] HTTP B1 surrogate inside image base64 string -> 400 status=400 {"detail":"'state.image' is not valid base64"}
+PASS [new] HTTP health after surrogate requests 200
+PASS [new] HTTP B2 0x0 GIF header -> 400 (not 500) status=400 {"detail":"'state.image' is not a decodable image"}
+PASS [new] HTTP CAPS image request returns caller's upper-case labels status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"BASSET HOUND","probabilities":{"BASSET HOUND":0.8447,"GOLDEN RETRIEVER":0.138,"PERSIAN CAT":0.0172},"confidence":0.5577,"answer_confidence":0.8447,"actio
+PASS [new] HTTP CAPS lower-case twin request status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"basset hound","probabilities":{"basset hound":0.8447,"golden retriever":0.138,"persian cat":0.0172},"confidence":0.5577,"answer_confidence":0.8447,"actio
+PASS [new] HTTP CAPS == lower-case probabilities caps=[0.8447, 0.138, 0.0172] lower=[0.8447, 0.138, 0.0172]
+PASS [new] HTTP CAPS acronym labels DNA/RNA unchanged status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"RNA","probabilities":{"DNA":0.3546,"RNA":0.6454},"confidence":0.0619,"answer_confidence":0.6454,"action":{"act_probability":1.0}}},"usage":{"input_tokens
+PASS [new] HTTP CAPS text-only labels unchanged status=200 {"model":"laya-rl-agent","answers":{"q":{"type":"choice","choice":"SPORTS NEWS","probabilities":{"SPORTS NEWS":0.9636,"WORLD NEWS":0.0364},"confidence":0.7743,"answer_confidence":0.9636,"action":{"act_probability":1.0}}}
+TOTAL 74 PASS 72 FAIL 2
+exit=0 end=23:07:51

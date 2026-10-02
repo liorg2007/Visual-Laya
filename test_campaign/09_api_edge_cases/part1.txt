@@ -1,0 +1,276 @@
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 3889.54it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+PASS determinism: 5 repeated predict() max |dp| over 5 repeats = 0
+PASS determinism: predict_batch same image x3 vs predict predict_batch x3 vs single: max|dp|=0.0006 (rounded 4dp output)
+FAIL batch composition invariance (mixed image/text) mixed batch (img,img2,text,img2,img) vs singles: max|dp|=0.0217
+FAIL batch_size invariance batch_size 1,2,3,8 dev=[0.0, 0.027099999999999957, 0.020100000000000007, 0.031299999999999994]
+PASS sort_by_length keeps order sort_by_length order/devs=0
+PASS multi-question vs single invariance question invariance to co-questions d=0.0006
+PASS input forms path/Path/bytes/bytearray/b64/dataurl/PIL/ndarray agree {'path': 0.0, 'pathlib': 0.0, 'bytes': 0.0, 'bytearray': 0.0, 'b64': 0.0, 'dataurl': 0.0, 'PIL': 0.0, 'ndarray': 0.0}
+PASS fmt PNG bytes probs={'cat': 0.0098, 'dog': 0.9902}
+PASS fmt JPEG bytes probs={'cat': 0.012, 'dog': 0.988}
+PASS fmt WEBP bytes probs={'cat': 0.0096, 'dog': 0.9904}
+PASS fmt GIF bytes probs={'cat': 0.0049, 'dog': 0.9951}
+PASS fmt BMP bytes probs={'cat': 0.0098, 'dog': 0.9902}
+PASS fmt TIFF bytes (expect reject: not allowed) raised ImageError: image format TIFF is not allowed (allowed: JPEG, PNG, WEBP, GIF, BMP)
+PASS mode RGBA PIL probs={'cat': 0.0098, 'dog': 0.9902}
+PASS mode RGBA fully transparent PIL probs={'cat': 0.5788, 'dog': 0.4212}
+PASS mode RGBA PNG bytes probs={'cat': 0.0098, 'dog': 0.9902}
+PASS mode L grayscale PIL probs={'cat': 0.0051, 'dog': 0.9949}
+PASS mode L PNG bytes probs={'cat': 0.0051, 'dog': 0.9949}
+PASS mode LA PNG bytes probs={'cat': 0.0051, 'dog': 0.9949}
+PASS mode P palette PNG bytes probs={'cat': 0.0049, 'dog': 0.9951}
+PASS mode P + transparency PNG bytes probs={'cat': 0.0045, 'dog': 0.9955}
+PASS mode CMYK JPEG bytes probs={'cat': 0.0061, 'dog': 0.9939}
+PASS mode CMYK PIL probs={'cat': 0.0098, 'dog': 0.9902}
+PASS mode 1 (bilevel) PIL probs={'cat': 0.0025, 'dog': 0.9975}
+PASS mode I;16 PNG bytes probs={'cat': 0.0051, 'dog': 0.9949}
+PASS mode I PIL probs={'cat': 0.0051, 'dog': 0.9949}
+PASS mode F PIL probs={'cat': 0.0051, 'dog': 0.9949}
+PASS mode HSV PIL probs={'cat': 0.0062, 'dog': 0.9938}
+PASS mode YCbCr PIL probs={'cat': 0.0071, 'dog': 0.9929}
+PASS tiny 1x1 PIL probs={'cat': 0.474, 'dog': 0.526}
+PASS tiny 1x1 PNG bytes probs={'cat': 0.474, 'dog': 0.526}
+PASS 1xN 1x1000 PIL probs={'cat': 0.4756, 'dog': 0.5244}
+PASS non-square 4000x100 probs={'cat': 0.0065, 'dog': 0.9935}
+PASS non-square 100x4000 probs={'cat': 0.0038, 'dog': 0.9962}
+PASS big 6000x6000 (36MP) PNG bytes probs={'cat': 0.4878, 'dog': 0.5122}
+PASS over limit 7000x7000 (49MP) PIL (expect reject) raised ImageError: image is 7000x7000 = 49000000 pixels; the limit is 40000000
+PASS over limit 7000x7000 PNG bytes (expect reject) raised ImageError: image is 7000x7000 = 49000000 pixels; the limit is 40000000
+PASS over 10MB bytes (expect reject) raised ImageError: image is 11534336 bytes; the limit is 10485760
+PASS random-noise 2000x2000 PNG (12.0 MB; reject iff >10MB) raised ImageError: image is 12015067 bytes; the limit is 10485760
+PASS animated GIF (frame 0) probs={'cat': 0.474, 'dog': 0.526}
+PASS animated WEBP (frame 0) probs={'cat': 0.4392, 'dog': 0.5608}
+PASS ndarray uint8 HxWx3 probs={'cat': 0.0098, 'dog': 0.9902}
+PASS ndarray float [0,1] probs={'cat': 0.0098, 'dog': 0.9902}
+PASS ndarray HxW gray probs={'cat': 0.004, 'dog': 0.996}
+PASS ndarray CHW probs={'cat': 0.0098, 'dog': 0.9902}
+PASS ndarray HxWx4 probs={'cat': 0.0098, 'dog': 0.9902}
+PASS ndarray bad shape 5D (expect reject) raised ImageError: array image must be HxW, HxWx3 or HxWx4, got shape (2, 2, 2, 2, 2)
+PASS ndarray empty 0x0 (expect reject) raised ImageError: array image has shape (0, 0, 3); it must have at least one pixel
+PASS missing path (expect error) raised ImageError: string is neither an existing file path nor valid base64 image data
+PASS directory path (expect error) raised ImageError: could not decode image: cannot identify image file <_io.BytesIO object at 0x7f1e694ab9c0>
+PASS corrupt JPEG: truncated half raised ImageError: could not decode image: image file is truncated (13 bytes not processed)
+PASS corrupt: random bytes raised ImageError: could not decode image: cannot identify image file <_io.BytesIO object at 0x7f1ebf726340>
+PASS corrupt: JPEG header then garbage raised ImageError: could not decode image: cannot identify image file <_io.BytesIO object at 0x7f1ea47ada30>
+PASS empty bytes (expect error) raised ImageError: could not decode image: cannot identify image file <_io.BytesIO object at 0x7f1e77c7abb0>
+PASS empty string (expect error) raised ImageError: could not decode image: cannot identify image file <_io.BytesIO object at 0x7f1ebf725f80>
+PASS None image (expect error) raised ImageError: unsupported image input type NoneType
+PASS int image (expect error) raised ImageError: unsupported image input type int
+PASS text file as path (expect error) raised ImageError: could not decode image: cannot identify image file <_io.BytesIO object at 0x7f1e682ef2e0>
+PASS SVG bytes (expect reject) raised ImageError: could not decode image: cannot identify image file <_io.BytesIO object at 0x7f1e682ef100>
+PASS invalid base64 string (expect error) raised ImageError: string is neither an existing file path nor valid base64 image data
+PASS data URL non-base64 (expect error) raised ImageError: only base64 image data URLs (data:image/...;base64,...) are supported
+PASS list of images (expect error v1) raised ValueError: only one image per state is supported in v1
+PASS state: extra key (expect error) raised ValueError: image state accepts only the keys 'image' and 'text'; got extra keys ['foo']
+PASS state: image+text str probs={'cat': 0.0174, 'dog': 0.9826}
+PASS state: image+text empty str probs={'cat': 0.0098, 'dog': 0.9902}
+PASS state: image+text None probs={'cat': 0.0098, 'dog': 0.9902}
+PASS state: image+text dict probs={'cat': 0.0101, 'dog': 0.9899}
+PASS state: image+text list (conversation) probs={'cat': 0.0174, 'dog': 0.9826}
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (20001 > 8192). Running this sequence through the model will result in indexing errors
+PASS state: image+very long text 20k words probs={'cat': 0.0287, 'dog': 0.9713}
+PASS state: image+unicode text probs={'cat': 0.0166, 'dog': 0.9834}
+PASS state: image+text containing [MASK] probs={'cat': 0.0136, 'dog': 0.9864}
+PASS state: no image text-only str probs={'cat': 0.3694, 'dog': 0.6306}
+PASS state: text-only dict probs={'cat': 0.557, 'dog': 0.443}
+PASS state: empty string probs={'cat': 0.444, 'dog': 0.556}
+FAIL state: None (expect error?) unexpected TypeError: state must not be None; pass a string, dict, or list
+PASS state: image=None dict (expect error) raised ImageError: unsupported image input type NoneType
+PASS opts: 2 options probs={'a': 0.5769, 'b': 0.4231}
+FAIL opts: 1 option choice (expect error?) no error; result=(True, "probs={'a': 1.0}")
+PASS opts: 10 options probs={'0': 0.0836, '1': 0.0731, '2': 0.0727, '3': 0.0889, '4': 0.0933, '5': 0.1068, '6': 0.1394, '7': 0.1148, '8': 0.144, '9': 0.0834}
+PASS opts: 11 options probs={'0': 0.1876, '1': 0.1025, '2': 0.0829, '3': 0.0816, '4': 0.0591, '5': 0.0833, '6': 0.0879, '7': 0.0882, '8': 0.091, '9': 0.061, '10': 0.0751}
+PASS opts: 20 options probs={'0': 0.0448, '1': 0.042, '2': 0.0424, '3': 0.0462, '4': 0.0475, '5': 0.0525, '6': 0.0629, '7': 0.0575, '8': 0.0609, '9': 0.0438, '10': 0.0534, '11': 0.0454, '12': 0.049, '13': 0.051, '14': 0.0536, '15': 0.0555, '16': 0.0637, '17': 0.0504, '18': 0.0434, '19': 0.0343}
+PASS opts: 21 options probs={'0': 0.0456, '1': 0.0402, '2': 0.0406, '3': 0.0457, '4': 0.0459, '5': 0.0496, '6': 0.0597, '7': 0.0564, '8': 0.0581, '9': 0.0423, '10': 0.0518, '11': 0.0439, '12': 0.046, '13': 0.0489, '14': 0.0502, '15': 0.0537, '16': 0.0627, '17': 0.0481, '18': 0.0424, '19': 0.0292, '20': 0.039}
+PASS opts: 26 options probs={'A': 0.0323, 'B': 0.0375, 'C': 0.0342, 'D': 0.0285, 'E': 0.0375, 'F': 0.0384, 'G': 0.0607, 'H': 0.0581, 'I': 0.0587, 'J': 0.046, 'K': 0.0298, 'L': 0.0326, 'M': 0.0296, 'N': 0.0392, 'O': 0.0942, 'P': 0.0356, 'Q': 0.0329, 'R': 0.0241, 'S': 0.0254, 'T': 0.0309, 'U': 0.0428, 'V': 0.0289, 'W': 0.0
+PASS opts: 50 options probs={'label0': 0.0285, 'label1': 0.0249, 'label2': 0.0227, 'label3': 0.0232, 'label4': 0.0196, 'label5': 0.0224, 'label6': 0.0221, 'label7': 0.0234, 'label8': 0.0203, 'label9': 0.0204, 'label10': 0.0185, 'label11': 0.019, 'label12': 0.0161, 'label13': 0.0176, 'label14': 0.0158, 'label15': 0.0174, 
+PASS opts: 200 options (expect error) raised ValueError: question 'q': image does not fit: 49 image tokens but only 0 state tokens left after the question (max_len=512). Shorten the options or use a longer-context checkpoint.
+PASS opts: empty dict (expect error) raised ValueError: question 'q': a choice question needs at least one criterion
+PASS opts: empty-string label probs={'': 0.5766, 'b': 0.4234}
+PASS opts: unicode labels probs={'猫': 0.617, '犬': 0.2819, '🐱': 0.1011}
+PASS opts: RTL labels probs={'قطة': 0.3634, 'كلب': 0.6366}
+PASS opts: very long label (5000 chars) probs={'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+PASS opts: very long descriptions probs={'a': 0.5442, 'b': 0.4558}
+PASS opts: whitespace-only label probs={' ': 0.6066, 'b': 0.3934}
+PASS opts: label w/ [MASK] [SEP] probs={'[MASK]': 0.5623, '[SEP]': 0.4377}
+PASS opts: label w/ newline/null probs={'a\nb': 0.6349, 'c\x00d': 0.3651}
+PASS opts: duplicate-like labels differing by case probs={'Cat': 0.5773, 'cat': 0.4227}
+FAIL opts: non-string label key int (expect error?) no error; result=(True, 'probs={1: 0.5212, 2: 0.4788}')
+FAIL opts: long descriptions -> image does not fit no error; result=(True, "probs={'o0': 0.2703, 'o1': 0.2577, 'o2': 0.1866, 'o3': 0.1758, 'o4': 0.1096}")
+PASS noul 2 options {'type': 'noul', 'noul': 0.6972, 'confidence': 0.6972, 'answer_confidence': 0.6972, 'action': {'act_probability': 1.0}}
+PASS noul with 3 options (expect error) raised ValueError: question 'q': a noul question takes 'criteria' keyed only 'true'/'false' (either or both, and omitted is fine), got ['a', 'b', 'c']. Those keys are the option texts the model reads; any other key was silently dropped and replaced with the defaults. If you want the answer worded di
+FAIL noul w/o criteria (expect error?) no error; result={'model': 'laya-rl-agent', 'answers': {'q': {'type': 'noul', 'noul': 0.6294, 'confidence': 0.6294, 'answer_confidence': 0.6294, 'action': {'act_probability': 1.0}}}, 'usage': {'input_tokens': 80, 'out
+PASS unknown qtype (expect error) raised ValueError: question 'q': unknown type 'bogus'; use one of ['choice', 'noul', 'score']
+PASS missing instructions (expect error?) raised ValueError: question 'q': no 'instructions'; add the text the model should answer
+PASS empty instructions True
+FAIL very long instructions 20k chars (expect error or truncation) no error; result={'model': 'laya-rl-agent', 'answers': {'q': {'type': 'choice', 'choice': 'a', 'probabilities': {'a': 0.5888, 'b': 0.4112}, 'confidence': 0.0229, 'answer_confidence': 0.5888, 'action': {'act_probabilit
+PASS unicode instructions {'猫': 0.6398, '狗': 0.3602}
+PASS questions: empty dict {'model': 'laya-rl-agent', 'answers': {}, 'usage': {'input_tokens': 0, 'output_tokens': 0}}
+PASS questions: not a dict (expect error) raised TypeError: questions must be a dict of question id -> definition, got list
+PASS questions: None (expect error) raised TypeError: questions must be a dict of question id -> definition, got NoneType
+PASS many questions per call n=5 n=5 answers=5 0.04s usage={'input_tokens': 339, 'output_tokens': 0}
+PASS many questions per call n=20 n=20 answers=20 0.10s usage={'input_tokens': 1360, 'output_tokens': 0}
+PASS many questions per call n=64 n=64 answers=64 0.21s usage={'input_tokens': 4352, 'output_tokens': 0}
+PASS many questions per call n=200 n=200 answers=200 0.64s usage={'input_tokens': 13600, 'output_tokens': 0}
+PASS many questions (text-only) n=100 ok
+PASS many states predict_batch n=64 (same image)  ok
+PASS predict_batch empty list []
+PASS predict_batch 1 text + 1 img mixed ok
+PASS predict_long with image (expect error) raised ValueError: predict_long does not support image states; use predict()
+PASS predict_shortlist with image (expect clear error) raised TypeError: predict_shortlist() missing 1 required positional argument: 'embed_fn'
+PASS min_confidence behavior (info) conf=0.9205; min_conf=.999 -> {"type": "choice", "choice": "dog", "probabilities": {"cat": 0.0098, "dog": 0.9902}, "confidence": 0.9205, "answer_confidence": 0.9902, "action": {"act_probability": 1.0}, "low_confidence": true}; 0.0 -> {"type": "choice", "choice": "dog", "probabilities": {"cat": 0.009
+PASS min_confidence in predict_batch [{"type": "choice", "choice": "dog", "probabilities": {"cat": 0.0093, "dog": 0.9907}, "confidence": 0.9236, "answer_confidence": 0.9907, "action": {"act_probability": 1.0}}, {"type": "choice", "choice": "dog", "probabilities": {"cat": 0.3787, "dog": 0.6213}, "confidence": 0.0429, "answer_confidence"
+PASS min_confidence=1.5 (expect error) raised ValueError: min_confidence must be a float in [0.0, 1.0], got 1.5
+PASS min_confidence=-1 (expect error) raised ValueError: min_confidence must be a float in [0.0, 1.0], got -1
+PASS min_confidence='x' (expect error) raised ValueError: min_confidence must be a float in [0.0, 1.0], got 'x'
+PASS probabilities sum to 1 / in [0,1] across n options bad=[]
+PASS max_len=64 fits exactly (63 tokens) usage={'input_tokens': 63, 'output_tokens': 0}
+PASS max_len=40 -> image does not fit (expect clear error) raised ValueError: question 'q': image does not fit: 49 image tokens but only 26 state tokens left after the question (max_len=40). Shorten the options or use a longer-context checkpoint.
+PASS max_len=80 borderline True
+PASS max_len=1024 > cfg True
+PASS max_len=0 (expect error) raised ValueError: question 'q': image does not fit: 49 image tokens but only 0 state tokens left after the question (max_len=0). Shorten the options or use a longer-context checkpoint.
+PASS max_len=-5 (expect error) raised ValueError: question 'q': image does not fit: 49 image tokens but only 0 state tokens left after the question (max_len=-5). Shorten the options or use a longer-context checkpoint.
+FAIL head_max_len=8 (expect error) no error; result={'model': 'laya-rl-agent', 'answers': {'q': {'type': 'choice', 'choice': 'dog', 'probabilities': {'cat': 0.0098, 'dog': 0.9902}, 'confidence': 0.9205, 'answer_confidence': 0.9902, 'action': {'act_prob
+FAIL max_len=100000 (expect error or ok) no error; result={'model': 'laya-rl-agent', 'answers': {'q': {'type': 'choice', 'choice': 'dog', 'probabilities': {'cat': 0.0098, 'dog': 0.9902}, 'confidence': 0.9205, 'answer_confidence': 0.9902, 'action': {'act_prob
+PASS predict_batch with one bad image (expect error, whole batch) raised ImageError: string is neither an existing file path nor valid base64 image data
+PASS lang='fr' with image True
+PASS hooks on_predict_start/end with image ['s', 'e']
+PASS concurrent predict() from 6 threads errs=[] d=0
+PASS text-only state agrees with stock Laya path (super) {"model": "laya-rl-agent", "answers": {"q": {"type": "choice", "choice": "sports", "probabilities": {"sports": 0.934, "world": 0.066}, "confidence": 0.6492, "answer_confidence": 0.934, "action": {"act
+Warning: laya fast path unavailable (No module named 'tilelang'); using the stock forward.
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 3583.83it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+FAIL load({'fast': True}) then image predict (expect clear error) no error; result={'model': 'laya-rl-agent', 'answers': {'q': {'type': 'choice', 'choice': 'dog', 'probabilities': {'cat': 0.0098, 'dog': 0.9902}, 'confidence': 0.9205, 'answer_confidence': 0.9902, 'action': {'act_prob
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 3840.97it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+PASS load({'compile': True}) then image predict (expect clear error) raised ValueError: image states are not supported with compile=True; load without it to send images
+PASS load nonexistent path (expect FileNotFoundError) raised FileNotFoundError: Local model path not found: '/no/such/dir'
+PASS load text-only Laya dir w/o vision block raised FileNotFoundError: Incompatible model: '/home/zera/laya-vision/runs/stage2_c' does not contain 'rl_agent_config.json'. That file ships with the weights of a Laya checkpoint, so load one of those (e.g. 'convaiinnovations/laya') or a directory your own training run wrote.
+PASS [new] B1 image: surrogate in option label ValueError: question 'q' contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 image: surrogate in instructions ValueError: question 'q' contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 image: surrogate in option description ValueError: question 'q' contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 image: surrogate in state text (str) ValueError: state text contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 image: surrogate in state text (dict value) ValueError: state text contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 image: surrogate in state text (list) ValueError: state text contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 text-only: surrogate in str state ValueError: state contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 text-only: surrogate in dict state value ValueError: state contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 text-only: surrogate in dict state key ValueError: state contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 text-only: surrogate in option label ValueError: question 'q' contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 text-only: surrogate in instructions ValueError: question 'q' contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 Python str with surrogate pair code points U+D83D U+DC36 (two lone surrogates) ValueError: question 'q' contains an invalid character '\ud83d' at position 0 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 predict_batch: one bad state among good ones ValueError: state contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+PASS [new] B1 second of two questions bad ValueError: question 'bad' contains an invalid character '\ud800' at position 1 (a lone surrogate cannot be encoded as UTF-8)
+FAIL [new] B1 text-only predict_long with surrogate (expect ValueError) TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]
+PASS [new] B1 control: real emoji / non-BMP / NUL / U+FFFD still accepted {'🐶': 0.3836, '𐍈': 0.3294, '�': 0.287}
+PASS [new] B1 agent unaffected after surrogate errors max|dp|=0
+PASS [new] B2 load_image ndarray (0,0,3) ImageError: array image has shape (0, 0, 3); it must have at least one pixel
+PASS [new] B2 load_image ndarray (0,5) ImageError: array image has shape (0, 5); it must have at least one pixel
+PASS [new] B2 load_image ndarray (5,0,3) ImageError: array image has shape (5, 0, 3); it must have at least one pixel
+PASS [new] B2 load_image ndarray (0,0) ImageError: array image has shape (0, 0); it must have at least one pixel
+PASS [new] B2 load_image ndarray CHW (3,0,0) ImageError: array image has shape (0, 0, 3); it must have at least one pixel
+PASS [new] B2 load_image ndarray float (0,4,4) ImageError: array image has shape (0, 4, 4); it must have at least one pixel
+PASS [new] B2 load_image PIL 0x4 ImageError: image is 0x4; it must have at least one pixel
+PASS [new] B2 load_image PIL 4x0 ImageError: image is 4x0; it must have at least one pixel
+PASS [new] B2 load_image PIL 0x0 mode L ImageError: image is 0x0; it must have at least one pixel
+PASS [new] B2 predict with (5,0,3) array -> ValueError (ImageError) raised ImageError: array image has shape (5, 0, 3); it must have at least one pixel
+PASS [new] B2 control: 1x1 array still accepted {'cat': 0.6862, 'dog': 0.3138}
+PASS [new] B2 control: 1x1 PIL still accepted {'cat': 0.6862, 'dog': 0.3138}
+PASS [new] CAPS image request returns caller's upper-case labels (keys + choice) answer={"type": "choice", "choice": "BASSET HOUND", "probabilities": {"BASSET HOUND": 0.8447, "GOLDEN RETRIEVER": 0.138, "PERSIAN CAT": 0.0172}, "confidence": 0.5577, "answer_confidence": 0.8447, "action": {"act_probability": 1.0}}
+PASS [new] CAPS image request == lower-case request (same model input) caps={'BASSET HOUND': 0.8447, 'GOLDEN RETRIEVER': 0.138, 'PERSIAN CAT': 0.0172} lower={'basset hound': 0.8447, 'golden retriever': 0.138, 'persian cat': 0.0172} max|dp|=0
+PASS [new] CAPS image-state text == lower-case text max|dp|=0
+PASS [new] CAPS acronym-only labels DNA/RNA unchanged (output and model input) keys=['DNA', 'RNA'] model-side crit=['DNA', 'RNA'] ins='is this dna or rna?'
+PASS [new] CAPS DNA/RNA probabilities differ from dna/rna (not rewritten) DNA/RNA {'DNA': 0.4664, 'RNA': 0.5336} vs dna/rna {'dna': 0.5563, 'rna': 0.4437} (differ => not rewritten)
+PASS [new] CAPS short acronyms unchanged; info: 4+ letter acronyms (NASA/HTTP/JSON) are lower-cased for the model {"USA": "USA", "CO2": "CO2", "A": "A", "UK": "UK", "DNA": "DNA", "NASA": "nasa", "HTTP": "http", "JSON": "json", "UNESCO": "unesco", "COVID-19": "covid-19", "I AM OK": "I AM OK", "TOP 10": "TOP 10"}
+PASS [new] CAPS label collision (APPLE vs apple) keeps all labels distinct, unrewritten keys=['APPLE', 'apple', 'PEAR'] model-side=['APPLE', 'apple', 'PEAR']
+PASS [new] CAPS mixed upper/title labels returned unchanged keys=['BASSET HOUND', 'Golden Retriever']
+PASS [new] CAPS text-only request not rewritten (unshout not called), labels kept unshout calls: text-only=0 image=1; keys=['SPORTS NEWS', 'WORLD NEWS']
+TOTAL 179 PASS 167 FAIL 12
+exit=0 end=23:07:35

@@ -1,0 +1,65 @@
+[
+ {
+  "idx": 6,
+  "task": "scienceqa",
+  "max|on-post_stored|": 0.0,
+  "max|on-on_repeat|": 0.0,
+  "max|off-post_stored|": 0.0,
+  "max|off-pre_stored|": 0.0,
+  "max|post-pre_stored|": 0.0
+ },
+ {
+  "idx": 12,
+  "task": "scienceqa",
+  "max|on-post_stored|": 0.0,
+  "max|on-on_repeat|": 0.0,
+  "max|off-post_stored|": 0.0,
+  "max|off-pre_stored|": 0.0,
+  "max|post-pre_stored|": 0.0
+ },
+ {
+  "idx": 78,
+  "task": "scienceqa",
+  "max|on-post_stored|": 0.0,
+  "max|on-on_repeat|": 0.0,
+  "max|off-post_stored|": 0.0,
+  "max|off-pre_stored|": 0.0046000000000000485,
+  "max|post-pre_stored|": 0.0046000000000000485
+ },
+ {
+  "idx": 90,
+  "task": "scienceqa",
+  "max|on-post_stored|": 0.0,
+  "max|on-on_repeat|": 0.0,
+  "max|off-post_stored|": 0.0,
+  "max|off-pre_stored|": 0.0027000000000000357,
+  "max|post-pre_stored|": 0.0027000000000000357
+ },
+ {
+  "idx": 120,
+  "task": "scienceqa",
+  "max|on-post_stored|": 0.0,
+  "max|on-on_repeat|": 0.0,
+  "max|off-post_stored|": 0.0,
+  "max|off-pre_stored|": 0.006800000000000028,
+  "max|post-pre_stored|": 0.006800000000000028
+ },
+ {
+  "idx": 156,
+  "task": "scienceqa",
+  "max|on-post_stored|": 0.0,
+  "max|on-on_repeat|": 0.0,
+  "max|off-post_stored|": 0.01419999999999999,
+  "max|off-pre_stored|": 0.0,
+  "max|post-pre_stored|": 0.01419999999999999
+ },
+ {
+  "idx": 192,
+  "task": "scienceqa",
+  "max|on-post_stored|": 0.0,
+  "max|on-on_repeat|": 0.0,
+  "max|off-post_stored|": 0.0,
+  "max|off-pre_stored|": 0.0020000000000000018,
+  "max|post-pre_stored|": 0.0020000000000000018
+ }
+]

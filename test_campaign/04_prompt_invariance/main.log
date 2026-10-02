@@ -1,0 +1,120 @@
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 81/208 [00:00<00:00, 796.71it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 1782.82it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+loaded 25s
+scienceqa 0 20 25s
+aokvqa 1 20 131s
+cifar10 2 19 151s
+food101 3 20 152s
+oxford_pets 4 20 152s
+eurosat 5 20 153s
+scienceqa 6 20 161s
+aokvqa 7 20 161s
+cifar10 8 19 165s
+food101 9 20 165s
+oxford_pets 10 20 166s
+eurosat 11 20 167s
+prog 12 176s
+scienceqa 12 20 177s
+aokvqa 13 20 181s
+cifar10 14 19 181s
+food101 15 20 182s
+oxford_pets 16 20 182s
+eurosat 17 20 183s
+scienceqa 18 20 183s
+aokvqa 19 20 183s
+cifar10 20 19 183s
+food101 21 20 194s
+oxford_pets 22 20 194s
+eurosat 23 20 195s
+prog 24 195s
+scienceqa 24 20 195s
+aokvqa 25 20 195s
+cifar10 26 19 195s
+food101 27 20 207s
+oxford_pets 28 20 207s
+eurosat 29 20 207s
+scienceqa 30 20 208s
+aokvqa 31 20 208s
+cifar10 32 19 208s
+food101 33 20 208s
+oxford_pets 34 20 221s
+eurosat 35 20 221s
+prog 36 222s
+scienceqa 36 20 222s
+aokvqa 37 20 222s
+cifar10 38 19 222s
+food101 39 20 223s
+oxford_pets 40 20 223s
+eurosat 41 20 237s
+scienceqa 42 20 238s
+aokvqa 43 20 238s
+cifar10 44 19 252s
+food101 45 20 269s
+oxford_pets 46 20 269s
+eurosat 47 20 285s
+prog 48 300s
+scienceqa 48 20 300s
+aokvqa 49 20 300s
+cifar10 50 19 316s
+food101 51 20 316s
+oxford_pets 52 20 332s
+eurosat 53 20 332s
+scienceqa 54 20 348s
+aokvqa 55 20 348s
+cifar10 56 19 362s
+food101 57 20 362s
+oxford_pets 58 20 363s
+eurosat 59 20 363s
+prog 60 364s
+scienceqa 60 20 364s
+aokvqa 61 20 364s
+cifar10 62 19 377s
+food101 63 20 378s
+oxford_pets 64 20 378s
+eurosat 65 20 379s
+scienceqa 66 20 379s
+aokvqa 67 20 379s
+cifar10 68 19 380s
+food101 69 20 394s
+oxford_pets 70 20 394s
+eurosat 71 20 395s
+prog 72 395s
+scienceqa 72 20 395s
+aokvqa 73 20 396s
+cifar10 74 19 396s
+food101 75 20 411s
+oxford_pets 76 20 412s
+eurosat 77 20 412s
+scienceqa 78 20 413s
+aokvqa 79 20 413s
+cifar10 80 19 413s
+food101 81 20 414s

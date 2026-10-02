@@ -1,0 +1,76 @@
+todo 44
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights:  26%|██▋       | 55/208 [00:00<00:00, 516.49it/s]Loading weights:  54%|█████▍    | 112/208 [00:00<00:00, 538.33it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 826.77it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+eurosat clean@0 0.98 0.977 589
+oxford_pets clean@0 0.747 0.726 686
+eurosat rot90@1 0.98 0.966 825
+oxford_pets rot90@1 0.66 0.691 956
+eurosat rot180@1 0.98 0.97 990
+oxford_pets rot180@1 0.64 0.661 1033
+eurosat hflip@1 0.973 0.974 1094
+oxford_pets hflip@1 0.767 0.727 1150
+eurosat vflip@1 0.987 0.975 1206
+oxford_pets vflip@1 0.673 0.676 1269
+eurosat grayscale@1 0.907 0.95 1318
+oxford_pets grayscale@1 0.76 0.713 1375
+eurosat blur@2 0.487 0.912 1411
+oxford_pets blur@2 0.64 0.712 1433
+eurosat noise@20 0.487 0.922 1441
+oxford_pets noise@20 0.733 0.734 1453
+eurosat jpeg@30 0.62 0.84 1461
+oxford_pets jpeg@30 0.713 0.719 1470
+eurosat brightness@0.6 0.96 0.964 1478
+oxford_pets brightness@0.6 0.727 0.724 1488
+eurosat contrast@0.5 0.913 0.952 1501
+oxford_pets contrast@0.5 0.76 0.725 1565
+eurosat zoom@0.7 0.88 0.951 1640
+oxford_pets zoom@0.7 0.74 0.725 1706
+eurosat downscale@4 0.447 0.904 1735
+oxford_pets downscale@4 0.68 0.705 1772
+eurosat occlusion@0.15 0.82 0.911 2012
+oxford_pets occlusion@0.15 0.747 0.713 2018
+eurosat blur@6 0.34 0.976 2025
+oxford_pets blur@6 0.453 0.656 2032
+eurosat noise@70 0.36 0.959 2037
+oxford_pets noise@70 0.547 0.659 2044
+eurosat jpeg@5 0.48 0.854 2050
+oxford_pets jpeg@5 0.6 0.692 2058
+eurosat brightness@0.25 0.72 0.9 2064
+oxford_pets brightness@0.25 0.727 0.726 2070
+eurosat contrast@0.2 0.613 0.904 2075
+oxford_pets contrast@0.2 0.667 0.712 2082
+eurosat zoom@0.4 0.673 0.891 2089
+oxford_pets zoom@0.4 0.68 0.708 2095
+eurosat downscale@12 0.347 0.968 2101
+oxford_pets downscale@12 0.453 0.657 2107
+eurosat occlusion@0.4 0.487 0.883 2113
+oxford_pets occlusion@0.4 0.56 0.641 2119

@@ -1,0 +1,5 @@
+{
+ "0x0x3": "no error, size=(0, 0) mode=RGB",
+ "0x5": "no error, size=(5, 0) mode=RGB",
+ "5x0x3": "no error, size=(0, 5) mode=RGB"
+}

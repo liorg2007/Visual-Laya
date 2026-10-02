@@ -8,3 +8,8 @@ __pycache__/
 /eval/cache/
 /eval/results/*.jsonl
 /wandb/
+/data_easy/
+/data_timing/
+/data_vqa_train/
+*.egg-info/
+/*.log

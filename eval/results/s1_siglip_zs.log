@@ -1,0 +1,12 @@
+[transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49406. This may result in unexpected behavior.
+[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49407. This may result in unexpected behavior.
+Loading weights:   0%|          | 0/408 [00:00<?, ?it/s]Loading weights:  36%|███▌      | 145/408 [00:00<00:00, 1444.00it/s]Loading weights: 100%|██████████| 408/408 [00:00<00:00, 2906.73it/s]
+[run_eval] 200/375 states, 11.5s
+## siglip_zeroshot
+
+| task | n | skipped | accuracy | brier | nll | ece10 | ece15 | score_mae |
+|---|---|---|---|---|---|---|---|---|
+| coco | 750 | 750 | 0.8227 | 0.2471 | 0.4255 | 0.0339 | 0.0406 |  |
+| **overall** | 750 | 750 | 0.8227 | 0.2471 | 0.4255 | 0.0339 | 0.0406 |  |
+| modality=image | 750 | 750 | 0.8227 | 0.2471 | 0.4255 | 0.0339 | 0.0406 |  |
+

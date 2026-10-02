@@ -89,6 +89,11 @@ def test_rejects(monkeypatch, tmp_path):
         load_image(_save(Image.new("RGB", (8, 8)), "TIFF"))
     with pytest.raises(ImageError):
         load_image(12345)
+    for empty in (np.zeros((0, 0, 3), np.uint8), np.zeros((0, 5), np.uint8), np.zeros((5, 0, 3), np.uint8)):
+        with pytest.raises(ImageError, match="at least one pixel"):
+            load_image(empty)
+    with pytest.raises(ImageError, match="at least one pixel"):
+        load_image(Image.new("RGB", (0, 4)))
     # size limits, scaled down so the test stays fast
     monkeypatch.setattr(images, "MAX_PIXELS", 100)
     with pytest.raises(ImageError, match="pixels"):

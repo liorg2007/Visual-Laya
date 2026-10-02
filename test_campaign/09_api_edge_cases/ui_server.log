@@ -1,0 +1,201 @@
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 3951.42it/s]
+[transformers] [1mSiglipVisionModel LOAD REPORT[0m from: google/siglip-base-patch16-224
+Key                                                          | Status     |  | 
+-------------------------------------------------------------+------------+--+-
+text_model.encoder.layers.{0...11}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.bias              | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc2.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.weight | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.bias          | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.mlp.fc1.weight            | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.weight        | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm2.bias          | UNEXPECTED |  | 
+logit_bias                                                   | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.layer_norm1.weight        | UNEXPECTED |  | 
+text_model.head.bias                                         | UNEXPECTED |  | 
+text_model.head.weight                                       | UNEXPECTED |  | 
+text_model.encoder.layers.{0...11}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+text_model.final_layer_norm.weight                           | UNEXPECTED |  | 
+text_model.embeddings.position_embedding.weight              | UNEXPECTED |  | 
+logit_scale                                                  | UNEXPECTED |  | 
+text_model.embeddings.token_embedding.weight                 | UNEXPECTED |  | 
+text_model.final_layer_norm.bias                             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+INFO:     Started server process [18344]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8793 (Press CTRL+C to quit)
+INFO:     127.0.0.1:47890 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47892 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47896 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47912 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47926 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47936 - "POST /v1/systemone HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:47950 - "POST /v1/systemone HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:47964 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47976 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47978 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47984 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47990 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47992 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48006 - "POST /v1/systemone HTTP/1.1" 413 Request Entity Too Large
+INFO:     127.0.0.1:48010 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48016 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48020 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48030 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48042 - "POST /v1/systemone HTTP/1.1" 413 Request Entity Too Large
+INFO:     127.0.0.1:48050 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48060 - "POST /v1/systemone HTTP/1.1" 413 Request Entity Too Large
+INFO:     127.0.0.1:48076 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48082 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48084 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48096 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48102 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48106 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48118 - "POST /v1/systemone HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:48122 - "OPTIONS /v1/systemone HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:48134 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48144 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48158 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48162 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48164 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48178 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48180 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48190 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48192 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48206 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48214 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48218 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48234 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 411, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/applications.py", line 1215, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/telemetry/_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 2782, in app
+    await route.handle(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 1314, in handle
+    await super().handle(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/routing.py", line 282, in handle
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 151, in app
+    response = await f(request)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 360, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/zera/laya-vision/laya_vision/serve.py", line 176, in systemone
+    return await _inner(request)
+  File "/home/zera/laya-vision/laya_vision/serve.py", line 209, in _inner
+    return JSONResponse(content=result, headers={"Server-Timing": "inference;dur=%.2f" % ms,
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 194, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 45, in __init__
+    self.body = self.render(content)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 203, in render
+    ).encode("utf-8")
+UnicodeEncodeError: 'utf-8' codec can't encode character '\ud800' in position 38: surrogates not allowed
+INFO:     127.0.0.1:48244 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/uvicorn/protocols/http/h11_impl.py", line 411, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/applications.py", line 1215, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/telemetry/_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 2782, in app
+    await route.handle(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 1314, in handle
+    await super().handle(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/routing.py", line 282, in handle
+    await self.app(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 151, in app
+    response = await f(request)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/fastapi/routing.py", line 360, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/zera/laya-vision/laya_vision/serve.py", line 176, in systemone
+    return await _inner(request)
+  File "/home/zera/laya-vision/laya_vision/serve.py", line 209, in _inner
+    return JSONResponse(content=result, headers={"Server-Timing": "inference;dur=%.2f" % ms,
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 194, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 45, in __init__
+    self.body = self.render(content)
+  File "/home/zera/laya-vision/.venv/lib/python3.10/site-packages/starlette/responses.py", line 203, in render
+    ).encode("utf-8")
+UnicodeEncodeError: 'utf-8' codec can't encode character '\ud800' in position 38: surrogates not allowed
+INFO:     127.0.0.1:48254 - "POST /v1/systemone HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:48256 - "POST /v1/systemone HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:48258 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48260 - "POST /v1/systemone HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:48266 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48276 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48290 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48292 - "POST /v1/systemone HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48300 - "GET /health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18344]

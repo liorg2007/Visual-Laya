@@ -108,6 +108,8 @@ def _decode(data: bytes):
 
 def _from_pil(img):
     w, h = img.size
+    if w == 0 or h == 0:
+        raise ImageError("image is %dx%d; it must have at least one pixel" % (w, h))
     if w * h > MAX_PIXELS:
         raise ImageError("image is %dx%d = %d pixels; the limit is %d" % (w, h, w * h, MAX_PIXELS))
     if getattr(img, "n_frames", 1) > 1:
@@ -125,6 +127,8 @@ def _from_array(a: np.ndarray):
         a = a[..., 0]
     if a.ndim not in (2, 3) or (a.ndim == 3 and a.shape[-1] not in (3, 4)):
         raise ImageError("array image must be HxW, HxWx3 or HxWx4, got shape %s" % (a.shape,))
+    if a.shape[0] == 0 or a.shape[1] == 0:
+        raise ImageError("array image has shape %s; it must have at least one pixel" % (a.shape,))
     if a.shape[0] * a.shape[1] > MAX_PIXELS:
         raise ImageError("image has %d pixels; the limit is %d" % (a.shape[0] * a.shape[1], MAX_PIXELS))
     if a.dtype != np.uint8:
