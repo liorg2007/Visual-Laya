@@ -75,6 +75,11 @@ Core-model additions (implemented; additive, no signature above changed):
 - `VisionAgent`: `self.vlm` (LayaVisionModel sharing `self.model`'s weights), `self.vcfg`, `self.n_image_tokens`,
   `self.model_dir`. `self.model` stays the plain DecisionModel, so every stock text path is untouched.
   Image rows are rejected (ValueError) under fast=True / compile=True / predict_long.
+- `textnorm.py`: `check_text` rejects lone UTF-16 surrogates in states and questions (ValueError, so the server
+  answers 422) on both paths. On image rows only, `unshout_question` / `unshout_state` lower-case all-caps
+  strings (no lower-case letters, a word of >= 4 letters) before tokenizing; answers keep the caller's labels.
+  Text-only rows are not rewritten, so they stay identical to `laya.Agent`.
+- `images.py` also rejects zero-size images (0xN / Nx0 arrays or PIL images).
 
 
 ## Data (`laya_vision/data/`)

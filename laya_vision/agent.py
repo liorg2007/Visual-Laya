@@ -22,6 +22,7 @@ from .checkpoint import TOWER_DIR, build_vision_from_dir
 from .config import VisionConfig
 from .images import load_image_and_hash, preprocess
 from .sequence import _state_token_ids, build_item, is_image_state, split_state
+from .textnorm import check_text, unshout_question, unshout_state
 
 _CHECKPOINT_FILES = ("rl_agent_config.json", "model.safetensors", "tokenizer/*", "encoder/*",
                      "vision.safetensors", TOWER_DIR + "/*")
@@ -89,19 +90,28 @@ class VisionAgent(Agent):
 
     def _encode_state(self, state: Union[str, dict, list], ids: List[str], internal: Dict[str, Dict],
                       max_len: Optional[int] = None, head_max_len: Optional[int] = None) -> List[Dict]:
+        # Both paths: the tokenizer raises TypeError on a lone surrogate; report it as bad input.
+        for qid in ids:
+            check_text(qid, "question id %r" % (qid,))  # also rendered as a response key
+            check_text(internal[qid], "question %r" % (qid,))
         if not is_image_state(state):
+            check_text(state, "state")
             return super()._encode_state(state, ids, internal, max_len=max_len, head_max_len=head_max_len)
         max_len = self.cfg.get("max_len", 512) if max_len is None else max_len
         head_max_len = self.cfg.get("head_max_len", 192) if head_max_len is None else head_max_len
         image, text = split_state(state)
+        check_text(text, "state text")
         img, sha = load_image_and_hash(image)
         pixel = preprocess([img], self.vcfg.image_size)[0]
+        # All-caps text is lower-cased on the image path only; text-only rows stay identical to
+        # laya.Agent. Decode still reads `internal`, so answers carry the caller's labels.
+        text = unshout_state(text)
         text_ids = _state_token_ids(self.tok, text) if text is not None and text != "" else None
         items = []
         for qid in ids:
             try:
-                item = build_item(self.tok, state, internal[qid], self.n_image_tokens, max_len, head_max_len,
-                                  state_ids=text_ids)
+                item = build_item(self.tok, {"image": image, "text": text}, unshout_question(internal[qid]),
+                                  self.n_image_tokens, max_len, head_max_len, state_ids=text_ids)
             except ValueError as e:
                 raise ValueError("question %r: %s" % (qid, e)) from None
             # Shared by reference across the state's rows; collate_items carries both into b["meta"].
@@ -160,6 +170,8 @@ class VisionAgent(Agent):
     def predict_long(self, state, questions, *args, **kwargs):
         if is_image_state(state):
             raise ValueError("predict_long does not support image states; use predict()")
+        check_text(state, "state")  # predict_long windows the state without going through _encode_state
+        check_text(questions, "questions")
         return super().predict_long(state, questions, *args, **kwargs)
 
     def __repr__(self) -> str:
