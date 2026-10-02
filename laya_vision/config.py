@@ -33,6 +33,8 @@ class VisionConfig:
     # so checkpoints written before they existed load unchanged; configs/stage1_a.yaml turns them on.
     proj_in_norm: bool = False
     proj_standardize: bool = False
+    # Set by train.interpolate: Laya weights = stock + wise_alpha * (fine-tuned - stock).
+    wise_alpha: Optional[float] = None
     # Image-modality temperatures, same layout as Laya's `temperature` / `temperature_by_options`.
     temperature: Optional[List[float]] = None
     temperature_by_options: Dict[str, float] = field(default_factory=dict)

@@ -110,3 +110,18 @@ def test_stock_laya_agent_loads_checkpoint(tiny_laya_dir):
 def test_text_only_checkpoint_rejected(tiny_laya_dir):
     with pytest.raises(ValueError, match="text-only"):
         load_checkpoint(tiny_laya_dir)
+
+
+def test_interpolate_weights():
+    import torch
+
+    from laya_vision.train.interpolate import interpolate
+
+    base = {"w": torch.zeros(3), "n": torch.tensor([1])}
+    ft = {"w": torch.full((3,), 2.0), "n": torch.tensor([1])}
+    assert torch.allclose(interpolate(ft, base, 0.25)["w"], torch.full((3,), 0.5))
+    assert torch.equal(interpolate(ft, base, 1.0)["w"], ft["w"]) and torch.equal(interpolate(ft, base, 0.0)["w"], base["w"])
+    import pytest
+
+    with pytest.raises(ValueError):
+        interpolate({"x": torch.zeros(1)}, base, 0.5)

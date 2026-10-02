@@ -171,8 +171,15 @@ def hf_rows(cfg: Dict[str, Any], seed: int = 0, streaming: bool = False, shuffle
     from datasets import load_dataset
 
     for sp in cfg["hf_splits"]:
-        ds = load_dataset(cfg["dataset_id"], cfg.get("config"), split=sp, streaming=streaming,
-                          revision=cfg.get("revision"))
+        if cfg.get("data_files"):
+            # parquet shards a repo ships but its dataset config does not declare as a split
+            # (e.g. VQAv2 "train" on lmms-lab-encoder/VQAv2): {split: "data/train-*.parquet"}
+            pat = cfg["data_files"][sp]
+            files = "hf://datasets/%s@%s/%s" % (cfg["dataset_id"], cfg.get("revision") or "main", pat)
+            ds = load_dataset("parquet", data_files={sp: files}, split=sp, streaming=streaming)
+        else:
+            ds = load_dataset(cfg["dataset_id"], cfg.get("config"), split=sp, streaming=streaming,
+                              revision=cfg.get("revision"))
         feats = ds.features
         if shuffle:  # many sources are sorted by class; max_per_task must not see only a few classes
             ds = ds.shuffle(seed=seed, buffer_size=10_000) if streaming else ds.shuffle(seed=seed)

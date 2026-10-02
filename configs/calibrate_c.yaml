@@ -1,0 +1,13 @@
+# Stage 3: temperature scaling on the held-out calib split, per modality.
+#   python -m laya_vision.train.calibrate --config configs/calibrate.yaml
+checkpoint: runs/stage2_c/best
+out: runs/stage2_c/calibrated     # copy of the checkpoint with the fitted temperatures
+data: [data/cifar10.calib.jsonl, data/oxford_pets.calib.jsonl, data/food101.calib.jsonl, data/eurosat.calib.jsonl,
+       data/aokvqa.calib.jsonl, data/scienceqa.calib.jsonl, data/vqav2_yesno.calib.jsonl,
+       data/typed_decisions.calib.jsonl]
+image_root: data/images
+min_bucket: 100                   # (qtype, option-count) buckets with fewer items use the per-type T
+refit_text: true                  # stage 2 changed the encoder, so refit the text temperatures too
+batch_size: 32
+device: auto
+amp: auto

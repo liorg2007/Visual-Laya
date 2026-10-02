@@ -1,0 +1,11 @@
+# VQAv2 yes/no from the HF *train* split (COCO train2014 images), all rows to train. The stage-2 set
+# (data_stage2.yaml) used only 60k rows of the validation split, and VQAv2 was the one image task
+# that did not clearly beat caption->Laya. Eval/calib stay on the validation-split files.
+#   python -m laya_vision.data.prepare --config configs/data_vqa_train.yaml
+out: data_vqa_train
+image_root: data/images
+seed: 0
+streaming: false
+tasks:
+  vqav2_yesno: {revision: 32665d35052eb4a6d4414851c3c829a72754915a, hf_splits: [train], calib: 0.0, test: 0.0,
+                max_per_task: 160000, balance: true, data_files: {train: "data/train-*.parquet"}}
