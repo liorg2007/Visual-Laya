@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laya Vision</title>
+<style>
+:root{--bg:#fff;--fg:#1c1c1e;--mut:#6b7280;--card:#f5f5f7;--bd:#d9d9de;--ac:#3b6cf6;--ok:#2e9e5b;--bar:#c9d6fb}
+@media(prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ececf0;--mut:#9a9aa5;--card:#1f1f23;--bd:#34343b;--ac:#6f93ff;--ok:#4cc27f;--bar:#2c3a66}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,sans-serif}
+header{padding:14px 20px;border-bottom:1px solid var(--bd);display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+header h1{margin:0;font-size:18px}header small{color:var(--mut)}
+main{display:grid;grid-template-columns:minmax(260px,1fr) minmax(300px,1.3fr);gap:20px;padding:20px;max-width:1200px;margin:auto}
+@media(max-width:800px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px;margin-bottom:16px}
+#drop{border:2px dashed var(--bd);border-radius:10px;min-height:220px;display:flex;align-items:center;justify-content:center;color:var(--mut);cursor:pointer;text-align:center;padding:10px}
+#drop.over{border-color:var(--ac)}#drop img{max-width:100%;max-height:380px;border-radius:6px}
+input,select,textarea,button{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:6px 8px}
+input,textarea{width:100%}textarea{resize:vertical}
+button{cursor:pointer}button.p{background:var(--ac);border-color:var(--ac);color:#fff;padding:8px 18px}button:disabled{opacity:.5;cursor:wait}
+.q{border:1px solid var(--bd);border-radius:8px;padding:10px;margin-bottom:10px;background:var(--bg)}
+.row{display:flex;gap:8px;align-items:center;margin-bottom:6px}.row>*:first-child{flex:1}
+label{font-size:12px;color:var(--mut);display:block;margin:6px 0 2px}
+.res{margin-bottom:14px}.res h3{margin:0 0 6px;font-size:14px}
+.bar{position:relative;height:22px;background:var(--card);border-radius:4px;margin:3px 0;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--bar)}.bar.top i{background:var(--ac);opacity:.55}
+.bar span{position:relative;display:flex;justify-content:space-between;padding:1px 8px;font-size:13px}
+.meta{color:var(--mut);font-size:12px}.err{color:#d33;white-space:pre-wrap}
+.big{font-size:20px;font-weight:600}
+</style></head><body>
+<header><h1>Laya Vision</h1><small id="status">connecting…</small></header>
+<main>
+<section>
+  <div class="card"><div id="drop" tabindex="0">Drop an image, paste (Ctrl+V), or click to choose</div>
+  <input id="file" type="file" accept="image/jpeg,image/png,image/webp,image/gif" hidden>
+  <label for="text">Optional text context</label><textarea id="text" rows="2" placeholder="Extra text state (leave blank for image only)"></textarea></div>
+</section>
+<section>
+  <div class="card"><div id="qs"></div>
+    <div class="row"><button id="addq" type="button">+ Add question</button>
+    <span style="flex:1"></span><button id="run" class="p" type="button">Ask</button></div></div>
+  <div id="out"></div>
+</section>
+</main>
+<script>
+const $=s=>document.querySelector(s);let imgData=null,nq=0;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+fetch('/health').then(r=>r.json()).then(h=>{$('#status').textContent=`${h.checkpoint||'model'} · ${h.device} · ${h.image_tokens} image tokens`}).catch(()=>{$('#status').textContent='server unreachable'});
+
+function setImage(f){if(!f)return;const r=new FileReader();r.onload=()=>{imgData=r.result;$('#drop').innerHTML='<img alt="">';$('#drop img').src=imgData};r.readAsDataURL(f)}
+const drop=$('#drop');drop.onclick=()=>$('#file').click();$('#file').onchange=e=>setImage(e.target.files[0]);
+drop.ondragover=e=>{e.preventDefault();drop.classList.add('over')};drop.ondragleave=()=>drop.classList.remove('over');
+drop.ondrop=e=>{e.preventDefault();drop.classList.remove('over');setImage(e.dataTransfer.files[0])};
+addEventListener('paste',e=>{const f=[...e.clipboardData.files].find(f=>f.type.startsWith('image/'));if(f)setImage(f)});
+
+function addQ(type='noul',ins='',opts=''){
+  const id='q'+(++nq),d=document.createElement('div');d.className='q';d.dataset.id=id;
+  d.innerHTML=`<div class="row"><select class="t"><option value="noul">Yes / No</option><option value="choice">Choice</option><option value="score">Score</option></select>
+  <button type="button" class="rm" title="remove">✕</button></div>
+  <input class="ins" placeholder="Question, e.g. Is there a dog in the picture?">
+  <div class="o"><label class="ol"></label><textarea class="opts" rows="3"></textarea></div>`;
+  $('#qs').appendChild(d);const t=d.querySelector('.t');t.value=type;d.querySelector('.ins').value=ins;d.querySelector('.opts').value=opts;
+  const sync=()=>{const o=d.querySelector('.o');o.hidden=t.value==='noul';
+    d.querySelector('.ol').textContent=t.value==='choice'?'Options, one per line (key: description, or just a label)':'Levels, lowest to highest, one per line';
+    d.querySelector('.opts').placeholder=t.value==='choice'?'cat\ndog\nbird':'blurry\nacceptable\nsharp'};
+  t.onchange=sync;sync();d.querySelector('.rm').onclick=()=>d.remove();
+}
+$('#addq').onclick=()=>addQ();addQ('noul','Is there a person in the picture?');
+
+function build(){
+  const qs={};
+  for(const d of document.querySelectorAll('.q')){
+    const type=d.querySelector('.t').value,ins=d.querySelector('.ins').value.trim();
+    if(!ins)throw new Error('Every question needs text.');
+    const lines=d.querySelector('.opts').value.split('\n').map(s=>s.trim()).filter(Boolean);
+    const q={type,instructions:ins};
+    if(type==='choice'){if(lines.length<2)throw new Error('A choice question needs at least 2 options.');
+      q.criteria={};for(const l of lines){const i=l.indexOf(':');const k=(i>0?l.slice(0,i):l).trim(),v=(i>0?l.slice(i+1):l).trim();q.criteria[k]=v||k}}
+    if(type==='score'){if(lines.length<2)throw new Error('A score question needs at least 2 levels.');q.criteria=lines}
+    qs[d.dataset.id]={q,ins};
+  }
+  if(!Object.keys(qs).length)throw new Error('Add at least one question.');
+  return qs;
+}
+function bars(p,top,fmt=k=>k){return Object.entries(p).map(([k,v])=>`<div class="bar ${k===top?'top':''}"><i style="width:${(v*100).toFixed(1)}%"></i><span><b>${esc(fmt(k))}</b><em>${(v*100).toFixed(1)}%</em></span></div>`).join('')}
+function render(a,qs,ms){
+  $('#out').innerHTML=`<div class="card">`+Object.entries(a).map(([id,r])=>{
+    let h=`<div class="res"><h3>${esc(qs[id].ins)}</h3>`;
+    if(r.type==='noul'){const y=r.noul>=.5;h+=`<div class="big">${y?'Yes':'No'}</div>`+bars({Yes:r.noul,No:1-r.noul},y?'Yes':'No')}
+    else if(r.type==='choice'){h+=`<div class="big">${esc(r.choice)}</div>`+bars(r.probabilities,r.choice)}
+    else{const lv=r.legend,best=Object.entries(r.probabilities).sort((a,b)=>b[1]-a[1])[0][0];
+      h+=`<div class="big">${r.score.toFixed(2)} <small class="meta">/ ${Object.keys(lv).length-1}</small></div>`+bars(r.probabilities,best,k=>lv[k])}
+    return h+`<div class="meta">confidence ${(r.answer_confidence*100).toFixed(0)}%</div></div>`}).join('')+
+    `<div class="meta">${ms} ms</div></div>`}
+
+$('#run').onclick=async()=>{
+  const out=$('#out'),btn=$('#run');
+  if(!imgData){out.innerHTML='<div class="card err">Choose an image first.</div>';return}
+  let qs;try{qs=build()}catch(e){out.innerHTML=`<div class="card err">${esc(e.message)}</div>`;return}
+  const state={image:imgData},tx=$('#text').value.trim();if(tx)state.text=tx;
+  const questions=Object.fromEntries(Object.entries(qs).map(([k,v])=>[k,v.q]));
+  btn.disabled=true;out.innerHTML='<div class="card meta">Thinking…</div>';
+  try{
+    const r=await fetch('/v1/systemone',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({state,questions})});
+    const j=await r.json();
+    if(!r.ok)throw new Error(typeof j.detail==='string'?j.detail:JSON.stringify(j.detail));
+    render(j.answers,qs,Math.round(+r.headers.get('X-Inference-Time-Ms')||0));
+  }catch(e){out.innerHTML=`<div class="card err">${esc(e.message)}</div>`}
+  btn.disabled=false};
+</script></body></html>

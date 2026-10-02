@@ -35,3 +35,6 @@ include = ["laya_vision*"]
 testpaths = ["tests"]
 markers = ["slow: needs real checkpoints downloaded from the Hub (run with -m slow)"]
 addopts = "-m 'not slow'"
+
+[tool.setuptools.package-data]
+laya_vision = ["ui.html"]
