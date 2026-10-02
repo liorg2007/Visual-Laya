@@ -2,6 +2,8 @@
 
 **Laya-Vision** extends [Laya](https://github.com/NandhaKishorM/laya), a 421M-parameter encoder-only decision model, so that it accepts an **image** (optionally with text) as its state. It answers typed questions (`choice`, `noul`, `score`) with calibrated probabilities in a single forward pass. A SigLIP vision tower and a small projector turn the image into 49 pseudo-tokens that are written into Laya's state slot. Everything downstream (encoder, decision head, option scorer, temperatures, output schema) is Laya's.
 
+**Model weights:** [huggingface.co/ZeraG07/laya-vision](https://huggingface.co/ZeraG07/laya-vision). See [§7](#7-using-and-reproducing) for setup and how to run it.
+
 This document describes the model and how it was built and trained. It then reports a 12-part evaluation campaign on the final checkpoint `runs/stage2_c/wise085_calibrated`. It ends with conclusions and directions for further work. Every number below comes from a report in `test_campaign/<class>/report.md` (with `results.json` and scripts alongside), `TRAINING.md`, or `eval/results/`. Sample sizes and 95% confidence intervals are given wherever they exist.
 
 **Headline results (final checkpoint):**
@@ -698,8 +700,60 @@ Every other malformed input gets a clean 4xx and the server stays healthy:
 
 ## 7. Using and reproducing
 
+### 7.1 Pretrained model on the Hugging Face Hub
+
+The final checkpoint is published at **[ZeraG07/laya-vision](https://huggingface.co/ZeraG07/laya-vision)**. Every place that takes a checkpoint path (`laya_vision.load`, `--checkpoint`) also accepts this Hub id, and the weights are downloaded and cached on first use. No token is needed for public repos.
+
+**Setup** (Python 3.10+; a CUDA GPU is recommended but CPU works):
+
 ```bash
-bash scripts/setup_train_env.sh && source .venv/bin/activate
+git clone https://github.com/liorg2007/Visual-Laya.git laya-vision && cd laya-vision
+python -m venv .venv && source .venv/bin/activate
+pip install torch                       # pick the CUDA build for your driver: https://pytorch.org/get-started/locally/
+pip install -e ".[serve]"               # installs laya==0.3.21, transformers, pillow, fastapi, uvicorn, ...
+```
+
+The first run also downloads the base Laya encoder and the SigLIP vision tower from the Hub.
+
+**Run it from Python:**
+
+```python
+import laya_vision
+
+agent = laya_vision.load("ZeraG07/laya-vision", device="cuda")   # or device="cpu"
+result = agent.predict(
+    {"image": "cat.jpg", "text": "optional caption / OCR / metadata"},
+    {"animal": {"type": "choice", "instructions": "Which animal is shown?",
+                "criteria": {"cat": "a cat", "dog": "a dog", "other": None}},
+     "outdoor": {"type": "noul", "instructions": "Is the photo taken outdoors?"}})
+print(result)
+```
+
+The question types and input formats are described in [§1.3](#13-interface).
+
+**Run it as an HTTP server** (Jev-compatible `POST /v1/systemone`):
+
+```bash
+python -m laya_vision.serve --checkpoint ZeraG07/laya-vision --port 8000   # API only
+python -m laya_vision.ui    --checkpoint ZeraG07/laya-vision               # API + web UI at http://127.0.0.1:7860
+```
+
+```bash
+curl http://localhost:8000/health
+curl -X POST http://localhost:8000/v1/systemone -H "Content-Type: application/json" -d '{
+  "state": {"image": "data:image/jpeg;base64,<BASE64>"},
+  "questions": {"animal": {"type": "choice", "instructions": "Which animal is shown?",
+                           "criteria": {"cat": "a cat", "dog": "a dog"}}}}'
+```
+
+Optional environment variables: `LAYA_DEVICE`, `LAYA_HOST`, `LAYA_PORT`, `LAYA_API_KEY` (enables a bearer-token check), `LAYA_MAX_CONCURRENT`.
+
+To download the weights ahead of time: `hf download ZeraG07/laya-vision`.
+
+### 7.2 From a local checkout
+
+```bash
+bash scripts/setup_train_env.sh && source .venv/bin/activate     # full training + eval environment (needs an NVIDIA GPU)
 python -m pytest -q                                    # unit tests (tiny models, CPU)
 python -m laya_vision.serve --checkpoint runs/stage2_c/wise085_calibrated   # POST /v1/systemone
 python -m laya_vision.ui    --checkpoint runs/stage2_c/wise085_calibrated   # same + local web UI
