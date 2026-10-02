@@ -11,6 +11,52 @@ The design is in `plan.md` §4 (Phases 4–5) and `ARCHITECTURE.md` §5. The opt
 - RLCD with G=4 noise samples, σ going linearly from 0.4 to 0.1, reward = log + 0.75·spherical − 1.0·RPS, group-centred and std-normalised advantage, plus soft CE with weight 1.0
 - AdamW, cosine schedule, gradient clip 1.0
 
+## Recommended recipe (B): commands and results
+
+Recipe A (`stage1_a.yaml` → `stage2_a.yaml`, sections 3–4 below) fails acceptance. Its stage 1 (projector only, LR 1e-3) **collapses**: every image looks alike to Laya (cosine 0.9995 between different images' tokens after the embedding LayerNorm), and its caption accuracy comes from text priors (0.37 with the right image, 0.42 with a wrong one). Yes/no image questions then stay at chance through stage 2. Recipe B fixes this:
+
+- guarded projector: `vision.proj_in_norm` and `vision.proj_standardize` (running mean/std on the projector output), plus `train.freeze_modality_emb`
+- projector LR 1e-4, and LoRA on the encoder from stage 1 on, so Laya learns to read image tokens
+- easier stage-1 negatives (`configs/data_stage1_easy.yaml`) and 10% text rows in stage 1
+- a VQAv2 train-split continuation (`stage2_c.yaml`)
+- weight interpolation toward stock Laya (`train.interpolate`, WiSE-FT) to undo text regression
+
+Every trainer eval now also reports `image_grounding`, which is accuracy minus accuracy with each row's image swapped for another one in the batch, and `image_token_cos`. Grounding near 0, or token cosine near 1, means the model is not using the image.
+
+```bash
+python -m laya_vision.data.prepare --config configs/data_stage1_easy.yaml    # data_easy/coco.*.jsonl (reuses data/images/coco)
+python -m laya_vision.data.prepare --config configs/data_stage2.yaml
+python -m laya_vision.data.prepare --config configs/data_vqa_train.yaml      # data_vqa_train/vqav2_yesno.train.jsonl (160k)
+python -m laya_vision.train.stage1 --config configs/stage1_b.yaml            # ~4.5 h on an 8 GB RTX 4060 Ti
+python -m laya_vision.train.stage2 --config configs/stage2_b.yaml            # ~14 h
+python -m laya_vision.train.stage2 --config configs/stage2_c.yaml            # ~4 h
+python -m laya_vision.train.interpolate --checkpoint runs/stage2_c/best --alpha 0.85 --out runs/stage2_c/wise085
+python -m laya_vision.train.calibrate --config configs/calibrate_c.yaml \
+    --checkpoint runs/stage2_c/wise085 --out runs/stage2_c/wise085_calibrated
+# then section 6 with --checkpoint runs/stage2_c/wise085_calibrated
+```
+
+The interpolation weight `alpha` was chosen on held-out data, never on the eval sets:
+
+- a 3,000-item BoolQ **train**-split slice (`data/proxy/boolq_train3k.jsonl`) for text
+- the image calib splits
+
+The rule, fixed before evaluation, was: an estimated BoolQ test drop of at most 1.5 points, then the best mean image calib accuracy. On recipe B the train-split proxy overstated the test drop by about 1.8×.
+
+Results (`eval/results/stage2_c_wise085.json`), **Acceptance: PASS**. KonIQ was not downloaded, so 3 image tasks are scored:
+
+| | Recipe A | **Recipe B (2c, α=0.85)** | caption→Laya | stock Laya |
+|---|---|---|---|---|
+| EuroSAT | 0.929 | **0.970** | 0.389 | |
+| Oxford Pets | 0.403 | **0.765** | 0.280 | |
+| VQAv2 yes/no | 0.527 | **0.608** | 0.592 | |
+| BoolQ | 0.719 | 0.747 | | 0.756 |
+| AG News | 0.925 | 0.924 | | 0.926 |
+| image ECE@10 | 0.010 | 0.014 | | |
+| p50 latency vs text-only Laya | 1.69× | 1.68× | | |
+
+On an 8 GB GPU, full fine-tuning of stage 2 runs out of memory, which is why every recipe-B stage uses LoRA.
+
 ## 0. Hardware and memory
 
 These are estimates. Confirm them with `nvidia-smi` during the first 50 steps.
@@ -63,6 +109,8 @@ python -m laya_vision.data.prepare --config configs/data_stage2.yaml   # data/{t
 - The stage-2 data config also writes the text-regression sets `data/ag_news.test.jsonl` and `data/boolq.test.jsonl` (5,000 items each, `text_eval:` block) that `configs/eval.yaml` uses. To build only those, run `python -m laya_vision.data.prepare --text-eval`.
 
 ## 3. Stage 1: alignment (projector only)
+
+> Recipe A, kept for reference. It collapses (see "Recommended recipe (B)" above); use `configs/stage1_b.yaml`.
 
 ```bash
 python -m laya_vision.train.stage1 --config configs/stage1_a.yaml
