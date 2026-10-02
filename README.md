@@ -72,6 +72,8 @@ ModernBERT-large encoder (LoRA-adapted, merged) ─► type embedding ─► 2-l
 option scorer at each [MASK] ─► softmax(z / T_image) ─► Laya/Jev output schema
 ```
 
+![Architecture: SigLIP tower, pooling, guarded projector, 49 image tokens in Laya's state slot](docs/figures/architecture.png)
+
 | Component | Implementation (final checkpoint) | Parameters |
 |---|---|---|
 | Vision tower | `google/siglip-base-patch16-224` @ `7fd15f06`, frozen; features from layer −2 | 92.9 M |
@@ -255,6 +257,8 @@ Accuracy by number of options, pooling `choice` rows across tasks, so option cou
 | 10 (EuroSAT, CIFAR-10) | 1,634 | 0.10 | 0.955 [0.945, 0.964] |
 | 20 (Pets, Food-101) | 647 | 0.05 | 0.737 [0.702, 0.771] |
 
+![Accuracy per task vs caption→Laya](docs/figures/accuracy.png)
+
 **Findings:**
 - On recognition tasks the model is far above both chance and caption→Laya, by +0.39 to +0.74, with paired CIs well clear of zero. Generic BLIP captions carry no breed or land-use information, so the caption baseline sits near chance on Pets and EuroSAT.
 - **VQAv2 yes/no is the one task without a demonstrated gain:** 0.608 against the caption baseline's 0.592, with a paired CI of [−0.005, +0.039]. Its better Brier score (0.330 vs 0.497) comes from less extreme probabilities, not from better answers.
@@ -292,6 +296,8 @@ Key paired differences (macro, 95% CI):
 | Stage 1: SigLIP zero-shot − stage1_b | +0.092 [0.056, 0.131] |
 | Stage 1: stage1_b − stage1_a | +0.345 [0.297, 0.391] |
 
+![Image vs text accuracy per checkpoint](docs/figures/recipe_tradeoff.png)
+
 **Findings:**
 1. **The guarded projector with LoRA from stage 1 (recipe B) produced essentially all of the image gain** (+0.17 macro). The grounding metric did not change accuracy itself, but it exposed recipe A as relying on text priors.
 2. **WiSE-FT trades image accuracy for text accuracy almost linearly.** The cost falls mostly on Pets. In the α sweep on calib splits, Pets fell from 0.851 to 0.805 between α=1.0 and α=0.85 while the BoolQ proxy rose from 0.784 to 0.812.
@@ -316,6 +322,10 @@ Confidence is the max probability. The table gives ECE with 10 equal-width bins,
 | AG News (text) | 5,000 | 0.924 | 0.029 | 0.030 | 0.029 | 0.86 | 0.85 | 0.97 / 0.99 / 1.0 |
 | BoolQ (text) | 3,270 | 0.747 | 0.071 | 0.072 | 0.071 | 0.70 | 0.70 | 0.80 / 0.85 / 0.92 |
 | Typed decisions (text) | 2,000 | 0.715 | **0.118** | 0.118 | 0.118 | 0.75 | 0.68 | 0.78 / 0.87 / 0.97 |
+
+![Reliability diagrams per task](test_campaign/02_calibration/reliability_by_task.png)
+
+![Selective prediction: accuracy vs coverage](test_campaign/02_calibration/selective.png)
 
 Group ECE10:
 - in-distribution image tasks (n=6,437): 0.014 [0.010, 0.025], AUROC 0.815;
@@ -366,6 +376,10 @@ The sample is partial (the run hit its time budget): 45 images per task, **902 q
 | **Macro** | **.741** [.707, .773] | .339 | .335 | .344 | .648 | .345 | .371 | .382 | ~.39 |
 | Drop vs real [CI] | | −.40 [.36, .45] | −.41 | −.40 | **−.09** [.06, .13] | −.40 | −.37 | −.36 [.31, .40] | |
 
+![Macro accuracy when the image is replaced](docs/figures/grounding.png)
+
+Per-task detail: [`test_campaign/05_modality_grounding/grounding.png`](test_campaign/05_modality_grounding/grounding.png).
+
 **Findings:**
 - **The image is used strongly.** Removing or mismatching it costs about 0.40 macro accuracy. On the classification tasks the `choice` questions fall from 0.53–0.93 to 0.02–0.13, *below* chance, because the model answers from the (wrong) image rather than from a prior. A wrong-but-real image does no better than a black one, so the model reads image content, not just whether an image is present.
 - **Much of the signal is global colour and texture.** Shuffling 4×4 tiles costs only 0.09 macro, and almost nothing on EuroSAT, Food-101, COCO and A-OKVQA. CIFAR-10 is the exception (0.96 → 0.50): its objects are small and low-resolution, so layout matters.
@@ -392,6 +406,8 @@ EuroSAT (64×64 satellite tiles, 10 classes) and Oxford Pets (photos, 20 options
 | EuroSAT | 0.980 | 0.980 | 0.973 | 0.987 | 0.907 |
 | Pets | 0.660 | 0.640 | 0.767 | 0.673 | 0.760 |
 
+![Accuracy under image corruptions](docs/figures/robustness.png)
+
 **Findings:**
 - **Robust:** moderate brightness and contrast changes, mild cropping, horizontal flips, and (on EuroSAT) every rotation and flip.
 - **Fragile to anything that destroys high-frequency detail.** Even *mild* blur, noise or a 4× downscale halves EuroSAT accuracy (0.98 → 0.45–0.49); JPEG at quality 30 gives 0.62. Pets photos tolerate the mild versions (within the CIs) but fall to 0.45 under severe blur or downscaling.
@@ -417,6 +433,8 @@ There were 50 images for each of 6 tasks (n=300), each asked in 20–21 prompt v
 | +4 foreign distractors (letter tasks, n=100) | 0.380 | **−0.170** [−0.250, −0.090] | 0.36 |
 | drop half of the distractors | 0.767 | +0.003 | 0.10 |
 | K = 2 / 5 / 10 / 20 (chance 0.50 / 0.20 / 0.10 / 0.05) | 0.883 / 0.770 / 0.905 / 0.780 | | |
+
+![All-caps prompts before and after the fix](docs/figures/allcaps_fix.png)
 
 All-caps accuracy by task, before and after the fix:
 
@@ -531,6 +549,8 @@ Final checkpoint vs stock Laya:
 | EuroSAT binary verify | 1,334 | 0.980 [0.971, 0.986] | 0.5 |
 | VQAv2 yes/no | 3,075 | 0.609 [0.591, 0.626] | majority "no" 0.533 |
 
+![EuroSAT confusion matrix](test_campaign/11_error_analysis/confusion_eurosat.png)
+
 - **Pets errors are look-alike breeds,** for example:
   - samoyed → great pyrenees (5);
   - british shorthair → russian blue (5);
@@ -571,6 +591,8 @@ These were measured on an RTX 4060 Ti **shared with about 11 other processes** (
 | batch of 1 / 4 / 8 / 16 images, 1 question (total) | 48 / 59 / 92 / 146 (16 images: 9.1 ms/image ≈ **110 images/s**, 4.8× unbatched) |
 | batch of 1 / 4 / 8 / 16 images, 4 questions (total) | 49 / 93 / 172 / 357 |
 | 8 copies of the same image, 4 questions | 164 (no gain over distinct images: 172) |
+
+![Latency vs questions and vs the caption cascade](docs/figures/latency.png)
 
 Component costs:
 - image decode and hash: 0.6–1.8 ms;
